@@ -199,6 +199,8 @@ span {
   cursor: pointer;
   box-shadow: 0 0 5px var(--main-color);
   transition: 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card:hover {
@@ -217,6 +219,17 @@ span {
 }
 .project-card p {
   font-size: 1.6rem;
+}
+.view-link {
+  font-size: 1.3rem;
+  color: var(--main-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
 }
 
 @media (max-width: 1285px) {
