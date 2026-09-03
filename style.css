@@ -1,0 +1,73 @@
+.site-nav {
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+.site-nav.is-scrolled {
+  border-color: var(--line);
+  box-shadow: 0 6px 24px rgba(15, 42, 74, 0.06);
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  border-radius: 8px;
+  color: #fff;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  color: var(--navy) !important;
+}
+.navbar-brand small {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  color: var(--gray);
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: var(--ink) !important;
+  font-weight: 500;
+  position: relative;
+  margin: 0 0.35rem;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  transition: width 0.2s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+.btn-nav-cta {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1.15rem;
+  border: none;
+}
+.btn-nav-cta:hover {
+  background: var(--navy);
+  color: #fff;
+}
