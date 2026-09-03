@@ -1,3 +1,15 @@
+:root {
+  --navy: #0f2a4a;
+  --blue: #1d5fbf;
+  --green: #1f9d63;
+  --ink: #132038;
+  --gray: #5c6b82;
+  --line: #dde5ef;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .site-nav {
   background: rgba(255, 255, 255, 0.92);
   -webkit-backdrop-filter: blur(10px);
