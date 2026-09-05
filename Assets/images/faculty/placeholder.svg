@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Faculty Photo Placeholder: Circuit board silhouette with "UE CpE" text -->
+  <rect width="120" height="120" rx="8" fill="#1B2A3A"/>
+  <path d="M16 22h64v56h-64z" fill="#0D1B2A"/>
+  <text x="60" y="32" text-anchor="middle" fill="#6B7C8A" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">UE CpE</text>
+  <text x="60" y="60" text-anchor="middle" fill="#6B7C8A" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Φ</text>
+</svg>
