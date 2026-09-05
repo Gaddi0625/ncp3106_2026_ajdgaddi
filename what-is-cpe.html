@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta.description">
+  <title data-i18n="whatIs.meta.title">What is Computer Engineering? | UE Computer Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"></noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container-custom">
+      <a class="navbar-brand" href="index.html" data-i18n="brand.name">UE Computer Engineering</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#hardware-software" data-i18n="nav.hardwareSoftware">Hardware & Software</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#major-fields" data-i18n="nav.majorFields">Major Fields</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#why-matters" data-i18n="nav.whyMatters">Why It Matters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.cpeAtUe">CpE at UE</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cpe-at-ue.html" data-i18n="nav.overview">Program Overview</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#objectives" data-i18n="nav.objectives">Objectives & Outcomes</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#facilities" data-i18n="nav.facilities">Facilities</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#accreditation" data-i18n="nav.accreditation">Accreditation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.community">Community</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="faculty.html" data-i18n="nav.faculty">Faculty</a></li>
+              <li><a class="dropdown-item" href="scpes.html" data-i18n="nav.scpes">SCPES</a></li>
+              <li><a class="dropdown-item" href="projects.html" data-i18n="nav.projects">Student Projects</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="dropdown language-selector">
+          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+            <span data-i18n="lang.current">English</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" data-lang="en" data-i18n="lang.english">English</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="fil" data-i18n="lang.filipino">Filipino</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
+
+  <header class="hero-carousel" style="height: 40vh; min-height: 300px;">
+    <div class="hero-slide" style="background-image: url('assets/images/hero/hero.jpg');">
+      <div class="carousel-caption">
+        <h1 data-i18n="whatIs.hero.title">What is Computer Engineering?</h1>
+        <p class="lead" data-i18n="whatIs.hero.tagline">Understanding the discipline that bridges hardware and software</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container-custom">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.whatIs">What is Computer Engineering?</li>
+          </ol>
+        </nav>
+
+        <article>
+          <header class="mb-5">
+            <h2 data-i18n="whatIs.definition.title">Definition</h2>
+            <p class="lead" data-i18n="whatIs.definition.desc">Computer Engineering is a discipline that integrates electrical engineering and computer science to develop computer hardware and software. Computer engineers are involved in many hardware and software aspects of computing, from the design of individual microcontrollers, microprocessors, personal computers, and supercomputers, to circuit design.</p>
+          </header>
+
+          <section id="hardware-software" class="mb-5">
+            <h2 data-i18n="whatIs.hwsw.title">The Hardware–Software Relationship</h2>
+            <p data-i18n="whatIs.hwsw.desc">Computer Engineering sits at the intersection of hardware and software. Unlike Computer Science (which focuses primarily on software) or Electrical Engineering (which focuses primarily on hardware), Computer Engineering requires understanding both domains and how they interact.</p>
+            <div class="row g-4 mt-4">
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.hwsw.hardware.title">Hardware</h3>
+                    <ul class="list-unstyled">
+                      <li data-i18n="whatIs.hwsw.hardware.item1">Digital logic design</li>
+                      <li data-i18n="whatIs.hwsw.hardware.item2">Computer architecture</li>
+                      <li data-i18n="whatIs.hwsw.hardware.item3">Embedded systems</li>
+                      <li data-i18n="whatIs.hwsw.hardware.item4">VLSI / Chip design</li>
+                      <li data-i18n="whatIs.hwsw.hardware.item5">Signal processing</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.hwsw.software.title">Software</h3>
+                    <ul class="list-unstyled">
+                      <li data-i18n="whatIs.hwsw.software.item1">Firmware & RTOS</li>
+                      <li data-i18n="whatIs.hwsw.software.item2">Device drivers</li>
+                      <li data-i18n="whatIs.hwsw.software.item3">Low-level programming (C, Assembly)</li>
+                      <li data-i18n="whatIs.hwsw.software.item4">Real-time systems</li>
+                      <li data-i18n="whatIs.hwsw.software.item5">Hardware-software co-design</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="major-fields" class="mb-5">
+            <h2 data-i18n="whatIs.fields.title">Major Areas of Computer Engineering</h2>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item1.title">Embedded Systems</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item1.desc">Designing dedicated computing systems for specific functions within larger devices.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item2.title">Computer Architecture</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item2.desc">Designing processor architectures, memory hierarchies, and instruction sets.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item3.title">VLSI & Chip Design</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item3.desc">Very Large Scale Integration — creating integrated circuits with millions of transistors.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item4.title">Computer Networks</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item4.desc">Designing and managing data communication systems and network protocols.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item5.title">Signal Processing</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item5.desc">Analyzing, modifying, and synthesizing signals for communications, audio, and video.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.fields.item6.title">Robotics & Control</h3>
+                    <p class="card-text" data-i18n="whatIs.fields.item6.desc">Integrating sensors, actuators, and computing for autonomous systems.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="what-do" class="mb-5">
+            <h2 data-i18n="whatIs.do.title">What Computer Engineers Do</h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.do.item1.title">Design</h3>
+                    <p class="card-text" data-i18n="whatIs.do.item1.desc">Create hardware architectures, circuit schematics, and system specifications.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.do.item2.title">Develop</h3>
+                    <p class="card-text" data-i18n="whatIs.do.item2.desc">Write firmware, device drivers, and low-level software for embedded platforms.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.do.item3.title">Test & Verify</h3>
+                    <p class="card-text" data-i18n="whatIs.do.item3.desc">Validate hardware and software through simulation, emulation, and physical testing.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.do.item4.title">Integrate</h3>
+                    <p class="card-text" data-i18n="whatIs.do.item4.desc">Combine hardware and software components into working systems.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card h-100">
+                  <div class="card-body">
+                    <h3 class="card-title" data-i18n="whatIs.do.item5.title">Research</h3>
+                    <p class="card-text" data-i18n="whatIs.do.item5.desc">Advance the state of the art in computing hardware, architectures, and applications.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section id="applications" class="mb-5">
+            <h2 data-i18n="whatIs.apps.title">Applications of Computer Engineering</h2>
+            <p data-i18n="whatIs.apps.intro">Computer Engineering drives innovation across diverse domains:</p>
+            <div class="row g-3">
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item1">Multimedia</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item2">Aerospace & Avionics</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item3">Automotive</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item4">Consumer Electronics</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item5">Medical Sciences</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item6">Internet & Communications</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item7">Entertainment & Gaming</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item8">Game System Hardware</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item9">Electronic Toys</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item10">Virtual Reality Hardware</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item11">Human Interface Devices</span></div>
+              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item12">Military & Defense</span></div>
+            </div>
+          </section>
+
+          <section id="why-matters" class="mb-5">
+            <h2 data-i18n="whatIs.matter.title">Importance in Modern Society</h2>
+            <p data-i18n="whatIs.matter.desc">Computer Engineering is foundational to modern technology. From the smartphones in our pockets to the control systems in aircraft, from medical devices that save lives to the infrastructure powering the internet — computer engineers design the computing systems that enable modern life. The discipline continues to drive advances in artificial intelligence, autonomous systems, quantum computing, and the Internet of Things.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-custom">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-brand" data-i18n="brand.name">UE Computer Engineering</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Bachelor of Science in Computer Engineering<br>University of the East</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
+            <li><a href="cpe-at-ue.html" data-i18n="nav.cpeAtUe">CpE at UE</a></li>
+            <li><a href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
+            <li><a href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.community">Community</h4>
+          <ul class="footer-links">
+            <li><a href="faculty.html" data-i18n="nav.faculty">Faculty</a></li>
+            <li><a href="scpes.html" data-i18n="nav.scpes">SCPES</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Student Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.contact">Contact</h4>
+          <address class="footer-contact">
+            <p><strong data-i18n="footer.dean">Dean:</strong> Dr. Rogelio B. Aniez Jr.</p>
+            <p><strong data-i18n="footer.assocDean">Associate Dean:</strong> Engr. Darwin Alpis</p>
+            <p><strong data-i18n="footer.secretary">College Secretary:</strong> Ms. Jasmin S. Salazar</p>
+            <p><strong data-i18n="footer.trunkline">Trunkline:</strong> (632) 8735-54-71 local 397</p>
+            <p><strong data-i18n="footer.directLine">Direct Line:</strong> (632) 8735-13-54</p>
+            <p><strong data-i18n="footer.email">Email:</strong> <a href="mailto:jasmin.salazar@ue.edu.ph">jasmin.salazar@ue.edu.ph</a></p>
+            <p><strong data-i18n="footer.address">Address:</strong> 2219 C.M. Recto Avenue, Brgy. 404, Zone 41, Sampaloc, Manila, Philippines</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.disclaimer">Program information sourced from publicly available University of the East websites (ue.edu.ph). For official admissions requirements, curriculum details, and faculty credentials, please contact the UE College of Engineering directly. This website is a student project and not an official UE publication.</p>
+        <p data-i18n="footer.copyright">&copy; 2025 University of the East Computer Engineering. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

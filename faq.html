@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n="meta.description">
+  <title data-i18n="faq.meta.title">Frequently Asked Questions | UE Computer Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"></noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container-custom">
+      <a class="navbar-brand" href="index.html" data-i18n="brand.name">UE Computer Engineering</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#hardware-software" data-i18n="nav.hardwareSoftware">Hardware & Software</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#major-fields" data-i18n="nav.majorFields">Major Fields</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#why-matters" data-i18n="nav.whyMatters">Why It Matters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.cpeAtUe">CpE at UE</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cpe-at-ue.html" data-i18n="nav.overview">Program Overview</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#objectives" data-i18n="nav.objectives">Objectives & Outcomes</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#facilities" data-i18n="nav.facilities">Facilities</a></li>
+              <li><a class="dropdown-item" href="cpe-at-ue.html#accreditation" data-i18n="nav.accreditation">Accreditation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html" data-i18n="nav.careers">Careers</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.community">Community</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="faculty.html" data-i18n="nav.faculty">Faculty</a></li>
+              <li><a class="dropdown-item" href="scpes.html" data-i18n="nav.scpes">SCPES</a></li>
+              <li><a class="dropdown-item" href="projects.html" data-i18n="nav.projects">Student Projects</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="dropdown language-selector">
+          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+            <span data-i18n="lang.current">English</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" data-lang="en" data-i18n="lang.english">English</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="fil" data-i18n="lang.filipino">Filipino</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
+
+  <header class="hero-carousel" style="height: 40vh; min-height: 300px;">
+    <div class="hero-slide" style="background-image: url('assets/images/hero/hero.jpg');">
+      <div class="carousel-caption">
+        <h1 data-i18n="faq.hero.title">Frequently Asked Questions</h1>
+        <p class="lead" data-i18n="faq.hero.tagline">Common questions about Computer Engineering and the UE program</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container-custom">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.faq">FAQ</li>
+          </ol>
+        </nav>
+
+        <!-- Search/Filter -->
+        <div class="mb-4">
+          <label for="faqSearch" class="form-label visually-hidden" data-i18n="faq.search.label">Search FAQs</label>
+          <input type="search" class="form-control" id="faqSearch" placeholder="Search questions..." aria-label="Search FAQs" data-i18n-placeholder="faq.search.placeholder">
+        </div>
+
+        <!-- General Questions -->
+        <section class="mb-5">
+          <h2 data-i18n="faq.general.title">General Questions</h2>
+          <div class="accordion" id="faqGeneral">
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  <span data-i18n="faq.q1">What is the difference between Computer Engineering and Computer Science?</span>
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a1">Computer Engineering integrates electrical engineering and computer science, focusing on the hardware-software interface. Computer Science focuses primarily on software, algorithms, and theoretical computing. Computer Engineers design both hardware (circuits, processors, embedded systems) and the low-level software (firmware, drivers, RTOS) that runs on it.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  <span data-i18n="faq.q2">Is Computer Engineering mostly hardware?</span>
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a2">No. Computer Engineering covers both hardware and software. While you study digital logic, computer architecture, and electronics, you also learn firmware development, device drivers, real-time operating systems, and hardware-software co-design. The balance depends on your chosen specialization.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  <span data-i18n="faq.q3">Do Computer Engineering students learn programming?</span>
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a3">Yes. Programming is fundamental to Computer Engineering. You will learn C, C++, and Assembly for low-level and embedded programming, as well as Python, Java, or other languages for higher-level applications and tools.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  <span data-i18n="faq.q4">What programming languages are commonly used?</span>
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  <ul>
+                    <li data-i18n="faq.a4.item1"><strong>C / C++</strong> — Embedded systems, firmware, real-time systems</li>
+                    <li data-i18n="faq.a4.item2"><strong>Python</strong> — Scripting, data analysis, ML/AI, testing</li>
+                    <li data-i18n="faq.a4.item3"><strong>Verilog / VHDL</strong> — Digital logic design, FPGA development</li>
+                    <li data-i18n="faq.a4.item4"><strong>Assembly</strong> — Microcontroller programming, optimization</li>
+                    <li data-i18n="faq.a4.item5"><strong>Java / JavaScript</strong> — Applications, web interfaces for embedded systems</li>
+                    <li data-i18n="faq.a4.item6"><strong>MATLAB</strong> — Signal processing, control systems</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- UE Program Questions -->
+        <section class="mb-5">
+          <h2 data-i18n="faq.ue.title">UE Computer Engineering Program</h2>
+          <div class="accordion" id="faqUE">
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="true" aria-controls="faq5">
+                  <span data-i18n="faq.q5">What are the program educational objectives of UE BSCpE?</span>
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse show" data-bs-parent="#faqUE">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a5">The UE BSCpE program aims to produce graduates who are: (1) professionally competent and globally competitive; (2) equipped with technical competencies to contribute to the country's social and economic progress; (3) lifelong learners imbued with UE core values of Excellence, Integrity, Professionalism, Teamwork, Commitment, Transparency, Accountability, and Social Responsibility.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                  <span data-i18n="faq.q6">What is the accreditation status of the program?</span>
+                </button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a6">The UE Caloocan BSCpE program is PAASCU Level III Re-Accredited. The UE Manila BSCpE program holds PACUCOA Level II Candidate Status.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                  <span data-i18n="faq.q7">What is the focus of the UE CpE curriculum?</span>
+                </button>
+              </h3>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a7">The UE CpE curriculum focuses on embedded systems — devices that use microprocessors or microcontrollers for specific purposes. The program balances engineering science and design, with hands-on projects starting from freshman year.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                  <span data-i18n="faq.q8">What are the application domains covered?</span>
+                </button>
+              </h3>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a8">UE CpE application domains include: Multimedia, Aerospace & Avionics, Automotive, Consumer Electronics, Medical Sciences, Internet, Entertainment, Game System Hardware, Electronic Toys, Virtual Reality Hardware, Human Interface Devices, and Military.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Admissions & Career Questions -->
+        <section class="mb-5">
+          <h2 data-i18n="faq.admissions.title">Admissions & Careers</h2>
+          <div class="accordion" id="faqAdmissions">
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="true" aria-controls="faq9">
+                  <span data-i18n="faq.q9">What careers can CpE graduates pursue?</span>
+                </button>
+              </h3>
+              <div id="faq9" class="accordion-collapse collapse show" data-bs-parent="#faqAdmissions">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a9">UE lists these career paths: Project Engineer/Manager, Network System Administrator/Manager, Data Communications Engineer, Systems Engineer/Developer/Manager, Systems Analyst/Designer, Technical Support Engineer/Manager, Test Engineer, Technopreneur, Software Engineer, Educator and Researcher. Additional industry roles include Embedded Systems Engineer, IoT Engineer, Hardware Engineer, Cybersecurity Engineer, AI/ML Engineer, Cloud Engineer, DevOps Engineer, Robotics Engineer, and R&D Engineer.</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+                  <span data-i18n="faq.q10">What skills should incoming CpE students develop?</span>
+                </button>
+              </h3>
+              <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
+                <div class="accordion-body">
+                  <ul>
+                    <li data-i18n="faq.a10.item1">Strong foundation in mathematics (calculus, discrete math, linear algebra)</li>
+                    <li data-i18n="faq.a10.item2">Physics fundamentals (electricity, magnetism, mechanics)</li>
+                    <li data-i18n="faq.a10.item3">Basic programming experience (any language)</li>
+                    <li data-i18n="faq.a10.item4">Logical thinking and problem-solving skills</li>
+                    <li data-i18n="faq.a10.item5">Interest in how hardware and software interact</li>
+                    <li data-i18n="faq.a10.item6">Willingness to learn circuit analysis and digital logic</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+                  <span data-i18n="faq.q11">What is the licensure examination for Computer Engineers?</span>
+                </button>
+              </h3>
+              <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a11">In the Philippines, Computer Engineering graduates take the Computer Engineering Licensure Examination administered by the Professional Regulation Commission (PRC). UE Manila reported a first-timers passing rate of 93.33% in the 2025 Electrical Engineers Licensure Exam (which includes CpE).</p>
+                </div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
+                  <span data-i18n="faq.q12">How can I contact the department for more information?</span>
+                </button>
+              </h3>
+              <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
+                <div class="accordion-body">
+                  <p data-i18n="faq.a12">Contact the UE College of Engineering — Manila:</p>
+                  <ul>
+                    <li data-i18n="faq.a12.item1">Dean: Dr. Rogelio B. Aniez Jr.</li>
+                    <li data-i18n="faq.a12.item2">Associate Dean: Engr. Darwin Alpis</li>
+                    <li data-i18n="faq.a12.item3">College Secretary: Ms. Jasmin S. Salazar</li>
+                    <li data-i18n="faq.a12.item4">Trunkline: (632) 8735-54-71 local 397</li>
+                    <li data-i18n="faq.a12.item5">Direct Line: (632) 8735-13-54</li>
+                    <li data-i18n="faq.a12.item6">Email: jasmin.salazar@ue.edu.ph</li>
+                    <li data-i18n="faq.a12.item7">Address: 2219 C.M. Recto Avenue, Sampaloc, Manila</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-custom">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-brand" data-i18n="brand.name">UE Computer Engineering</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Bachelor of Science in Computer Engineering<br>University of the East</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
+            <li><a href="cpe-at-ue.html" data-i18n="nav.cpeAtUe">CpE at UE</a></li>
+            <li><a href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
+            <li><a href="careers.html" data-i18n="nav.careers">Careers</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.community">Community</h4>
+          <ul class="footer-links">
+            <li><a href="faculty.html" data-i18n="nav.faculty">Faculty</a></li>
+            <li><a href="scpes.html" data-i18n="nav.scpes">SCPES</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Student Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading" data-i18n="footer.contact">Contact</h4>
+          <address class="footer-contact">
+            <p><strong data-i18n="footer.dean">Dean:</strong> Dr. Rogelio B. Aniez Jr.</p>
+            <p><strong data-i18n="footer.assocDean">Associate Dean:</strong> Engr. Darwin Alpis</p>
+            <p><strong data-i18n="footer.secretary">College Secretary:</strong> Ms. Jasmin S. Salazar</p>
+            <p><strong data-i18n="footer.trunkline">Trunkline:</strong> (632) 8735-54-71 local 397</p>
+            <p><strong data-i18n="footer.directLine">Direct Line:</strong> (632) 8735-13-54</p>
+            <p><strong data-i18n="footer.email">Email:</strong> <a href="mailto:jasmin.salazar@ue.edu.ph">jasmin.salazar@ue.edu.ph</a></p>
+            <p><strong data-i18n="footer.address">Address:</strong> 2219 C.M. Recto Avenue, Brgy. 404, Zone 41, Sampaloc, Manila, Philippines</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.disclaimer">Program information sourced from publicly available University of the East websites (ue.edu.ph). For official admissions requirements, curriculum details, and faculty credentials, please contact the UE College of Engineering directly. This website is a student project and not an official UE publication.</p>
+        <p data-i18n="footer.copyright">&copy; 2025 University of the East Computer Engineering. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
