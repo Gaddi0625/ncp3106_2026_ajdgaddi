@@ -397,9 +397,9 @@ pre code { background: none; padding: 0; }
   z-index: 1;
 }
 
-.hero-slide-1 { background-image: url('assets/images/hero/hero.jpg'); }
-.hero-slide-2 { background-image: url('assets/images/hero/hero2.jpg'); }
-.hero-slide-3 { background-image: url('assets/images/hero/hero3.jpg'); }
+.hero-slide-1 { background-image: url('Assets/images/hero/hero.jpg'); }
+.hero-slide-2 { background-image: url('Assets/images/hero/hero2.jpg'); }
+.hero-slide-3 { background-image: url('Assets/images/hero/hero3.jpg'); }
 
 .hero-slide .carousel-caption {
   position: absolute;

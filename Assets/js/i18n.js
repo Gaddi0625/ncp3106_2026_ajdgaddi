@@ -11,7 +11,7 @@ const I18n = (() => {
 
   async function load(lang) {
     try {
-      const res = await fetch(`assets/i18n/${lang}.json`);
+      const res = await fetch(`Assets/i18n/${lang}.json`);
       if (!res.ok) throw new Error(`Failed to load ${lang}.json`);
       dict = await res.json();
       currentLang = lang;
