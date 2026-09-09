@@ -103,18 +103,6 @@
               <p class="text-muted" data-i18n="careers.stat1.label">Licensure Pass Rate (First-Timers, 2025)</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="text-center p-4">
-              <div class="display-4 fw-bold text-primary" data-i18n="careers.stat2.value">[To Be Provided]</div>
-              <p class="text-muted" data-i18n="careers.stat2.label">Employment Rate</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center p-4">
-              <div class="display-4 fw-bold text-primary" data-i18n="careers.stat3.value">[To Be Provided]</div>
-              <p class="text-muted" data-i18n="careers.stat3.label">Industry Partners</p>
-            </div>
-          </div>
         </div>
 
         <!-- Desktop Table View -->
@@ -122,9 +110,9 @@
           <table class="table table-hover align-middle">
             <thead>
               <tr>
-                <th data-i18n="careers.table.role">Role</th>
-                <th data-i18n="careers.table.category">Category</th>
-                <th data-i18n="careers.table.desc">Description</th>
+                <th scope="col" data-i18n="careers.table.role">Role</th>
+                <th scope="col" data-i18n="careers.table.category">Category</th>
+                <th scope="col" data-i18n="careers.table.desc">Description</th>
               </tr>
             </thead>
             <tbody>
@@ -285,6 +273,80 @@
             <p data-i18n="careers.table.row15.desc">Advance computing technology through research and experimental development.</p>
           </article>
         </div>
+
+        <!-- Career Category Comparison -->
+        <section class="mb-5">
+          <h2 class="h4 mb-3" data-i18n="careers.comparison.title">Career Categories at a Glance</h2>
+          <p class="text-muted mb-4" data-i18n="careers.comparison.intro">Computer Engineering careers span multiple categories. This comparison helps you understand the focus and typical entry points for each area.</p>
+          
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col" data-i18n="careers.comparison.category">Category</th>
+                  <th scope="col" data-i18n="careers.comparison.focus">Primary Focus</th>
+                  <th scope="col" data-i18n="careers.comparison.typicalRoles">Typical Roles</th>
+                  <th scope="col" data-i18n="careers.comparison.keySkills">Key Skills</th>
+                  <th scope="col" data-i18n="careers.comparison.workStyle">Work Style</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge badge-primary" data-i18n="careers.table.row1.cat">Hardware/Software</span></td>
+                  <td data-i18n="careers.comparison.hwsw.focus">Integrating both domains; full-stack systems thinking</td>
+                  <td data-i18n="careers.comparison.hwsw.roles">Computer Engineer, Systems Architect</td>
+                  <td data-i18n="careers.comparison.hwsw.skills">C/C++, Verilog/VHDL, Python, systems design</td>
+                  <td data-i18n="careers.comparison.hwsw.style">Cross-functional; bridging teams</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-primary" data-i18n="careers.table.row2.cat">Hardware</span></td>
+                  <td data-i18n="careers.comparison.hw.focus">Circuits, chips, boards; physical implementation</td>
+                  <td data-i18n="careers.comparison.hw.roles">Hardware Engineer, ASIC/FPGA Engineer, PCB Designer</td>
+                  <td data-i18n="careers.comparison.hw.skills">Verilog/VHDL, SPICE, layout tools, test equipment</td>
+                  <td data-i18n="careers.comparison.hw.style">Lab/bench work; simulation-heavy</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-secondary" data-i18n="careers.table.row4.cat">Software</span></td>
+                  <td data-i18n="careers.comparison.sw.focus">Code that runs on hardware; applications & systems</td>
+                  <td data-i18n="careers.comparison.sw.roles">Software Engineer, Firmware Engineer, Systems Programmer</td>
+                  <td data-i18n="careers.comparison.sw.skills">C/C++, Python, Git, RTOS, debugging tools</td>
+                  <td data-i18n="careers.comparison.sw.style">Desk-based; iterative development</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-secondary" data-i18n="careers.table.row3.cat">Systems</span></td>
+                  <td data-i18n="careers.comparison.sys.focus">Integration, networks, infrastructure, operations</td>
+                  <td data-i18n="careers.comparison.sys.roles">Systems Engineer, Network Engineer, Cloud/DevOps Engineer</td>
+                  <td data-i18n="careers.comparison.sys.skills">Linux, networking, cloud platforms, automation</td>
+                  <td data-i18n="careers.comparison.sys.style">Infrastructure-focused; on-call rotations</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-secondary" data-i18n="careers.table.row8.cat">Security</span></td>
+                  <td data-i18n="careers.comparison.sec.focus">Protection, threat modeling, secure design</td>
+                  <td data-i18n="careers.comparison.sec.roles">Cybersecurity Engineer, Security Analyst, Pen Tester</td>
+                  <td data-i18n="careers.comparison.sec.skills">Cryptography, threat modeling, secure coding, forensics</td>
+                  <td data-i18n="careers.comparison.sec.style">Analytical; compliance-aware</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-secondary" data-i18n="careers.table.row10.cat">Emerging</span></td>
+                  <td data-i18n="careers.comparison.emerging.focus">AI/ML, robotics, quantum, edge — cutting edge</td>
+                  <td data-i18n="careers.comparison.emerging.roles">AI/ML Engineer, Robotics Engineer, Quantum Engineer</td>
+                  <td data-i18n="careers.comparison.emerging.skills">PyTorch/TensorFlow, ROS, quantum algorithms, edge runtimes</td>
+                  <td data-i18n="careers.comparison.emerging.style">Research-heavy; rapid iteration</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Career CTA -->
+        <section class="mb-5">
+          <div class="p-5 rounded bg-primary text-white text-center">
+            <h2 class="h4 mb-3" data-i18n="careers.cta.title">Ready to Start Your CpE Career?</h2>
+            <p class="lead mb-4" data-i18n="careers.cta.desc">Explore the Bachelor of Science in Computer Engineering program at the University of the East and build the foundation for a rewarding career in technology.</p>
+            <a href="cpe-at-ue.html" class="btn btn-light btn-lg me-2" data-i18n="careers.cta.explore">Explore the Program</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg" data-i18n="careers.cta.contact">Contact Us</a>
+          </div>
+        </section>
 
         <div class="text-center mt-4">
           <p class="placeholder-notice" data-i18n="careers.note">[UE-specific career outcomes and alumni data to be provided]</p>

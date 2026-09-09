@@ -26,7 +26,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item active" href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
               <li><a class="dropdown-item" href="what-is-cpe.html#hardware-software" data-i18n="nav.hardwareSoftware">Hardware & Software</a></li>
@@ -75,7 +75,7 @@
     <div class="hero-slide" style="background-image: url('Assets/images/hero/hero.jpg');">
       <div class="carousel-caption">
         <h1 data-i18n="whatIs.hero.title">What is Computer Engineering?</h1>
-        <p class="lead" data-i18n="whatIs.hero.tagline">Understanding the discipline that bridges hardware and software</p>
+        <p class="lead" data-i18n="whatIs.hero.tagline">The discipline that bridges hardware and software to create computing systems</p>
       </div>
     </div>
   </header>
@@ -99,136 +99,175 @@
           <section id="hardware-software" class="mb-5">
             <h2 data-i18n="whatIs.hwsw.title">The Hardware–Software Relationship</h2>
             <p data-i18n="whatIs.hwsw.desc">Computer Engineering sits at the intersection of hardware and software. Unlike Computer Science (which focuses primarily on software) or Electrical Engineering (which focuses primarily on hardware), Computer Engineering requires understanding both domains and how they interact.</p>
-            <div class="row g-4 mt-4">
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.hwsw.hardware.title">Hardware</h3>
-                    <ul class="list-unstyled">
-                      <li data-i18n="whatIs.hwsw.hardware.item1">Digital logic design</li>
-                      <li data-i18n="whatIs.hwsw.hardware.item2">Computer architecture</li>
-                      <li data-i18n="whatIs.hwsw.hardware.item3">Embedded systems</li>
-                      <li data-i18n="whatIs.hwsw.hardware.item4">VLSI / Chip design</li>
-                      <li data-i18n="whatIs.hwsw.hardware.item5">Signal processing</li>
-                    </ul>
-                  </div>
-                </article>
+            
+            <div class="row g-4 mt-4 align-items-start">
+              <div class="col-lg-6">
+                <h3 data-i18n="whatIs.hwsw.hardware.title" class="h4 mb-3">Hardware</h3>
+                <p class="text-muted small mb-3" data-i18n="whatIs.hwsw.hardware.desc">Computer Engineering hardware encompasses the physical components and architectural decisions that define computing systems.</p>
+                <ul class="list-unstyled">
+                  <li data-i18n="whatIs.hwsw.hardware.item1"><span class="me-2" aria-hidden="true">▸</span> Digital logic design</li>
+                  <li data-i18n="whatIs.hwsw.hardware.item2"><span class="me-2" aria-hidden="true">▸</span> Computer architecture</li>
+                  <li data-i18n="whatIs.hwsw.hardware.item3"><span class="me-2" aria-hidden="true">▸</span> Embedded systems</li>
+                  <li data-i18n="whatIs.hwsw.hardware.item4"><span class="me-2" aria-hidden="true">▸</span> VLSI / Chip design</li>
+                  <li data-i18n="whatIs.hwsw.hardware.item5"><span class="me-2" aria-hidden="true">▸</span> Signal processing</li>
+                </ul>
               </div>
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.hwsw.software.title">Software</h3>
-                    <ul class="list-unstyled">
-                      <li data-i18n="whatIs.hwsw.software.item1">Firmware & RTOS</li>
-                      <li data-i18n="whatIs.hwsw.software.item2">Device drivers</li>
-                      <li data-i18n="whatIs.hwsw.software.item3">Low-level programming (C, Assembly)</li>
-                      <li data-i18n="whatIs.hwsw.software.item4">Real-time systems</li>
-                      <li data-i18n="whatIs.hwsw.software.item5">Hardware-software co-design</li>
-                    </ul>
-                  </div>
-                </article>
+              <div class="col-lg-6">
+                <h3 data-i18n="whatIs.hwsw.software.title" class="h4 mb-3">Software</h3>
+                <p class="text-muted small mb-3" data-i18n="whatIs.hwsw.software.desc">Computer Engineering software focuses on the code that runs close to the hardware, enabling systems to function efficiently.</p>
+                <ul class="list-unstyled">
+                  <li data-i18n="whatIs.hwsw.software.item1"><span class="me-2" aria-hidden="true">▸</span> Firmware & RTOS</li>
+                  <li data-i18n="whatIs.hwsw.software.item2"><span class="me-2" aria-hidden="true">▸</span> Device drivers</li>
+                  <li data-i18n="whatIs.hwsw.software.item3"><span class="me-2" aria-hidden="true">▸</span> Low-level programming (C, Assembly)</li>
+                  <li data-i18n="whatIs.hwsw.software.item4"><span class="me-2" aria-hidden="true">▸</span> Real-time systems</li>
+                  <li data-i18n="whatIs.hwsw.software.item5"><span class="me-2" aria-hidden="true">▸</span> Hardware-software co-design</li>
+                </ul>
               </div>
+            </div>
+            
+            <div class="mt-4 p-3 rounded bg-light border">
+              <h4 class="mb-2" data-i18n="whatIs.hwsw.integration.title">Where They Meet: Hardware-Software Integration</h4>
+              <p class="mb-0" data-i18n="whatIs.hwsw.integration.desc">The defining skill of a Computer Engineer is co-design — making hardware and software decisions together to optimize for performance, power, cost, and reliability. This systems-level thinking is what distinguishes Computer Engineering from its parent disciplines.</p>
             </div>
           </section>
 
           <section id="major-fields" class="mb-5">
             <h2 data-i18n="whatIs.fields.title">Major Areas of Computer Engineering</h2>
+            <p class="lead mb-4" data-i18n="whatIs.fields.intro">Computer Engineering spans multiple interconnected fields. Students typically build depth in one or more of these areas through electives, projects, and research.</p>
+            
             <div class="row g-4">
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item1.title">Embedded Systems</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item1.desc">Designing dedicated computing systems for specific functions within larger devices.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item1.title">Embedded Systems</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item1.desc">Designing dedicated computing systems for specific functions within larger devices.</p>
+                  <p class="small" data-i18n="whatIs.fields.item1.topics"><strong>Key topics:</strong> Microcontrollers, RTOS, C/C++, bare-metal programming</p>
+                  <p class="small" data-i18n="whatIs.fields.item1.apps"><strong>Applications:</strong> Automotive ECUs, medical devices, IoT sensors, industrial controllers</p>
+                </div>
               </div>
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item2.title">Computer Architecture</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item2.desc">Designing processor architectures, memory hierarchies, and instruction sets.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item2.title">Computer Architecture</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item2.desc">Designing processor architectures, memory hierarchies, and instruction sets.</p>
+                  <p class="small" data-i18n="whatIs.fields.item2.topics"><strong>Key topics:</strong> ISA design, pipelining, cache hierarchy, parallel processing</p>
+                  <p class="small" data-i18n="whatIs.fields.item2.apps"><strong>Applications:</strong> CPU/GPU design, high-performance computing, accelerator chips</p>
+                </div>
               </div>
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item3.title">VLSI & Chip Design</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item3.desc">Very Large Scale Integration — creating integrated circuits with millions of transistors.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item3.title">VLSI & Chip Design</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item3.desc">Very Large Scale Integration — creating integrated circuits with millions of transistors.</p>
+                  <p class="small" data-i18n="whatIs.fields.item3.topics"><strong>Key topics:</strong> Verilog/VHDL, FPGA, ASIC flow, timing analysis</p>
+                  <p class="small" data-i18n="whatIs.fields.item3.apps"><strong>Applications:</strong> Custom SoCs, AI accelerators, memory controllers, I/O interfaces</p>
+                </div>
               </div>
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item4.title">Computer Networks</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item4.desc">Designing and managing data communication systems and network protocols.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item4.title">Computer Networks</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item4.desc">Designing and managing data communication systems and network protocols.</p>
+                  <p class="small" data-i18n="whatIs.fields.item4.topics"><strong>Key topics:</strong> TCP/IP, routing, switching, network security, QoS</p>
+                  <p class="small" data-i18n="whatIs.fields.item4.apps"><strong>Applications:</strong> Data centers, 5G/6G, IoT connectivity, SDN/NFV</p>
+                </div>
               </div>
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item5.title">Signal Processing</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item5.desc">Analyzing, modifying, and synthesizing signals for communications, audio, and video.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item5.title">Signal Processing</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item5.desc">Analyzing, modifying, and synthesizing signals for communications, audio, and video.</p>
+                  <p class="small" data-i18n="whatIs.fields.item5.topics"><strong>Key topics:</strong> DSP algorithms, filters, transforms, real-time processing</p>
+                  <p class="small" data-i18n="whatIs.fields.item5.apps"><strong>Applications:</strong> Wireless comms, audio/video codecs, radar/sonar, biomedical imaging</p>
+                </div>
               </div>
-              <div class="col-sm-6 col-lg-4">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.fields.item6.title">Robotics & Control</h3>
-                    <p class="card-text" data-i18n="whatIs.fields.item6.desc">Integrating sensors, actuators, and computing for autonomous systems.</p>
-                  </div>
-                </article>
+              <div class="col-md-6 col-lg-4">
+                <div class="p-3">
+                  <h3 class="h5 mb-2" data-i18n="whatIs.fields.item6.title">Robotics & Control</h3>
+                  <p class="text-muted small mb-2" data-i18n="whatIs.fields.item6.desc">Integrating sensors, actuators, and computing for autonomous systems.</p>
+                  <p class="small" data-i18n="whatIs.fields.item6.topics"><strong>Key topics:</strong> Control theory, sensor fusion, ROS, real-time control loops</p>
+                  <p class="small" data-i18n="whatIs.fields.item6.apps"><strong>Applications:</strong> Industrial robots, autonomous vehicles, drones, surgical robots</p>
+                </div>
               </div>
             </div>
           </section>
 
           <section id="what-do" class="mb-5">
             <h2 data-i18n="whatIs.do.title">What Computer Engineers Do</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.do.item1.title">Design</h3>
-                    <p class="card-text" data-i18n="whatIs.do.item1.desc">Create hardware architectures, circuit schematics, and system specifications.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.do.item2.title">Develop</h3>
-                    <p class="card-text" data-i18n="whatIs.do.item2.desc">Write firmware, device drivers, and low-level software for embedded platforms.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.do.item3.title">Test & Verify</h3>
-                    <p class="card-text" data-i18n="whatIs.do.item3.desc">Validate hardware and software through simulation, emulation, and physical testing.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.do.item4.title">Integrate</h3>
-                    <p class="card-text" data-i18n="whatIs.do.item4.desc">Combine hardware and software components into working systems.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title" data-i18n="whatIs.do.item5.title">Research</h3>
-                    <p class="card-text" data-i18n="whatIs.do.item5.desc">Advance the state of the art in computing hardware, architectures, and applications.</p>
-                  </div>
-                </article>
-              </div>
+            <p data-i18n="whatIs.do.intro">Computer Engineers work across the full lifecycle of computing systems. Their work typically spans these core activities:</p>
+            
+            <dl class="row mb-4">
+              <dt class="col-sm-3" data-i18n="whatIs.do.item1.title">Design</dt>
+              <dd class="col-sm-9" data-i18n="whatIs.do.item1.desc">Create hardware architectures, circuit schematics, and system specifications.</dd>
+              
+              <dt class="col-sm-3" data-i18n="whatIs.do.item2.title">Develop</dt>
+              <dd class="col-sm-9" data-i18n="whatIs.do.item2.desc">Write firmware, device drivers, and low-level software for embedded platforms.</dd>
+              
+              <dt class="col-sm-3" data-i18n="whatIs.do.item3.title">Test & Verify</dt>
+              <dd class="col-sm-9" data-i18n="whatIs.do.item3.desc">Validate hardware and software through simulation, emulation, and physical testing.</dd>
+              
+              <dt class="col-sm-3" data-i18n="whatIs.do.item4.title">Integrate</dt>
+              <dd class="col-sm-9" data-i18n="whatIs.do.item4.desc">Combine hardware and software components into working systems.</dd>
+              
+              <dt class="col-sm-3" data-i18n="whatIs.do.item5.title">Research</dt>
+              <dd class="col-sm-9" data-i18n="whatIs.do.item5.desc">Advance the state of the art in computing hardware, architectures, and applications.</dd>
+            </dl>
+            
+            <div class="p-3 rounded bg-light border" data-i18n="whatIs.do.note">
+              <strong>Note:</strong> The specific mix of activities varies by role. An embedded engineer might spend 80% of their time on firmware development, while a hardware engineer focuses on circuit design and verification. Computer Engineering's breadth allows graduates to specialize based on interest.
             </div>
+          </section>
+
+          <!-- CpE vs Computer Science -->
+          <section id="cpe-vs-cs" class="mb-5">
+            <h2 data-i18n="whatIs.vsCS.title">Computer Engineering vs. Computer Science</h2>
+            <p data-i18n="whatIs.vsCS.intro">Both disciplines work with computing, but they differ in focus and scope:</p>
+            
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col" data-i18n="whatIs.vsCS.aspect">Aspect</th>
+                    <th scope="col" data-i18n="whatIs.vsCS.cpe">Computer Engineering</th>
+                    <th scope="col" data-i18n="whatIs.vsCS.cs">Computer Science</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row1.aspect">Core Focus</td>
+                    <td data-i18n="whatIs.vsCS.row1.cpe">Hardware–software interface; systems that integrate both</td>
+                    <td data-i18n="whatIs.vsCS.row1.cs">Software, algorithms, theory, data structures</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row2.aspect">Hardware Knowledge</td>
+                    <td data-i18n="whatIs.vsCS.row2.cpe">Deep: circuits, architecture, digital logic, VLSI</td>
+                    <td data-i18n="whatIs.vsCS.row2.cs">Minimal: typically one architecture course</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row3.aspect">Software Focus</td>
+                    <td data-i18n="whatIs.vsCS.row3.cpe">Low-level: firmware, drivers, RTOS, co-design</td>
+                    <td data-i18n="whatIs.vsCS.row3.cs">Broad: applications, systems, web, AI/ML, theory</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row4.aspect">Mathematics</td>
+                    <td data-i18n="whatIs.vsCS.row4.cpe">Continuous (calculus, differential equations, signals)</td>
+                    <td data-i18n="whatIs.vsCS.row4.cs">Discrete (logic, combinatorics, graph theory)</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row5.aspect">Typical Outputs</td>
+                    <td data-i18n="whatIs.vsCS.row5.cpe">Chips, boards, embedded devices, real-time systems</td>
+                    <td data-i18n="whatIs.vsCS.row5.cs">Applications, libraries, frameworks, algorithms</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row6.aspect">Accreditation</td>
+                    <td data-i18n="whatIs.vsCS.row6.cpe">Engineering accreditation (ABET, PAASCU, PACUCOA)</td>
+                    <td data-i18n="whatIs.vsCS.row6.cs">Computing accreditation (ABET-CAC, CHED)</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="whatIs.vsCS.row7.aspect">Licensure</td>
+                    <td data-i18n="whatIs.vsCS.row7.cpe">Professional Engineer (PE) / CpE Licensure Exam</td>
+                    <td data-i18n="whatIs.vsCS.row7.cs">Typically no licensure required</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="mt-3" data-i18n="whatIs.vsCS.conclusion">In practice, the fields overlap significantly. Many Computer Engineers write substantial software, and many Computer Scientists work with hardware. Choose Computer Engineering if you want to understand and design the complete computing system — from the physics of transistors to the software that runs on them.</p>
           </section>
 
           <section id="applications" class="mb-5">

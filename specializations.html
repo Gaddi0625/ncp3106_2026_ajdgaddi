@@ -96,12 +96,12 @@
         </header>
 
         <!-- Filter Chips -->
-        <div class="specializations-filter" role="tablist" aria-label="Filter specializations">
-          <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true" data-i18n="spec.filter.all">All</button>
-          <button class="filter-chip" data-filter="hardware" role="tab" data-i18n="spec.filter.hardware">Hardware</button>
-          <button class="filter-chip" data-filter="software" role="tab" data-i18n="spec.filter.software">Software</button>
-          <button class="filter-chip" data-filter="systems" role="tab" data-i18n="spec.filter.systems">Systems</button>
-          <button class="filter-chip" data-filter="emerging" role="tab" data-i18n="spec.filter.emerging">Emerging</button>
+        <div class="specializations-filter" role="group" aria-label="Filter specializations by category">
+          <button class="filter-chip active" data-filter="all" role="button" aria-pressed="true" data-i18n="spec.filter.all">All</button>
+          <button class="filter-chip" data-filter="hardware" role="button" aria-pressed="false" data-i18n="spec.filter.hardware">Hardware</button>
+          <button class="filter-chip" data-filter="software" role="button" aria-pressed="false" data-i18n="spec.filter.software">Software</button>
+          <button class="filter-chip" data-filter="systems" role="button" aria-pressed="false" data-i18n="spec.filter.systems">Systems</button>
+          <button class="filter-chip" data-filter="emerging" role="button" aria-pressed="false" data-i18n="spec.filter.emerging">Emerging</button>
         </div>
 
         <!-- Specializations Grid -->
@@ -120,6 +120,15 @@
               <span class="badge badge-secondary" data-i18n="spec.embedded.tag4">Hardware</span>
             </div>
             <p class="small text-muted" data-i18n="spec.embedded.careers">Career paths: Embedded Systems Engineer, Firmware Engineer, IoT Device Engineer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.embedded.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.embedded.apps.list">
+                <li>Automotive ECUs (engine control, ABS, infotainment)</li>
+                <li>Medical devices (pacemakers, infusion pumps, monitors)</li>
+                <li>Industrial controllers (PLCs, motor drives, robotics)</li>
+                <li>Consumer electronics (smart home, wearables, appliances)</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Internet of Things -->
@@ -136,6 +145,15 @@
               <span class="badge badge-secondary" data-i18n="spec.iot.tag4">Systems</span>
             </div>
             <p class="small text-muted" data-i18n="spec.iot.careers">Career paths: IoT Engineer, IoT Solutions Architect, Connected Systems Developer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.iot.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.iot.apps.list">
+                <li>Smart home systems (lighting, climate, security)</li>
+                <li>Industrial IoT (predictive maintenance, asset tracking)</li>
+                <li>Smart agriculture (soil monitoring, automated irrigation)</li>
+                <li>Smart cities (traffic, waste management, utilities)</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Computer Networks -->
@@ -152,6 +170,15 @@
               <span class="badge badge-secondary" data-i18n="spec.networks.tag4">Systems</span>
             </div>
             <p class="small text-muted" data-i18n="spec.networks.careers">Career paths: Network Engineer, Network Architect, Systems Administrator</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.networks.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.networks.apps.list">
+                <li>Enterprise network infrastructure (LAN/WAN, data centers)</li>
+                <li>5G/6G cellular networks and edge infrastructure</li>
+                <li>Content delivery networks (CDNs) and cloud networking</li>
+                <li>IoT connectivity (LoRaWAN, NB-IoT, Zigbee)</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Cybersecurity -->
@@ -168,6 +195,15 @@
               <span class="badge badge-secondary" data-i18n="spec.cyber.tag4">Software</span>
             </div>
             <p class="small text-muted" data-i18n="spec.cyber.careers">Career paths: Cybersecurity Engineer, Security Analyst, Penetration Tester</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.cyber.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.cyber.apps.list">
+                <li>Embedded device security (secure boot, firmware signing)</li>
+                <li>Network intrusion detection and prevention systems</li>
+                <li>Hardware security modules (HSMs) and trusted execution</li>
+                <li>Automotive/industrial control system hardening</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Software Development -->
@@ -184,6 +220,15 @@
               <span class="badge badge-secondary" data-i18n="spec.software.tag4">Software</span>
             </div>
             <p class="small text-muted" data-i18n="spec.software.careers">Career paths: Software Engineer, Systems Programmer, Application Developer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.software.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.software.apps.list">
+                <li>Real-time embedded firmware and device drivers</li>
+                <li>Cross-platform desktop and mobile applications</li>
+                <li>Build systems, CI/CD pipelines, developer tools</li>
+                <li>High-performance computing and scientific software</li>
+              </ul>
+            </div>
           </article>
 
           <!-- AI & Machine Learning -->
@@ -200,6 +245,15 @@
               <span class="badge badge-secondary" data-i18n="spec.ai.tag4">Emerging</span>
             </div>
             <p class="small text-muted" data-i18n="spec.ai.careers">Career paths: AI/ML Engineer, Data Scientist, Computer Vision Engineer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.ai.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.ai.apps.list">
+                <li>Edge AI for real-time inference on microcontrollers</li>
+                <li>Computer vision for quality inspection and robotics</li>
+                <li>Predictive maintenance using sensor data analytics</li>
+                <li>Natural language processing for embedded voice interfaces</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Data Science & Data Engineering -->
@@ -216,6 +270,15 @@
               <span class="badge badge-secondary" data-i18n="spec.data.tag4">Systems</span>
             </div>
             <p class="small text-muted" data-i18n="spec.data.careers">Career paths: Data Engineer, Data Scientist, Analytics Engineer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.data.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.data.apps.list">
+                <li>Real-time streaming analytics for IoT sensor data</li>
+                <li>Manufacturing process optimization and quality analytics</li>
+                <li>Network traffic analysis and anomaly detection</li>
+                <li>Hardware/software performance profiling and optimization</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Robotics & Automation -->
@@ -232,6 +295,15 @@
               <span class="badge badge-secondary" data-i18n="spec.robotics.tag4">Systems</span>
             </div>
             <p class="small text-muted" data-i18n="spec.robotics.careers">Career paths: Robotics Engineer, Automation Engineer, Control Systems Engineer</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.robotics.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.robotics.apps.list">
+                <li>Industrial manipulator arms and collaborative robots</li>
+                <li>Autonomous mobile robots (AMRs) for logistics</li>
+                <li>Surgical and rehabilitation robotics</li>
+                <li>Automated inspection and quality control systems</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Computer Hardware & Architecture -->
@@ -248,6 +320,15 @@
               <span class="badge badge-secondary" data-i18n="spec.hardware.tag4">Hardware</span>
             </div>
             <p class="small text-muted" data-i18n="spec.hardware.careers">Career paths: Hardware Engineer, ASIC/FPGA Engineer, Computer Architect</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.hardware.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.hardware.apps.list">
+                <li>Custom ASIC/FPGA designs for specialized computing</li>
+                <li>RISC-V and custom processor core development</li>
+                <li>Memory controller and cache hierarchy design</li>
+                <li>High-speed I/O interfaces (PCIe, DDR, SerDes)</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Cloud & Edge Computing -->
@@ -264,6 +345,15 @@
               <span class="badge badge-secondary" data-i18n="spec.cloud.tag4">Emerging</span>
             </div>
             <p class="small text-muted" data-i18n="spec.cloud.careers">Career paths: Cloud Engineer, DevOps Engineer, Edge Computing Specialist</p>
+            <div class="mt-3 p-2 rounded bg-light border">
+              <h5 class="small fw-semibold mb-1" data-i18n="spec.cloud.apps.title">Example Applications</h5>
+              <ul class="small mb-0" data-i18n="spec.cloud.apps.list">
+                <li>Edge inference for real-time AI on IoT devices</li>
+                <li>Hybrid cloud orchestration for industrial workloads</li>
+                <li>Content delivery and caching at the network edge</li>
+                <li>Distributed training and federated learning frameworks</li>
+              </ul>
+            </div>
           </article>
         </div>
 
