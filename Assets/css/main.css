@@ -369,6 +369,11 @@ pre code { background: none; padding: 0; }
   overflow: hidden;
 }
 
+.hero-carousel--careers {
+  height: 40vh;
+  min-height: 300px;
+}
+
 @media (max-width: 767.98px) {
   .hero-carousel {
     height: var(--hero-height-mobile);
