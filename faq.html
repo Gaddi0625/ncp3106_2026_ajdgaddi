@@ -86,163 +86,163 @@
           </ol>
         </nav>
 
-        <!-- Search/Filter -->
-        <div class="mb-4">
-          <label for="faqSearch" class="form-label visually-hidden" data-i18n="faq.search.label">Search FAQs</label>
-          <input type="search" class="form-control" id="faqSearch" placeholder="Search questions..." aria-label="Search FAQs" data-i18n-placeholder="faq.search.placeholder">
+        <div class="row g-5 align-items-start">
+          <header class="col-lg-4">
+            <h2 data-i18n="faq.intro.title">Questions, answered clearly</h2>
+            <p class="lead" data-i18n="faq.intro.desc">A concise guide to Computer Engineering, the UE Manila program, and where to confirm current institutional information.</p>
+            <div class="mt-4">
+              <label for="faqSearch" class="form-label" data-i18n="faq.search.label">Search frequently asked questions</label>
+              <input type="search" class="form-control" id="faqSearch" placeholder="Search by topic or keyword" data-i18n-placeholder="faq.search.placeholder" aria-describedby="faqSearchStatus">
+              <p class="form-text" id="faqSearchStatus" aria-live="polite"><span id="faqSearchStatusLabel" data-i18n="faq.search.status">Questions available:</span> <span id="faqSearchCount">12</span></p>
+            </div>
+          </header>
+
+          <div class="col-lg-8">
+            <section class="mb-5" aria-labelledby="faq-about-heading">
+              <h2 id="faq-about-heading" class="h3" data-i18n="faq.general.title">About Computer Engineering</h2>
+              <div class="accordion faq-accordion" id="faqAbout">
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                      <span data-i18n="faq.q1">What is Computer Engineering?</span>
+                    </button>
+                  </h3>
+                  <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAbout">
+                    <div class="accordion-body"><p data-i18n="faq.a1">Computer Engineering combines principles from electrical engineering and computer science to develop computing systems that integrate hardware and software.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                      <span data-i18n="faq.q2">How is Computer Engineering different from Computer Science?</span>
+                    </button>
+                  </h3>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAbout">
+                    <div class="accordion-body"><p data-i18n="faq.a2">Computer Engineering commonly emphasizes hardware-software integration, while Computer Science commonly emphasizes software, algorithms, data, and computing theory. The subjects overlap, and the balance varies by program.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                      <span data-i18n="faq.q3">Does Computer Engineering involve both hardware and software?</span>
+                    </button>
+                  </h3>
+                  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAbout">
+                    <div class="accordion-body"><p data-i18n="faq.a3">Yes. Computer Engineering connects physical computing components with the software that controls and uses them.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                      <span data-i18n="faq.q4">Is programming part of Computer Engineering?</span>
+                    </button>
+                  </h3>
+                  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAbout">
+                    <div class="accordion-body"><p data-i18n="faq.a4">Yes. Programming supports work in areas such as embedded systems, firmware, system software, automation, and hardware-software integration.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                      <span data-i18n="faq.q5">Is Computer Engineering only about building computers?</span>
+                    </button>
+                  </h3>
+                  <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAbout">
+                    <div class="accordion-body"><p data-i18n="faq.a5">No. The field also covers computing systems found in devices, networks, automation, communications, and many other applications.</p></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="mb-5" aria-labelledby="faq-study-heading">
+              <h2 id="faq-study-heading" class="h3" data-i18n="faq.study.title">Studying Computer Engineering</h2>
+              <div class="accordion faq-accordion" id="faqStudy">
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                      <span data-i18n="faq.q6">What areas can Computer Engineering students explore?</span>
+                    </button>
+                  </h3>
+                  <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqStudy">
+                    <div class="accordion-body"><p data-i18n="faq.a6">General areas include embedded systems, computer architecture, networks, cybersecurity, robotics, software development, and hardware design. Available subjects vary by institution and curriculum.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                      <span data-i18n="faq.q7">What skills are useful when studying Computer Engineering?</span>
+                    </button>
+                  </h3>
+                  <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqStudy">
+                    <div class="accordion-body"><p data-i18n="faq.a7">Logical thinking, problem solving, communication, mathematics, and a willingness to learn both programming and electronics are useful foundations.</p></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="mb-5" aria-labelledby="faq-careers-heading">
+              <h2 id="faq-careers-heading" class="h3" data-i18n="faq.careers.title">Careers</h2>
+              <div class="accordion faq-accordion" id="faqCareers">
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                      <span data-i18n="faq.q8">What careers can Computer Engineering graduates explore?</span>
+                    </button>
+                  </h3>
+                  <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqCareers">
+                    <div class="accordion-body"><p data-i18n="faq.a8">Graduates may explore roles involving embedded systems, hardware, software, networks, cybersecurity, systems integration, data, cloud computing, robotics, technical support, and research.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+                      <span data-i18n="faq.q9">Does BS Computer Engineering have a dedicated PRC licensure examination?</span>
+                    </button>
+                  </h3>
+                  <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqCareers">
+                    <div class="accordion-body"><p data-i18n="faq.a9">No. BS Computer Engineering does not have its own dedicated Professional Regulation Commission licensure examination.</p></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section aria-labelledby="faq-ue-heading">
+              <h2 id="faq-ue-heading" class="h3" data-i18n="faq.ue.title">UE Manila Program and Contact</h2>
+              <div class="accordion faq-accordion" id="faqUE">
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+                      <span data-i18n="faq.q10">Which program and campus does this website represent?</span>
+                    </button>
+                  </h3>
+                  <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                    <div class="accordion-body"><p data-i18n="faq.a10">This website represents the Bachelor of Science in Computer Engineering program at the University of the East — Manila.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+                      <span data-i18n="faq.q11">What is the approved accreditation status shown for UE Manila BS Computer Engineering?</span>
+                    </button>
+                  </h3>
+                  <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                    <div class="accordion-body"><p data-i18n="faq.a11">UE Manila BS Computer Engineering holds PACUCOA Level II Reaccredited Status, valid until November 2027.</p></div>
+                  </div>
+                </article>
+                <article class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
+                      <span data-i18n="faq.q12">Where can I confirm current admissions or program information?</span>
+                    </button>
+                  </h3>
+                  <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqUE">
+                    <div class="accordion-body"><p data-i18n="faq.a12">Use the Contact page for verified Dean's Office details for program inquiries, and confirm admissions information through UE Manila's official channels.</p></div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
         </div>
-
-        <!-- General Questions -->
-        <section class="mb-5">
-          <h2 data-i18n="faq.general.title">General Questions</h2>
-          <div class="accordion" id="faqGeneral">
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                  <span data-i18n="faq.q1">What is the difference between Computer Engineering and Computer Science?</span>
-                </button>
-              </h3>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a1">Computer Engineering integrates electrical engineering and computer science, focusing on the hardware-software interface. Computer Science focuses primarily on software, algorithms, and theoretical computing. Computer Engineers design both hardware (circuits, processors, embedded systems) and the low-level software (firmware, drivers, RTOS) that runs on it.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                  <span data-i18n="faq.q2">Is Computer Engineering mostly hardware?</span>
-                </button>
-              </h3>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a2">No. Computer Engineering covers both hardware and software. The balance and specific topics vary by institution and curriculum.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                  <span data-i18n="faq.q3">Do Computer Engineering students learn programming?</span>
-                </button>
-              </h3>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a3">Yes. Computer Engineering programs commonly include programming for hardware, embedded systems, and software applications. The languages taught vary by institution and curriculum.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                  <span data-i18n="faq.q4">What programming languages are commonly used?</span>
-                </button>
-              </h3>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
-                <div class="accordion-body">
-                  <ul>
-                    <li data-i18n="faq.a4.item1"><strong>C / C++</strong> — Embedded systems, firmware, real-time systems</li>
-                    <li data-i18n="faq.a4.item2"><strong>Python</strong> — Scripting, data analysis, ML/AI, testing</li>
-                    <li data-i18n="faq.a4.item3"><strong>Verilog / VHDL</strong> — Digital logic design, FPGA development</li>
-                    <li data-i18n="faq.a4.item4"><strong>Assembly</strong> — Microcontroller programming, optimization</li>
-                    <li data-i18n="faq.a4.item5"><strong>Java / JavaScript</strong> — Applications, web interfaces for embedded systems</li>
-                    <li data-i18n="faq.a4.item6"><strong>MATLAB</strong> — Signal processing, control systems</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- UE Program Questions -->
-        <section class="mb-5">
-          <h2 data-i18n="faq.ue.title">UE Computer Engineering Program</h2>
-          <div class="accordion" id="faqUE">
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
-                  <span data-i18n="faq.q8">What are some general Computer Engineering application areas?</span>
-                </button>
-              </h3>
-              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqUE">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a8">Computer Engineering may be applied in areas including multimedia, aerospace and avionics, automotive systems, consumer electronics, medical devices, communications, entertainment, virtual reality hardware, and human-interface devices.</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Admissions & Career Questions -->
-        <section class="mb-5">
-          <h2 data-i18n="faq.admissions.title">Admissions & Careers</h2>
-          <div class="accordion" id="faqAdmissions">
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="true" aria-controls="faq9">
-                  <span data-i18n="faq.q9">What careers can CpE graduates pursue?</span>
-                </button>
-              </h3>
-              <div id="faq9" class="accordion-collapse collapse show" data-bs-parent="#faqAdmissions">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a9">UE lists these career paths: Project Engineer/Manager, Network System Administrator/Manager, Data Communications Engineer, Systems Engineer/Developer/Manager, Systems Analyst/Designer, Technical Support Engineer/Manager, Test Engineer, Technopreneur, Software Engineer, Educator and Researcher. Additional industry roles include Embedded Systems Engineer, IoT Engineer, Hardware Engineer, Cybersecurity Engineer, AI/ML Engineer, Cloud Engineer, DevOps Engineer, Robotics Engineer, and R&D Engineer.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
-                  <span data-i18n="faq.q10">What skills should incoming CpE students develop?</span>
-                </button>
-              </h3>
-              <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
-                <div class="accordion-body">
-                  <ul>
-                    <li data-i18n="faq.a10.item1">Strong foundation in mathematics (calculus, discrete math, linear algebra)</li>
-                    <li data-i18n="faq.a10.item2">Physics fundamentals (electricity, magnetism, mechanics)</li>
-                    <li data-i18n="faq.a10.item3">Basic programming experience (any language)</li>
-                    <li data-i18n="faq.a10.item4">Logical thinking and problem-solving skills</li>
-                    <li data-i18n="faq.a10.item5">Interest in how hardware and software interact</li>
-                    <li data-i18n="faq.a10.item6">Willingness to learn circuit analysis and digital logic</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
-                  <span data-i18n="faq.q11">Does BS Computer Engineering have a dedicated PRC licensure examination?</span>
-                </button>
-              </h3>
-              <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a11">No. BS Computer Engineering does not have its own dedicated Professional Regulation Commission licensure examination.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
-                  <span data-i18n="faq.q12">How can I contact the UE Manila College of Engineering?</span>
-                </button>
-              </h3>
-              <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAdmissions">
-                <div class="accordion-body">
-                  <p data-i18n="faq.a12">Contact the UE College of Engineering — Manila:</p>
-                  <ul>
-                    <li data-i18n="faq.a12.item1">Dean: Dr. Rogelio B. Aniez Jr.</li>
-                    <li data-i18n="faq.a12.item2">Associate Dean: Engr. Darwin Alpis</li>
-                    <li data-i18n="faq.a12.item3">College Secretary: Ms. Jasmin S. Salazar</li>
-                    <li data-i18n="faq.a12.item4">Trunkline: (632) 8735-54-71 local 397</li>
-                    <li data-i18n="faq.a12.item5">Direct Line: (632) 8735-13-54</li>
-                    <li data-i18n="faq.a12.item6">Email: jasmin.salazar@ue.edu.ph</li>
-                    <li data-i18n="faq.a12.item7">Address: 2219 C.M. Recto Avenue, Sampaloc, Manila</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
       </div>
     </section>
   </main>

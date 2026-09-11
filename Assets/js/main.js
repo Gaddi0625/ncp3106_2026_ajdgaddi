@@ -59,18 +59,48 @@
 
   // ===== FAQ Search/Filter =====
   const faqSearch = document.getElementById('faqSearch');
-  const faqItems = document.querySelectorAll('#faqGeneral .accordion-item, #faqUE .accordion-item, #faqAdmissions .accordion-item');
+  const faqItems = document.querySelectorAll('.faq-accordion .accordion-item');
+  const faqGroups = document.querySelectorAll('.faq-accordion');
+  const faqSearchStatusLabel = document.getElementById('faqSearchStatusLabel');
+  const faqSearchCount = document.getElementById('faqSearchCount');
   if (faqSearch && faqItems.length) {
-    faqSearch.addEventListener('input', () => {
+    const filterFaqs = () => {
       const query = faqSearch.value.toLowerCase().trim();
+      let matches = 0;
       faqItems.forEach(item => {
         const button = item.querySelector('.accordion-button');
         const body = item.querySelector('.accordion-body');
         const text = (button?.textContent + ' ' + body?.textContent).toLowerCase();
         const match = !query || text.includes(query);
-        item.style.display = match ? '' : 'none';
+        item.hidden = !match;
+        if (match) matches += 1;
+      });
+
+      faqGroups.forEach(group => {
+        group.closest('section').hidden = ![...group.querySelectorAll('.accordion-item')].some(item => !item.hidden);
+      });
+
+      if (faqSearchStatusLabel && faqSearchCount) {
+        const translations = typeof I18n !== 'undefined' ? I18n.dict() : {};
+        const label = query ? translations['faq.search.results'] || 'Matching questions:' : translations['faq.search.status'] || 'Questions available:';
+        faqSearchStatusLabel.textContent = label;
+        faqSearchCount.textContent = matches;
+      }
+    };
+
+    faqSearch.addEventListener('input', filterFaqs);
+    document.querySelectorAll('[data-lang]').forEach(button => {
+      button.addEventListener('click', () => {
+        faqSearch.value = '';
+        filterFaqs();
       });
     });
+  }
+
+  // ===== Demo Contact Form =====
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', event => event.preventDefault());
   }
 
   // ===== Mailto Form Helper =====

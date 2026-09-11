@@ -86,11 +86,15 @@
           </ol>
         </nav>
 
-        <div class="row g-5">
-          <!-- Contact Information -->
-          <div class="col-lg-5">
-            <h2 data-i18n="contact.info.title">UE Manila College of Engineering Contact Information</h2>
-            <p class="lead" data-i18n="contact.info.desc">Contact information shown for the UE Manila College of Engineering.</p>
+        <header class="mb-5 col-xl-8">
+          <h2 data-i18n="contact.intro.title">Contact the UE Manila College of Engineering</h2>
+          <p class="lead" data-i18n="contact.intro.desc">Use the verified Dean's Office details below for program inquiries. Confirm current admissions information through UE Manila's official channels.</p>
+        </header>
+
+        <div class="row g-5 align-items-start">
+          <section class="col-lg-5" aria-labelledby="contact-office-heading">
+            <h2 id="contact-office-heading" data-i18n="contact.info.title">UE College of Engineering — Manila Dean's Office</h2>
+            <p data-i18n="contact.info.desc">These details belong to the College of Engineering Dean's Office at UE Manila, not to a separate Computer Engineering department office.</p>
 
             <dl class="contact-details mt-4">
               <div class="mb-4">
@@ -123,19 +127,19 @@
               </div>
             </dl>
 
-            <div class="mt-4">
-              <h3 data-i18n="contact.info.website">Official Website</h3>
+            <div class="border-top pt-4 mt-4">
+              <h3 class="h5" data-i18n="contact.info.website">Official websites</h3>
               <p><a href="https://www.ue.edu.ph/" target="_blank" rel="noopener" data-i18n="contact.info.ueLink">University of the East — ue.edu.ph</a></p>
               <p><a href="https://www.ue.edu.ph/mla/computer/" target="_blank" rel="noopener" data-i18n="contact.info.cpeLink">UE Manila Computer Engineering</a></p>
             </div>
-          </div>
+          </section>
 
-          <!-- Contact Form -->
-          <div class="col-lg-7">
-            <h2 data-i18n="contact.form.title">Send a Message</h2>
-            <p class="lead" data-i18n="contact.form.desc">Fill out the form below to send an email to the College of Engineering.</p>
+          <section class="col-lg-7" aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading" data-i18n="contact.form.title">Message form preview</h2>
+            <p data-i18n="contact.form.desc">Use these fields to preview the information a contact form would collect.</p>
+            <p class="border-start border-4 border-success ps-3 py-2 mt-4" id="contactFormNotice" data-i18n="contact.form.demo">This form is for interface demonstration only and does not send messages.</p>
 
-            <form class="contact-form mt-4" id="contactForm" action="mailto:jasmin.salazar@ue.edu.ph" method="POST" enctype="text/plain">
+            <form class="contact-form mt-4" id="contactForm" aria-describedby="contactFormNotice">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="name" class="form-label" data-i18n="contact.form.name">Full Name</label>
@@ -150,26 +154,24 @@
                   <select class="form-select" id="subject" name="subject" required>
                     <option value="" disabled selected data-i18n="contact.form.subjectSelect">Select a topic</option>
                     <option value="Admissions Inquiry" data-i18n="contact.form.subjectAdmissions">Admissions Inquiry</option>
-                    <option value="Curriculum Question" data-i18n="contact.form.subjectCurriculum">Curriculum Question</option>
-                    <option value="Research Collaboration" data-i18n="contact.form.subjectResearch">Research Collaboration</option>
-                    <option value="Industry Partnership" data-i18n="contact.form.subjectIndustry">Industry Partnership</option>
-                    <option value="Alumni Relations" data-i18n="contact.form.subjectAlumni">Alumni Relations</option>
+                    <option value="Program Information" data-i18n="contact.form.subjectProgram">Program Information</option>
                     <option value="Other" data-i18n="contact.form.subjectOther">Other</option>
                   </select>
                 </div>
                 <div class="col-12">
                   <label for="message" class="form-label" data-i18n="contact.form.message">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary btn-lg" data-i18n="contact.form.submit">Send via Email</button>
-                  <p class="form-text mt-2" data-i18n="contact.form.hint">Opens your default email client with the form data pre-filled.</p>
+                  <button type="button" class="btn btn-primary btn-lg" disabled data-i18n="contact.form.submit">Message sending unavailable</button>
+                  <p class="form-text mt-2" data-i18n="contact.form.hint">Use the verified contact details on this page to reach the Dean's Office.</p>
                 </div>
               </div>
             </form>
-          </div>
+          </section>
         </div>
 
+        <p class="small text-muted border-top pt-4 mt-5 mb-0" data-i18n="contact.verify">Verify current admissions and program information directly with UE Manila through its official channels.</p>
       </div>
     </section>
   </main>
