@@ -1,7 +1,9 @@
 /**
- * main.js — Shared utilities: filters, scroll-to-top, mailto form helper
+ * main.js — Shared utilities: filters, scroll-to-top, and anchor navigation
  */
 (() => {
+  const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
   // ===== Scroll to Top =====
   const scrollTopBtn = document.querySelector('.scroll-top');
   if (scrollTopBtn) {
@@ -14,9 +16,10 @@
         setTimeout(() => { if (window.scrollY <= 300) scrollTopBtn.hidden = true; }, 250);
       }
     };
+    toggleScrollTop();
     window.addEventListener('scroll', toggleScrollTop, { passive: true });
     scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: scrollBehavior });
     });
   }
 
@@ -29,29 +32,12 @@
         const filter = chip.dataset.filter;
         filterChips.forEach(c => {
           c.classList.toggle('active', c === chip);
-          c.setAttribute('aria-selected', c === chip);
+          c.setAttribute('aria-pressed', c === chip);
         });
         specCards.forEach(card => {
           const categories = card.dataset.category.split(' ');
           const show = filter === 'all' || categories.includes(filter);
-          card.style.display = show ? '' : 'none';
-        });
-      });
-    });
-  }
-
-  // ===== Careers Filter (optional enhancement) =====
-  const careerFilterChips = document.querySelectorAll('.career-filter-chip');
-  const careerCards = document.querySelectorAll('.career-card[data-category]');
-  if (careerFilterChips.length && careerCards.length) {
-    careerFilterChips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        const filter = chip.dataset.filter;
-        careerFilterChips.forEach(c => c.classList.toggle('active', c === chip));
-        careerCards.forEach(card => {
-          const categories = card.dataset.category.split(' ');
-          const show = filter === 'all' || categories.includes(filter);
-          card.style.display = show ? '' : 'none';
+          card.hidden = !show;
         });
       });
     });
@@ -89,11 +75,9 @@
     };
 
     faqSearch.addEventListener('input', filterFaqs);
-    document.querySelectorAll('[data-lang]').forEach(button => {
-      button.addEventListener('click', () => {
-        faqSearch.value = '';
-        filterFaqs();
-      });
+    document.addEventListener('i18n:changed', () => {
+      faqSearch.value = '';
+      filterFaqs();
     });
   }
 
@@ -103,22 +87,6 @@
     contactForm.addEventListener('submit', event => event.preventDefault());
   }
 
-  // ===== Mailto Form Helper =====
-  // Enhances mailto forms by properly encoding the body
-  document.querySelectorAll('form[action^="mailto:"]').forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const params = new URLSearchParams();
-      for (const [key, value] of formData.entries()) {
-        params.append(key, value);
-      }
-      const action = form.getAttribute('action');
-      const mailtoUrl = `${action}?${params.toString()}`;
-      window.location.href = mailtoUrl;
-    });
-  });
-
   // ===== Smooth scroll for anchor links =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -127,8 +95,11 @@
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        target.focus({ preventScroll: true });
+        target.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+        if (this.classList.contains('skip-link')) {
+          if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+          target.focus({ preventScroll: true });
+        }
       }
     });
   });

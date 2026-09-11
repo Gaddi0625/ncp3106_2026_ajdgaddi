@@ -10,7 +10,8 @@
 
   /* Accent — Restrained Phosphor (engineering green, not neon) */
   --color-accent: #00A878;
-  --color-accent-hover: #008F65;
+  --color-accent-hover: #00C08A;
+  --color-accent-text: #007A56;
   --color-accent-focus: rgba(0, 168, 120, 0.35);
 
   /* Secondary — Slate (professional neutral) */
@@ -121,14 +122,14 @@
   --bs-btn-primary-focus-shadow: 0 0 0 0.25rem var(--color-accent-focus);
 
   /* Outline primary */
-  --bs-btn-outline-primary-color: var(--color-accent);
+  --bs-btn-outline-primary-color: var(--color-accent-text);
   --bs-btn-outline-primary-border: var(--color-accent);
   --bs-btn-outline-primary-hover-bg: var(--color-accent);
   --bs-btn-outline-primary-hover-color: var(--color-primary);
 
   /* Links = dark text with underline, hover = accent */
   --bs-link-color: var(--color-text);
-  --bs-link-hover-color: var(--color-accent);
+  --bs-link-hover-color: var(--color-accent-text);
   --bs-link-underline-offset: 2px;
 
   /* Body */

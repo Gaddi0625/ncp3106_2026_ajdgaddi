@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="meta.description">
+  <meta name="description" content="Bachelor of Science in Computer Engineering website for the University of the East - Manila" data-i18n="meta.description">
   <title data-i18n="spec.meta.title">Specializations | UE Computer Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,15 @@
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
-  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+  <nav class="navbar navbar-expand-xl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
     <div class="container-custom">
       <a class="navbar-brand" href="index.html" data-i18n="brand.name">UE Computer Engineering</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria-label="a11y.toggleNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-drawer-close" type="button" data-i18n="a11y.closeNav">Close menu</button>
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
           <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
@@ -54,7 +55,7 @@
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="dropdown language-selector">
-          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language" data-i18n-aria-label="a11y.selectLanguage">
             <span data-i18n="lang.current">English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -79,7 +80,7 @@
   <main id="main-content">
     <section class="section">
       <div class="container-custom">
-        <nav aria-label="Breadcrumb" class="mb-4">
+        <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.specializations">Specializations</li>
@@ -92,16 +93,16 @@
         </header>
 
         <!-- Filter Chips -->
-        <div class="specializations-filter" role="group" aria-label="Filter specializations by category">
-          <button class="filter-chip active" data-filter="all" role="button" aria-pressed="true" data-i18n="spec.filter.all">All</button>
-          <button class="filter-chip" data-filter="hardware" role="button" aria-pressed="false" data-i18n="spec.filter.hardware">Hardware</button>
-          <button class="filter-chip" data-filter="software" role="button" aria-pressed="false" data-i18n="spec.filter.software">Software</button>
-          <button class="filter-chip" data-filter="systems" role="button" aria-pressed="false" data-i18n="spec.filter.systems">Systems</button>
-          <button class="filter-chip" data-filter="emerging" role="button" aria-pressed="false" data-i18n="spec.filter.emerging">Emerging</button>
+        <div class="specializations-filter" role="group" aria-label="Filter specializations by category" data-i18n-aria-label="a11y.filterSpecializations">
+          <button class="filter-chip active" data-filter="all" aria-pressed="true" data-i18n="spec.filter.all">All</button>
+          <button class="filter-chip" data-filter="hardware" aria-pressed="false" data-i18n="spec.filter.hardware">Hardware</button>
+          <button class="filter-chip" data-filter="software" aria-pressed="false" data-i18n="spec.filter.software">Software</button>
+          <button class="filter-chip" data-filter="systems" aria-pressed="false" data-i18n="spec.filter.systems">Systems</button>
+          <button class="filter-chip" data-filter="emerging" aria-pressed="false" data-i18n="spec.filter.emerging">Emerging</button>
         </div>
 
         <!-- Specializations Grid -->
-        <div class="specializations-grid" role="tabpanel">
+        <div class="specializations-grid">
           <!-- Embedded Systems -->
           <article class="spec-card" data-category="hardware systems">
             <div class="spec-icon">
@@ -117,7 +118,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.embedded.careers">Career paths: Embedded Systems Engineer, Firmware Engineer, IoT Device Engineer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.embedded.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.embedded.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.embedded.apps.list">
                 <li>Automotive ECUs (engine control, ABS, infotainment)</li>
                 <li>Medical devices (pacemakers, infusion pumps, monitors)</li>
@@ -142,7 +143,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.iot.careers">Career paths: IoT Engineer, IoT Solutions Architect, Connected Systems Developer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.iot.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.iot.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.iot.apps.list">
                 <li>Smart home systems (lighting, climate, security)</li>
                 <li>Industrial IoT (predictive maintenance, asset tracking)</li>
@@ -167,7 +168,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.networks.careers">Career paths: Network Engineer, Network Architect, Systems Administrator</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.networks.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.networks.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.networks.apps.list">
                 <li>Enterprise network infrastructure (LAN/WAN, data centers)</li>
                 <li>5G/6G cellular networks and edge infrastructure</li>
@@ -192,7 +193,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.cyber.careers">Career paths: Cybersecurity Engineer, Security Analyst, Penetration Tester</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.cyber.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.cyber.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.cyber.apps.list">
                 <li>Embedded device security (secure boot, firmware signing)</li>
                 <li>Network intrusion detection and prevention systems</li>
@@ -217,7 +218,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.software.careers">Career paths: Software Engineer, Systems Programmer, Application Developer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.software.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.software.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.software.apps.list">
                 <li>Real-time embedded firmware and device drivers</li>
                 <li>Cross-platform desktop and mobile applications</li>
@@ -242,7 +243,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.ai.careers">Career paths: AI/ML Engineer, Data Scientist, Computer Vision Engineer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.ai.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.ai.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.ai.apps.list">
                 <li>Edge AI for real-time inference on microcontrollers</li>
                 <li>Computer vision for quality inspection and robotics</li>
@@ -267,7 +268,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.data.careers">Career paths: Data Engineer, Data Scientist, Analytics Engineer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.data.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.data.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.data.apps.list">
                 <li>Real-time streaming analytics for IoT sensor data</li>
                 <li>Manufacturing process optimization and quality analytics</li>
@@ -292,7 +293,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.robotics.careers">Career paths: Robotics Engineer, Automation Engineer, Control Systems Engineer</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.robotics.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.robotics.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.robotics.apps.list">
                 <li>Industrial manipulator arms and collaborative robots</li>
                 <li>Autonomous mobile robots (AMRs) for logistics</li>
@@ -317,7 +318,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.hardware.careers">Career paths: Hardware Engineer, ASIC/FPGA Engineer, Computer Architect</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.hardware.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.hardware.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.hardware.apps.list">
                 <li>Custom ASIC/FPGA designs for specialized computing</li>
                 <li>RISC-V and custom processor core development</li>
@@ -342,7 +343,7 @@
             </div>
             <p class="small text-muted" data-i18n="spec.cloud.careers">Career paths: Cloud Engineer, DevOps Engineer, Edge Computing Specialist</p>
             <div class="mt-3 p-2 rounded bg-light border">
-              <h5 class="small fw-semibold mb-1" data-i18n="spec.cloud.apps.title">Example Applications</h5>
+              <h4 class="small fw-semibold mb-1" data-i18n="spec.cloud.apps.title">Example Applications</h4>
               <ul class="small mb-0" data-i18n="spec.cloud.apps.list">
                 <li>Edge inference for real-time AI on IoT devices</li>
                 <li>Hybrid cloud orchestration for industrial workloads</li>
@@ -409,7 +410,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Scroll to top" hidden>
+  <button class="scroll-top" aria-label="Scroll to top" data-i18n-aria-label="a11y.scrollTop" hidden>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 

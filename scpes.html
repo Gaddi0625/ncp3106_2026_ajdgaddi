@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="meta.description">
+  <meta name="description" content="Bachelor of Science in Computer Engineering website for the University of the East - Manila" data-i18n="meta.description">
   <title data-i18n="scpes.meta.title">SCPES | UE Computer Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,15 @@
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
-  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+  <nav class="navbar navbar-expand-xl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
     <div class="container-custom">
       <a class="navbar-brand" href="index.html" data-i18n="brand.name">UE Computer Engineering</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria-label="a11y.toggleNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-drawer-close" type="button" data-i18n="a11y.closeNav">Close menu</button>
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
           <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
@@ -54,7 +55,7 @@
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="dropdown language-selector">
-          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language" data-i18n-aria-label="a11y.selectLanguage">
             <span data-i18n="lang.current">English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -79,7 +80,7 @@
   <main id="main-content">
     <section class="section">
       <div class="container-custom">
-        <nav aria-label="Breadcrumb" class="mb-4">
+        <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.scpes">SCPES</li>
@@ -94,7 +95,7 @@
               <p data-i18n="scpes.about.desc">This page presents officer profiles and community activity images. Names, positions, and event details are included only when verified.</p>
             </div>
             <div class="col-lg-6">
-              <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES Arduino Day event" class="img-fluid rounded">
+              <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES Arduino Day event" class="img-fluid rounded" decoding="async">
             </div>
           </div>
         </section>
@@ -106,19 +107,19 @@
           </header>
 
           <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic6.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic7.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic8.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic9.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic10.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic11.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic12.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic13.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic14.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic15.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic16.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic17.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic18.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic6.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic7.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic8.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic9.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic10.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic11.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic12.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic13.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic14.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic15.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic16.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic17.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic18.jpg" alt="Officer photograph with profile information pending" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
           </div>
         </section>
 
@@ -129,18 +130,18 @@
           </header>
 
           <div class="row g-4">
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="1st Computer Engineering Research Colloquium Forum"><div class="community-event-body"><h3 data-i18n="scpes.events.1.title">1st Computer Engineering Research Colloquium Forum</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="3D Printing Workshop"><div class="community-event-body"><h3 data-i18n="scpes.events.2.title">3D Printing Workshop</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing.jpg" alt="3D Printing"><div class="community-event-body"><h3 data-i18n="scpes.events.3.title">3D Printing</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/arduino-day.jpg" alt="Arduino Day"><div class="community-event-body"><h3 data-i18n="scpes.events.4.title">Arduino Day</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.5.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.6.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.7.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Free Coffee and Bread"><div class="community-event-body"><h3 data-i18n="scpes.events.8.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="Free Coffee and Bread"><div class="community-event-body"><h3 data-i18n="scpes.events.9.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/shs-work-immersion.jpg" alt="SHS Work Immersion"><div class="community-event-body"><h3 data-i18n="scpes.events.10.title">SHS Work Immersion</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Thanksgiving 2025"><div class="community-event-body"><h3 data-i18n="scpes.events.11.title">Thanksgiving 2025</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Tracing Sumobot Workshops"><div class="community-event-body"><h3 data-i18n="scpes.events.12.title">Tracing Sumobot Workshops</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="1st Computer Engineering Research Colloquium Forum" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.1.title">1st Computer Engineering Research Colloquium Forum</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="3D Printing Workshop" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.2.title">3D Printing Workshop</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing.jpg" alt="3D Printing" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.3.title">3D Printing</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/arduino-day.jpg" alt="Arduino Day" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.4.title">Arduino Day</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="DOST-PAGASA" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.5.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="DOST-PAGASA" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.6.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="DOST-PAGASA" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.7.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Free Coffee and Bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.8.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="Free Coffee and Bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.9.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/shs-work-immersion.jpg" alt="SHS Work Immersion" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.10.title">SHS Work Immersion</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Thanksgiving 2025" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.11.title">Thanksgiving 2025</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Tracing Sumobot Workshops" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.12.title">Tracing Sumobot Workshops</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
           </div>
         </section>
       </div>
@@ -196,7 +197,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Scroll to top" hidden>
+  <button class="scroll-top" aria-label="Scroll to top" data-i18n-aria-label="a11y.scrollTop" hidden>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 

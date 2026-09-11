@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-i18n="meta.description">
+  <meta name="description" content="Bachelor of Science in Computer Engineering website for the University of the East - Manila" data-i18n="meta.description">
   <title data-i18n="whatIs.meta.title">What is Computer Engineering? | UE Computer Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,15 @@
 <body>
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
-  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+  <nav class="navbar navbar-expand-xl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
     <div class="container-custom">
       <a class="navbar-brand" href="index.html" data-i18n="brand.name">UE Computer Engineering</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria-label="a11y.toggleNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-drawer-close" type="button" data-i18n="a11y.closeNav">Close menu</button>
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
           <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
@@ -54,7 +55,7 @@
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="dropdown language-selector">
-          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+          <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language" data-i18n-aria-label="a11y.selectLanguage">
             <span data-i18n="lang.current">English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -79,7 +80,7 @@
   <main id="main-content">
     <section class="section">
       <div class="container-custom">
-        <nav aria-label="Breadcrumb" class="mb-4">
+        <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.whatIs">What is Computer Engineering?</li>
@@ -333,7 +334,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Scroll to top" hidden>
+  <button class="scroll-top" aria-label="Scroll to top" data-i18n-aria-label="a11y.scrollTop" hidden>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
