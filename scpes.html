@@ -38,10 +38,6 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.cpeAtUe">CpE at UE</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="cpe-at-ue.html" data-i18n="nav.overview">Program Overview</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#objectives" data-i18n="nav.objectives">Objectives & Outcomes</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#facilities" data-i18n="nav.facilities">Facilities</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#accreditation" data-i18n="nav.accreditation">Accreditation</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
@@ -71,11 +67,11 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel" style="height: 40vh; min-height: 300px;">
-    <div class="hero-slide" style="background-image: url('Assets/images/scpes/thanksgiving-2025.jpg');">
+  <header class="hero-carousel hero-carousel--compact">
+    <div class="hero-slide hero-slide--scpes">
       <div class="carousel-caption">
         <h1 data-i18n="scpes.hero.title">Society of Computer Engineering Students</h1>
-        <p class="lead" data-i18n="scpes.hero.tagline">SCPES — Unifying CpE students through quality programs and events</p>
+        <p class="lead" data-i18n="scpes.hero.tagline">Computer Engineering student community at UE Manila</p>
       </div>
     </div>
   </header>
@@ -90,14 +86,12 @@
           </ol>
         </nav>
 
-        <!-- About SCPES -->
-        <section class="mb-5">
-          <h2 data-i18n="scpes.about.title">About SCPES</h2>
+        <section class="community-intro mb-5" aria-labelledby="scpes-about-title">
+          <h2 id="scpes-about-title" data-i18n="scpes.about.title">About SCPES</h2>
           <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-              <p class="lead" data-i18n="scpes.about.mission">The Society of Computer Engineering Students (SCPES) is the recognized student organization of the Bachelor of Science in Computer Engineering program at the University of the East — Manila.</p>
-              <p data-i18n="scpes.about.desc">SCPES aims to unify Computer Engineering students through quality programs and events related to Computer Engineering, emphasizing the success of a diverse student, faculty, and alumni community.</p>
-              <p data-i18n="scpes.about.recognized">Recognized by the University of the East Manila Student Affairs Office under the College of Engineering.</p>
+              <p class="lead" data-i18n="scpes.about.mission">Society of Computer Engineering Students (SCPES), University of the East — Manila.</p>
+              <p data-i18n="scpes.about.desc">This page presents officer profiles and community activity images. Names, positions, and event details are included only when verified.</p>
             </div>
             <div class="col-lg-6">
               <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES Arduino Day event" class="img-fluid rounded">
@@ -105,350 +99,49 @@
           </div>
         </section>
 
-        <!-- Officers -->
-        <section class="mb-5">
-          <h2 data-i18n="scpes.officers.title">Current Officers</h2>
-          <p class="placeholder-notice" data-i18n="scpes.officers.placeholder">[Officer names, roles, and academic years to be provided — 13 officer photos available]</p>
+        <section class="community-section mb-5" aria-labelledby="scpes-officers-title">
+          <header class="section-heading">
+            <h2 id="scpes-officers-title" data-i18n="scpes.officers.title">Officer Profiles</h2>
+            <p data-i18n="scpes.officers.placeholder">Officer names and positions will be added when verified information becomes available.</p>
+          </header>
 
           <div class="row g-4">
-            <!-- Officer cards will be populated via data-i18n keys -->
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic6.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.1.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.1.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.1.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic7.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.2.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.2.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.2.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic8.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.3.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.3.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.3.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic9.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.4.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.4.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.4.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic10.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.5.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.5.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.5.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic11.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.6.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.6.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.6.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic12.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.7.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.7.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.7.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic13.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.8.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.8.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.8.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic14.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.9.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.9.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.9.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic15.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.10.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.10.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.10.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic16.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.11.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.11.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.11.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic17.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.12.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.12.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.12.year">Academic Year</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <article class="officer-card">
-                <img src="Assets/images/officers/pic18.jpg" alt="Officer photo" class="img-fluid">
-                <h4 class="officer-name" data-i18n="scpes.officers.13.name">Officer Name</h4>
-                <p class="officer-role" data-i18n="scpes.officers.13.role">Position</p>
-                <p class="officer-year" data-i18n="scpes.officers.13.year">Academic Year</p>
-              </article>
-            </div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic6.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic7.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic8.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic9.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic10.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic11.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic12.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic13.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic14.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic15.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic16.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic17.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
+            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic18.jpg" alt="Officer photograph with profile information pending"><h3 class="officer-name" data-i18n="scpes.officers.profilePending">Officer profile pending</h3><p class="officer-detail" data-i18n="scpes.officers.profileDetail">Name and position will be added when verified information is available.</p></article></div>
           </div>
         </section>
 
-        <!-- Activities & Events Timeline -->
-        <section class="mb-5">
-          <h2 data-i18n="scpes.events.title">Activities & Events</h2>
-          <p class="placeholder-notice" data-i18n="scpes.events.placeholder">[Event dates and descriptions to be provided — 12 event photos available]</p>
+        <section class="community-section" aria-labelledby="scpes-events-title">
+          <header class="section-heading">
+            <h2 id="scpes-events-title" data-i18n="scpes.events.title">Community Activities</h2>
+            <p data-i18n="scpes.events.placeholder">Event details will be added as verified information becomes available.</p>
+          </header>
 
-          <div class="event-timeline">
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.1.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/arduino-day.jpg" alt="Arduino Day event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.1.title">Arduino Day</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.1.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.2.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="3D Printing Workshop event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.2.title">3D Printing Workshop</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.2.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.3.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="Research Colloquium Forum event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.3.title">1st Computer Engineering Research Colloquium Forum</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.3.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.4.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Tracing Sumobot Workshops event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.4.title">Tracing Sumobot Workshops</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.4.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.5.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="DOST-PAGASA event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.5.title">DOST-PAGASA Activity</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.5.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.6.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/shs-work-immersion.jpg" alt="SHS Work Immersion event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.6.title">SHS Work Immersion</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.6.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.7.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Free Coffee and Bread event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.7.title">Free Coffee and Bread</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.7.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.8.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Thanksgiving 2025 event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.8.title">Thanksgiving 2025</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.8.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.9.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/3d-printing.jpg" alt="3D Printing event" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.9.title">3D Printing Activity</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.9.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.10.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="DOST-PAGASA event 2" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.10.title">DOST-PAGASA Activity 2</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.10.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.11.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="Free Coffee and Bread event 2" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.11.title">Free Coffee and Bread 2</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.11.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="event-item">
-              <time class="event-date" data-i18n="scpes.events.12.date">Date</time>
-              <div class="event-content">
-                <img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="DOST-PAGASA event 3" class="img-fluid rounded">
-                <div>
-                  <h4 data-i18n="scpes.events.12.title">DOST-PAGASA Activity 3</h4>
-                  <p class="event-placeholder" data-i18n="scpes.events.12.desc">Event description coming soon.</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Projects & Achievements -->
-        <section class="mb-5">
-          <h2 data-i18n="scpes.projects.title">Projects & Achievements</h2>
-          <p class="placeholder-notice" data-i18n="scpes.projects.placeholder">[Featured SCPES projects and achievements to be added — cross-reference with Student Projects page]</p>
           <div class="row g-4">
-            <div class="col-md-4">
-              <article class="card h-100">
-                <div class="card-body text-center">
-                  <div class="spec-icon mx-auto mb-3">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                  </div>
-                  <h3 class="card-title" data-i18n="scpes.projects.item1.title">Competition Participation</h3>
-                  <p class="card-text" data-i18n="scpes.projects.item1.desc">SCPES members participate in national hackathons and engineering competitions.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="card h-100">
-                <div class="card-body text-center">
-                  <div class="spec-icon mx-auto mb-3">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 22a10 10 0 0 1-10-10"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-                  </div>
-                  <h3 class="card-title" data-i18n="scpes.projects.item2.title">Technical Workshops</h3>
-                  <p class="card-text" data-i18n="scpes.projects.item2.desc">Hands-on workshops in Arduino, 3D printing, and embedded systems.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="card h-100">
-                <div class="card-body text-center">
-                  <div class="spec-icon mx-auto mb-3">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                  </div>
-                  <h3 class="card-title" data-i18n="scpes.projects.item3.title">Academic Recognition</h3>
-                  <p class="card-text" data-i18n="scpes.projects.item3.desc">Outstanding Student Organization — UE Manila (SY 2025–2026).</p>
-                </div>
-              </article>
-            </div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="1st Computer Engineering Research Colloquium Forum"><div class="community-event-body"><h3 data-i18n="scpes.events.1.title">1st Computer Engineering Research Colloquium Forum</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="3D Printing Workshop"><div class="community-event-body"><h3 data-i18n="scpes.events.2.title">3D Printing Workshop</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing.jpg" alt="3D Printing"><div class="community-event-body"><h3 data-i18n="scpes.events.3.title">3D Printing</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/arduino-day.jpg" alt="Arduino Day"><div class="community-event-body"><h3 data-i18n="scpes.events.4.title">Arduino Day</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.5.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.6.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="DOST-PAGASA"><div class="community-event-body"><h3 data-i18n="scpes.events.7.title">DOST-PAGASA</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Free Coffee and Bread"><div class="community-event-body"><h3 data-i18n="scpes.events.8.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="Free Coffee and Bread"><div class="community-event-body"><h3 data-i18n="scpes.events.9.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/shs-work-immersion.jpg" alt="SHS Work Immersion"><div class="community-event-body"><h3 data-i18n="scpes.events.10.title">SHS Work Immersion</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Thanksgiving 2025"><div class="community-event-body"><h3 data-i18n="scpes.events.11.title">Thanksgiving 2025</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
+            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Tracing Sumobot Workshops"><div class="community-event-body"><h3 data-i18n="scpes.events.12.title">Tracing Sumobot Workshops</h3><p data-i18n="scpes.events.detail">Event details coming soon.</p></div></article></div>
           </div>
-        </section>
-
-        <!-- Join SCPES -->
-        <section>
-          <h2 data-i18n="scpes.join.title">Join SCPES</h2>
-          <p class="lead" data-i18n="scpes.join.desc">Become part of the Computer Engineering student community at UE.</p>
-          <form class="contact-form" id="scpesJoinForm" action="mailto:scpesofficial@gmail.com" method="POST" enctype="text/plain">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="joinName" class="form-label" data-i18n="scpes.join.form.name">Full Name</label>
-                <input type="text" class="form-control" id="joinName" name="name" required>
-              </div>
-              <div class="col-md-6">
-                <label for="joinYear" class="form-label" data-i18n="scpes.join.form.year">Year Level</label>
-                <select class="form-select" id="joinYear" name="year" required>
-                  <option value="" disabled selected data-i18n="scpes.join.form.yearSelect">Select year</option>
-                  <option value="1st Year" data-i18n="scpes.join.form.year1">1st Year</option>
-                  <option value="2nd Year" data-i18n="scpes.join.form.year2">2nd Year</option>
-                  <option value="3rd Year" data-i18n="scpes.join.form.year3">3rd Year</option>
-                  <option value="4th Year" data-i18n="scpes.join.form.year4">4th Year</option>
-                  <option value="5th Year" data-i18n="scpes.join.form.year5">5th Year</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="joinEmail" class="form-label" data-i18n="scpes.join.form.email">Email</label>
-                <input type="email" class="form-control" id="joinEmail" name="email" required>
-              </div>
-              <div class="col-md-6">
-                <label for="joinInterest" class="form-label" data-i18n="scpes.join.form.interest">Area of Interest</label>
-                <select class="form-select" id="joinInterest" name="interest">
-                  <option value="" disabled selected data-i18n="scpes.join.form.interestSelect">Select interest</option>
-                  <option value="Embedded Systems" data-i18n="scpes.join.form.embedded">Embedded Systems</option>
-                  <option value="IoT" data-i18n="scpes.join.form.iot">Internet of Things</option>
-                  <option value="Networks" data-i18n="scpes.join.form.networks">Computer Networks</option>
-                  <option value="Cybersecurity" data-i18n="scpes.join.form.cyber">Cybersecurity</option>
-                  <option value="Software" data-i18n="scpes.join.form.software">Software Development</option>
-                  <option value="AI/ML" data-i18n="scpes.join.form.ai">AI & Machine Learning</option>
-                  <option value="Robotics" data-i18n="scpes.join.form.robotics">Robotics & Automation</option>
-                  <option value="Other" data-i18n="scpes.join.form.other">Other</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label for="joinMessage" class="form-label" data-i18n="scpes.join.form.message">Message</label>
-                <textarea class="form-control" id="joinMessage" name="message" rows="4" data-i18n-placeholder="scpes.join.form.placeholder"></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary" data-i18n="scpes.join.form.submit">Submit via Email</button>
-                <p class="form-text mt-2" data-i18n="scpes.join.form.hint">Opens your default email client with the form data.</p>
-              </div>
-            </div>
-          </form>
         </section>
       </div>
     </section>
@@ -459,7 +152,11 @@
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
           <p class="footer-brand" data-i18n="brand.name">UE Computer Engineering</p>
-          <p class="footer-tagline" data-i18n="footer.tagline">Bachelor of Science in Computer Engineering<br>University of the East</p>
+          <p class="footer-tagline">
+            <span data-i18n="footer.tagline">Bachelor of Science in Computer Engineering</span>
+            <br>
+            <span data-i18n="footer.university">University of the East — Manila</span>
+          </p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
@@ -494,7 +191,7 @@
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.disclaimer">Program information sourced from publicly available University of the East websites (ue.edu.ph). For official admissions requirements, curriculum details, and faculty credentials, please contact the UE College of Engineering directly. This website is a student project and not an official UE publication.</p>
-        <p data-i18n="footer.copyright">&copy; 2025 University of the East Computer Engineering. All rights reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 University of the East Computer Engineering. All rights reserved.</p>
       </div>
     </div>
   </footer>

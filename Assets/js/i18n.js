@@ -33,6 +33,11 @@ const I18n = (() => {
       }
     });
 
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.dataset.i18nPlaceholder;
+      if (dict[key]) el.placeholder = dict[key];
+    });
+
     // Update language toggle buttons
     document.querySelectorAll('[data-lang]').forEach(btn => {
       const isActive = btn.dataset.lang === currentLang;

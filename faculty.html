@@ -38,10 +38,6 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.cpeAtUe">CpE at UE</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="cpe-at-ue.html" data-i18n="nav.overview">Program Overview</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#objectives" data-i18n="nav.objectives">Objectives & Outcomes</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#facilities" data-i18n="nav.facilities">Facilities</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#accreditation" data-i18n="nav.accreditation">Accreditation</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
@@ -71,11 +67,11 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel" style="height: 40vh; min-height: 300px;">
-    <div class="hero-slide" style="background-image: url('Assets/images/hero/hero2.jpg');">
+  <header class="hero-carousel hero-carousel--compact">
+    <div class="hero-slide hero-slide-2">
       <div class="carousel-caption">
         <h1 data-i18n="faculty.hero.title">Faculty</h1>
-        <p class="lead" data-i18n="faculty.hero.tagline">Department leadership and faculty profiles</p>
+        <p class="lead" data-i18n="faculty.hero.tagline">Current UE Manila Computer Engineering faculty records</p>
       </div>
     </div>
   </header>
@@ -90,141 +86,66 @@
           </ol>
         </nav>
 
-        <!-- Department Leadership (Verified) -->
-        <section class="faculty-leadership mb-5">
-          <h2 data-i18n="faculty.leadership.title">Department Leadership</h2>
-          <p data-i18n="faculty.leadership.intro">The following faculty members are listed on the official UE Computer Engineering pages.</p>
+        <section class="faculty-directory mb-5" aria-labelledby="current-faculty-title">
+          <header class="section-heading">
+            <h2 id="current-faculty-title" data-i18n="faculty.verified.title">Current Faculty</h2>
+            <p data-i18n="faculty.verified.intro">The four profiles below list only verified current UE Manila department information.</p>
+          </header>
 
-          <dl class="row">
-            <dt class="col-sm-3" data-i18n="faculty.leadership.chairCaloocan">Department Chair (Caloocan)</dt>
-            <dd class="col-sm-9" data-i18n="faculty.leadership.chairCaloocanName">Dr. Paraluman G. Sim</dd>
-
-            <dt class="col-sm-3" data-i18n="faculty.leadership.dean">Dean (Manila)</dt>
-            <dd class="col-sm-9" data-i18n="faculty.leadership.deanName">Dr. Rogelio B. Aniez Jr.</dd>
-
-            <dt class="col-sm-3" data-i18n="faculty.leadership.assocDean">Associate Dean</dt>
-            <dd class="col-sm-9" data-i18n="faculty.leadership.assocDeanName">Engr. Darwin Alpis</dd>
-
-            <dt class="col-sm-3" data-i18n="faculty.leadership.secretary">College Secretary</dt>
-            <dd class="col-sm-9" data-i18n="faculty.leadership.secretaryName">Ms. Jasmin S. Salazar</dd>
-          </dl>
-
-          <h3 class="mt-4" data-i18n="faculty.leadership.verifiedFaculty">Faculty Members (Manila — Verified Names)</h3>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" data-i18n="faculty.leadership.faculty1">Errol John M. Antonio — BSCpE, UE (2012); MEng-CpE, PLM (2018); DIT, UE (on-going)</li>
-            <li class="list-group-item" data-i18n="faculty.leadership.faculty2">Cherry Casuat — BSCpE, TIP Manila (2006); MEng-CpE, Adamson University (2010); DIT, UE (on-going)</li>
-            <li class="list-group-item" data-i18n="faculty.leadership.faculty3">Onofre F. Corpuz — BSECE, FEATI (1993); MES, UE (2017)</li>
-            <li class="list-group-item" data-i18n="faculty.leadership.faculty4">Mary Ann L. Limkian — BSCpE, UE (2000); MEng-CpE, PLM (2006); DBA, UE (units earned); DIT, UE (on-going)</li>
-          </ul>
-
-          <p class="placeholder-notice mt-3" data-i18n="faculty.leadership.note">[Additional faculty details — specializations, courses taught, contact information — to be provided]</p>
-        </section>
-
-        <!-- Faculty Profiles (Placeholders) -->
-        <section class="faculty-profiles">
-          <h2 data-i18n="faculty.profiles.title">Faculty Profiles</h2>
-          <p class="placeholder-notice" data-i18n="faculty.profiles.notice">Faculty profiles will be added as information becomes available.</p>
-
-          <div class="faculty-grid row g-4">
-            <!-- Placeholder Card 1 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-1">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
+          <div class="faculty-record-grid">
+            <article class="faculty-record faculty-record--verified">
+              <div class="faculty-record-visual">
+                <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image">
+                <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
+              </div>
+              <div>
+                <h3 data-i18n="faculty.antonio.name">Errol John M. Antonio</h3>
+                <ul class="faculty-credentials">
+                  <li data-i18n="faculty.antonio.degree1">BSCpE, University of the East, 2012</li>
+                  <li data-i18n="faculty.antonio.degree2">MEng-CpE, Pamantasan ng Lungsod ng Maynila, 2018</li>
+                  <li data-i18n="faculty.antonio.degree3">DIT, University of the East, on-going</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Placeholder Card 2 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-2">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
+            <article class="faculty-record faculty-record--verified">
+              <div class="faculty-record-visual">
+                <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image">
+                <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
+              </div>
+              <div>
+                <h3 data-i18n="faculty.corpuz.name">Onofre F. Corpuz</h3>
+                <ul class="faculty-credentials">
+                  <li data-i18n="faculty.corpuz.degree1">BSECE, FEATI University, 1993</li>
+                  <li data-i18n="faculty.corpuz.degree2">MES, University of the East, 2017</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Placeholder Card 3 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-3">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
+            <article class="faculty-record faculty-record--verified">
+              <div class="faculty-record-visual">
+                <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image">
+                <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
+              </div>
+              <div>
+                <h3 data-i18n="faculty.limkian.name">Mary Ann L. Limkian</h3>
+                <ul class="faculty-credentials">
+                  <li data-i18n="faculty.limkian.degree1">BSCpE, University of the East, 2000</li>
+                  <li data-i18n="faculty.limkian.degree2">MEng-CpE, Pamantasan ng Lungsod ng Maynila, 2006</li>
+                  <li data-i18n="faculty.limkian.degree3">DBA, University of the East, units</li>
+                  <li data-i18n="faculty.limkian.degree4">DIT, University of the East, on-going</li>
+                </ul>
               </div>
             </article>
 
-            <!-- Placeholder Card 4 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-4">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
+            <article class="faculty-record faculty-record--verified">
+              <div class="faculty-record-visual">
+                <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image">
+                <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
               </div>
-            </article>
-
-            <!-- Placeholder Card 5 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-5">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
-              </div>
-            </article>
-
-            <!-- Placeholder Card 6 -->
-            <article class="col-md-6 col-lg-4">
-              <div class="card faculty-card h-100">
-                <div class="faculty-photo-wrapper">
-                  <img src="Assets/images/faculty/placeholder.svg" alt="Faculty photo placeholder" class="faculty-photo" data-faculty-id="placeholder-6">
-                  <span class="photo-badge" data-i18n="faculty.placeholder.photoBadge">Photo Pending</span>
-                </div>
-                <div class="card-body faculty-info">
-                  <h3 class="faculty-name" data-i18n="faculty.placeholder.name">Faculty Name</h3>
-                  <p class="faculty-title" data-i18n="faculty.placeholder.title">Academic Title</p>
-                  <p class="faculty-specialization" data-i18n="faculty.placeholder.spec">Area of Specialization</p>
-                  <p class="faculty-courses" data-i18n="faculty.placeholder.courses">Courses Taught</p>
-                  <p class="faculty-email-placeholder" data-i18n="faculty.placeholder.contact">Contact information will be added</p>
-                </div>
+              <div>
+                <h3 data-i18n="faculty.coral.name">Joemhel Jhon D. Coral</h3>
+                <p class="text-muted mb-0" data-i18n="faculty.coral.detail">Profile details coming soon.</p>
               </div>
             </article>
           </div>
@@ -238,7 +159,11 @@
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
           <p class="footer-brand" data-i18n="brand.name">UE Computer Engineering</p>
-          <p class="footer-tagline" data-i18n="footer.tagline">Bachelor of Science in Computer Engineering<br>University of the East</p>
+          <p class="footer-tagline">
+            <span data-i18n="footer.tagline">Bachelor of Science in Computer Engineering</span>
+            <br>
+            <span data-i18n="footer.university">University of the East — Manila</span>
+          </p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
@@ -273,7 +198,7 @@
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.disclaimer">Program information sourced from publicly available University of the East websites (ue.edu.ph). For official admissions requirements, curriculum details, and faculty credentials, please contact the UE College of Engineering directly. This website is a student project and not an official UE publication.</p>
-        <p data-i18n="footer.copyright">&copy; 2025 University of the East Computer Engineering. All rights reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 University of the East Computer Engineering. All rights reserved.</p>
       </div>
     </div>
   </footer>

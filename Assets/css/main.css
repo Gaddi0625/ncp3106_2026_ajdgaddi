@@ -369,7 +369,8 @@ pre code { background: none; padding: 0; }
   overflow: hidden;
 }
 
-.hero-carousel--careers {
+.hero-carousel--careers,
+.hero-carousel--compact {
   height: 40vh;
   min-height: 300px;
 }
@@ -378,6 +379,12 @@ pre code { background: none; padding: 0; }
   .hero-carousel {
     height: var(--hero-height-mobile);
     min-height: 400px;
+  }
+
+  .hero-carousel--careers,
+  .hero-carousel--compact {
+    height: 40vh;
+    min-height: 300px;
   }
 }
 
@@ -402,9 +409,10 @@ pre code { background: none; padding: 0; }
   z-index: 1;
 }
 
-.hero-slide-1 { background-image: url('Assets/images/hero/hero.jpg'); }
-.hero-slide-2 { background-image: url('Assets/images/hero/hero2.jpg'); }
-.hero-slide-3 { background-image: url('Assets/images/hero/hero3.jpg'); }
+.hero-slide-1 { background-image: url('../images/hero/hero.jpg'); }
+.hero-slide-2 { background-image: url('../images/hero/hero2.jpg'); }
+.hero-slide-3 { background-image: url('../images/hero/hero3.jpg'); }
+.hero-slide--scpes { background-image: url('../images/scpes/thanksgiving-2025.jpg'); }
 
 .hero-slide .carousel-caption {
   position: absolute;
@@ -780,164 +788,170 @@ pre code { background: none; padding: 0; }
 }
 .btn-close:hover { opacity: 1; }
 
-/* --- Faculty Card -------------------------------------------------------- */
-.faculty-card .card-body { padding: var(--space-5); }
-
-.faculty-photo-wrapper {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background: var(--color-surface-alt);
-  margin-bottom: var(--space-4);
-}
-
-.faculty-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.faculty-card:hover .faculty-photo { transform: scale(1.05); }
-
-.faculty-info h3 {
-  font-size: var(--fs-600);
-  font-weight: var(--fw-semibold);
-  margin-bottom: var(--space-1);
-}
-
-.faculty-info .faculty-title {
-  font-size: var(--fs-400);
-  color: var(--color-accent);
-  font-weight: var(--fw-medium);
-  margin-bottom: var(--space-2);
-}
-
-.faculty-info .faculty-specialization,
-.faculty-info .faculty-courses {
-  font-size: var(--fs-400);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-1);
-}
-
-.faculty-info .faculty-email-placeholder {
-  font-size: var(--fs-300);
-  color: var(--color-secondary);
-  font-style: italic;
-}
-
-/* --- Officer Card (SCPES) ----------------------------------------------- */
-.officer-card {
-  text-align: center;
-  padding: var(--space-4);
-}
-
-.officer-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--color-surface);
-  box-shadow: var(--shadow-md);
-  margin-bottom: var(--space-3);
-  background: var(--color-surface-alt);
-}
-
-.officer-name { font-size: var(--fs-500); font-weight: var(--fw-semibold); margin-bottom: var(--space-1); }
-.officer-role { font-size: var(--fs-400); color: var(--color-accent); font-weight: var(--fw-medium); margin-bottom: var(--space-1); }
-.officer-year { font-size: var(--fs-300); color: var(--color-text-muted); }
-
-/* --- Event Timeline (SCPES) --------------------------------------------- */
-.event-item {
-  position: relative;
-  padding-left: var(--space-8);
+/* --- Community Pages ----------------------------------------------------- */
+.section-heading {
+  max-width: 720px;
   margin-bottom: var(--space-8);
 }
 
-.event-item::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--color-border);
+.section-heading h2 { margin-bottom: var(--space-3); }
+.section-heading p { color: var(--color-text-muted); margin-bottom: 0; }
+
+.section-heading--centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-.event-item:last-child::before { display: none; }
-
-.event-item::after {
-  content: '';
-  position: absolute;
-  left: 15px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  border: 3px solid var(--color-surface);
-  box-shadow: 0 0 0 2px var(--color-accent);
-  z-index: 1;
+.faculty-record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 var(--space-8);
 }
 
-.event-date {
-  position: absolute;
-  left: -160px;
-  top: 4px;
-  width: 140px;
-  text-align: right;
-  font-size: var(--fs-400);
+.faculty-record {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: start;
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.faculty-record-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.faculty-record-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--color-primary-light);
+  border-radius: var(--radius-md);
+}
+
+.faculty-photo-status {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--fs-300);
+  line-height: var(--lh-normal);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.faculty-record h3 {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-600);
+}
+
+.faculty-role {
+  color: var(--color-accent);
   font-weight: var(--fw-medium);
-  color: var(--color-secondary);
-  white-space: nowrap;
+}
+
+.faculty-credentials {
+  padding-left: var(--space-5);
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-400);
+}
+
+.faculty-credentials li + li { margin-top: var(--space-2); }
+.community-intro img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.community-section {
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.officer-card {
+  height: 100%;
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.officer-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  margin-bottom: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-alt);
+}
+
+.officer-name {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semibold);
+}
+
+.officer-detail {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-400);
+}
+
+.community-event {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.community-event img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.community-event-body { padding: var(--space-5); }
+
+.community-event h3 {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-600);
+}
+
+.community-event p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-400);
 }
 
 @media (max-width: 767.98px) {
-  .event-item { padding-left: var(--space-6); }
-  .event-item::before { left: 16px; }
-  .event-item::after { left: 11px; }
-  .event-date {
-    position: static;
-    text-align: left;
-    width: auto;
-    margin-bottom: var(--space-2);
-    padding-left: 40px;
-  }
+  .faculty-record-grid { grid-template-columns: 1fr; }
+  .faculty-record { grid-template-columns: 88px minmax(0, 1fr); gap: var(--space-4); }
 }
-
-.event-content { display: flex; gap: var(--space-4); }
-
-.event-content img {
-  width: 200px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  flex-shrink: 0;
-}
-
-.event-content h4 { margin-bottom: var(--space-2); font-size: var(--fs-600); }
-.event-content p { margin-bottom: 0; }
 
 /* --- Project Showcase ---------------------------------------------------- */
 .project-showcase {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-8);
-  align-items: start;
-  margin-bottom: var(--space-12);
+  align-items: center;
+  padding: var(--space-10) 0;
+  margin: 0;
+  border-top: 1px solid var(--color-border);
 }
 
 @media (min-width: 992px) {
-  .project-showcase { grid-template-columns: 1fr 1fr; }
-}
+  .project-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "media content";
+    gap: var(--space-12);
+  }
 
-.project-showcase.project-media-right .project-media { grid-column: 2; }
-.project-showcase.project-media-right .project-content { grid-column: 1; }
-
-@media (max-width: 991.98px) {
-  .project-showcase.project-media-right .project-media,
-  .project-showcase.project-media-right .project-content { grid-column: 1; }
+  .project-showcase.project-media-right { grid-template-areas: "content media"; }
+  .project-media { grid-area: media; }
+  .project-content { grid-area: content; }
 }
 
 .project-media {
@@ -950,25 +964,10 @@ pre code { background: none; padding: 0; }
   width: 100%;
   height: auto;
   display: block;
-  transition: transform var(--transition-base);
-}
-
-.project-showcase:hover .project-media img { transform: scale(1.02); }
-
-.project-category {
-  display: inline-block;
-  margin: var(--space-3);
-  padding: var(--space-1) var(--space-3);
-  background: var(--color-primary);
-  color: var(--color-text-on-primary);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-medium);
-  border-radius: var(--radius-full);
 }
 
 .project-content h3 { margin-bottom: var(--space-3); }
-.project-content .project-placeholder { margin-bottom: var(--space-4); }
-.project-content .btn { margin-right: var(--space-2); margin-bottom: var(--space-2); }
+.project-content .project-placeholder { margin-bottom: 0; color: var(--color-text-muted); }
 
 /* --- Specializations Grid ----------------------------------------------- */
 .specializations-filter {

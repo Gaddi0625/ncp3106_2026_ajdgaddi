@@ -38,10 +38,6 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.cpeAtUe">CpE at UE</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="cpe-at-ue.html" data-i18n="nav.overview">Program Overview</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#objectives" data-i18n="nav.objectives">Objectives & Outcomes</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#curriculum" data-i18n="nav.curriculum">Curriculum</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#facilities" data-i18n="nav.facilities">Facilities</a></li>
-              <li><a class="dropdown-item" href="cpe-at-ue.html#accreditation" data-i18n="nav.accreditation">Accreditation</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="specializations.html" data-i18n="nav.specializations">Specializations</a></li>
@@ -71,8 +67,8 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel" style="height: 40vh; min-height: 300px;">
-    <div class="hero-slide" style="background-image: url('Assets/images/hero/hero.jpg');">
+  <header class="hero-carousel hero-carousel--compact">
+    <div class="hero-slide hero-slide-1">
       <div class="carousel-caption">
         <h1 data-i18n="whatIs.hero.title">What is Computer Engineering?</h1>
         <p class="lead" data-i18n="whatIs.hero.tagline">The discipline that bridges hardware and software to create computing systems</p>
@@ -98,7 +94,7 @@
 
           <section id="hardware-software" class="mb-5">
             <h2 data-i18n="whatIs.hwsw.title">The Hardware–Software Relationship</h2>
-            <p data-i18n="whatIs.hwsw.desc">Computer Engineering sits at the intersection of hardware and software. Unlike Computer Science (which focuses primarily on software) or Electrical Engineering (which focuses primarily on hardware), Computer Engineering requires understanding both domains and how they interact.</p>
+            <p data-i18n="whatIs.hwsw.desc">Computer Engineering sits at the intersection of hardware and software. Computer Science, Electrical Engineering, and Computer Engineering overlap, while each program emphasizes different combinations of theory, software, electronics, and system design.</p>
             
             <div class="row g-4 mt-4 align-items-start">
               <div class="col-lg-6">
@@ -209,7 +205,7 @@
             </dl>
             
             <div class="p-3 rounded bg-light border" data-i18n="whatIs.do.note">
-              <strong>Note:</strong> The specific mix of activities varies by role. An embedded engineer might spend 80% of their time on firmware development, while a hardware engineer focuses on circuit design and verification. Computer Engineering's breadth allows graduates to specialize based on interest.
+              <strong>Note:</strong> The specific mix of activities varies by role. Computer Engineering's breadth allows graduates to specialize based on interest.
             </div>
           </section>
 
@@ -235,8 +231,8 @@
                   </tr>
                   <tr>
                     <td data-i18n="whatIs.vsCS.row2.aspect">Hardware Knowledge</td>
-                    <td data-i18n="whatIs.vsCS.row2.cpe">Deep: circuits, architecture, digital logic, VLSI</td>
-                    <td data-i18n="whatIs.vsCS.row2.cs">Minimal: typically one architecture course</td>
+                    <td data-i18n="whatIs.vsCS.row2.cpe">Often emphasizes circuits, architecture, digital logic, and hardware-software integration</td>
+                    <td data-i18n="whatIs.vsCS.row2.cs">Coverage varies by program and may include architecture and hardware-related topics</td>
                   </tr>
                   <tr>
                     <td data-i18n="whatIs.vsCS.row3.aspect">Software Focus</td>
@@ -245,29 +241,19 @@
                   </tr>
                   <tr>
                     <td data-i18n="whatIs.vsCS.row4.aspect">Mathematics</td>
-                    <td data-i18n="whatIs.vsCS.row4.cpe">Continuous (calculus, differential equations, signals)</td>
-                    <td data-i18n="whatIs.vsCS.row4.cs">Discrete (logic, combinatorics, graph theory)</td>
+                    <td data-i18n="whatIs.vsCS.row4.cpe">Often includes both continuous and discrete mathematics</td>
+                    <td data-i18n="whatIs.vsCS.row4.cs">Often emphasizes discrete mathematics while requirements vary by program</td>
                   </tr>
                   <tr>
                     <td data-i18n="whatIs.vsCS.row5.aspect">Typical Outputs</td>
                     <td data-i18n="whatIs.vsCS.row5.cpe">Chips, boards, embedded devices, real-time systems</td>
                     <td data-i18n="whatIs.vsCS.row5.cs">Applications, libraries, frameworks, algorithms</td>
                   </tr>
-                  <tr>
-                    <td data-i18n="whatIs.vsCS.row6.aspect">Accreditation</td>
-                    <td data-i18n="whatIs.vsCS.row6.cpe">Engineering accreditation (ABET, PAASCU, PACUCOA)</td>
-                    <td data-i18n="whatIs.vsCS.row6.cs">Computing accreditation (ABET-CAC, CHED)</td>
-                  </tr>
-                  <tr>
-                    <td data-i18n="whatIs.vsCS.row7.aspect">Licensure</td>
-                    <td data-i18n="whatIs.vsCS.row7.cpe">Professional Engineer (PE) / CpE Licensure Exam</td>
-                    <td data-i18n="whatIs.vsCS.row7.cs">Typically no licensure required</td>
-                  </tr>
                 </tbody>
               </table>
             </div>
             
-            <p class="mt-3" data-i18n="whatIs.vsCS.conclusion">In practice, the fields overlap significantly. Many Computer Engineers write substantial software, and many Computer Scientists work with hardware. Choose Computer Engineering if you want to understand and design the complete computing system — from the physics of transistors to the software that runs on them.</p>
+            <p class="mt-3" data-i18n="whatIs.vsCS.conclusion">In practice, the fields overlap significantly. Computer Engineers may work extensively with software, and Computer Scientists may work with hardware. The emphasis of either degree varies by institution and curriculum.</p>
           </section>
 
           <section id="applications" class="mb-5">
@@ -303,7 +289,11 @@
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
           <p class="footer-brand" data-i18n="brand.name">UE Computer Engineering</p>
-          <p class="footer-tagline" data-i18n="footer.tagline">Bachelor of Science in Computer Engineering<br>University of the East</p>
+          <p class="footer-tagline">
+            <span data-i18n="footer.tagline">Bachelor of Science in Computer Engineering</span>
+            <br>
+            <span data-i18n="footer.university">University of the East — Manila</span>
+          </p>
         </div>
         <div class="col-lg-2 col-md-6">
           <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
@@ -338,7 +328,7 @@
       </div>
       <div class="footer-bottom">
         <p data-i18n="footer.disclaimer">Program information sourced from publicly available University of the East websites (ue.edu.ph). For official admissions requirements, curriculum details, and faculty credentials, please contact the UE College of Engineering directly. This website is a student project and not an official UE publication.</p>
-        <p data-i18n="footer.copyright">&copy; 2025 University of the East Computer Engineering. All rights reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 University of the East Computer Engineering. All rights reserved.</p>
       </div>
     </div>
   </footer>
