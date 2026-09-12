@@ -45,7 +45,7 @@
 
     drawer.addEventListener('show.bs.collapse', () => setDrawerState(true));
     drawer.addEventListener('shown.bs.collapse', () => {
-      if (window.innerWidth >= 1200) {
+      if (window.innerWidth >= 1400) {
         bsCollapse.hide();
         setDrawerState(false);
         return;
@@ -100,7 +100,7 @@
     // Close drawer when clicking a nav link (on mobile)
     drawer.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item').forEach(link => {
       link.addEventListener('click', () => {
-        if (window.innerWidth < 1200) {
+        if (window.innerWidth < 1400) {
           const url = new URL(link.href, window.location.href);
           const isSameDocument = url.pathname === window.location.pathname && Boolean(url.hash);
           restoreTogglerFocus = link.hasAttribute('data-lang') || isSameDocument;
@@ -110,7 +110,7 @@
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth >= 1200) {
+      if (window.innerWidth >= 1400) {
         restoreTogglerFocus = false;
         bsCollapse.hide();
         setDrawerState(false);
