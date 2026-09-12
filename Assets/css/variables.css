@@ -96,8 +96,6 @@
   --header-height: 72px;
 
   /* --- Hero -------------------------------------------------------------- */
-  --hero-height-desktop: 75vh;
-  --hero-height-mobile: 60vh;
   --hero-overlay: linear-gradient(135deg, rgba(13, 27, 42, 0.75), rgba(13, 27, 42, 0.45));
 
   /* --- Z-index ----------------------------------------------------------- */
