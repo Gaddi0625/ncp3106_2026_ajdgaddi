@@ -103,8 +103,8 @@
     },
     {
       id: 'contact',
-      phrases: ['contact ue', 'contact ue manila', 'how can i contact', 'where can i contact', 'makipag ugnayan', 'saan kokontak', 'contact details'],
-      keywords: ['contact', 'email', 'phone', 'telephone', 'address', 'location', 'office', 'tawag', 'numero'],
+      phrases: ['contact ue', 'contact ue manila', 'how can i contact', 'where can i contact', 'makipag ugnayan', 'makikipag ugnayan', 'saan kokontak', 'contact details'],
+      keywords: ['contact', 'email', 'phone', 'telephone', 'address', 'location', 'office', 'ugnayan', 'tawag', 'numero'],
       answer: 'assistant.answer.contact',
       links: [['contact.html', 'nav.contact']]
     },

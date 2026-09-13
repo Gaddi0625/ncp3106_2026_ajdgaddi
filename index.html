@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
-  <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
+<body class="page-home">
+  <a href="#home-overview" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -34,7 +34,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About CpE</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
-              <li><a class="dropdown-item" href="what-is-cpe.html#hardware-software" data-i18n="nav.hardwareSoftware">Hardware & Software</a></li>
+              <li><a class="dropdown-item" href="what-is-cpe.html#hardware-software" data-i18n="nav.hardwareSoftware">Hardware &amp; Software</a></li>
               <li><a class="dropdown-item" href="what-is-cpe.html#major-fields" data-i18n="nav.majorFields">Major Fields</a></li>
               <li><a class="dropdown-item" href="what-is-cpe.html#why-matters" data-i18n="nav.whyMatters">Why It Matters</a></li>
             </ul>
@@ -75,9 +75,10 @@
 
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
+  <main id="main-content">
   <!-- Hero Carousel -->
   <section class="hero-carousel" aria-label="Hero carousel" data-i18n-aria-label="a11y.heroCarousel">
-    <div id="heroCarousel" class="carousel slide">
+    <div id="heroCarousel" class="carousel slide" data-bs-interval="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" data-i18n-aria-label="a11y.slide1"></button>
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2" data-i18n-aria-label="a11y.slide2"></button>
@@ -87,6 +88,7 @@
         <div class="carousel-item active">
           <div class="hero-slide hero-slide-1">
             <div class="carousel-caption">
+              <p class="home-hero-label" data-i18n="home.hero.slide1.label">UE Manila / Program</p>
               <h1 data-i18n="hero.slide1.title">Bachelor of Science in Computer Engineering</h1>
               <p class="lead" data-i18n="hero.slide1.tagline">Where hardware meets software. Where theory meets practice.</p>
               <a href="cpe-at-ue.html" class="btn btn-primary btn-lg" data-i18n="hero.slide1.cta">Explore the Program</a>
@@ -97,6 +99,7 @@
         <div class="carousel-item">
           <div class="hero-slide hero-slide-2">
             <div class="carousel-caption">
+              <p class="home-hero-label" data-i18n="home.hero.slide2.label">Student Work / Engineering</p>
               <h2 data-i18n="hero.slide2.title">Design. Build. Innovate.</h2>
               <p class="lead" data-i18n="hero.slide2.tagline">Real projects. Real engineering. Real impact.</p>
               <a href="projects.html" class="btn btn-primary btn-lg" data-i18n="hero.slide2.cta">View Student Work</a>
@@ -113,184 +116,158 @@
     </div>
   </section>
 
-  <main id="main-content">
     <!-- Introduction -->
-    <section class="section pb-0">
+    <section class="section home-intro" id="home-overview">
       <div class="container-custom">
-        <div class="row g-5 align-items-start">
-          <div class="col-12">
+        <div class="home-editorial-split">
+          <header class="home-section-heading">
             <h2 data-i18n="intro.whatIs.title">What is Computer Engineering?</h2>
+          </header>
+          <div class="home-intro-copy">
             <p class="lead" data-i18n="intro.whatIs.desc">Computer Engineering integrates electrical engineering and computer science to develop computer hardware and software. Computer engineers design, develop, test, and integrate embedded systems, computer networks, and computing hardware.</p>
-            <a href="what-is-cpe.html" class="btn btn-outline-primary" data-i18n="intro.whatIs.cta">Learn More</a>
+            <a href="what-is-cpe.html" class="home-text-link" data-i18n="intro.whatIs.cta">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Specializations Preview -->
-    <section class="section">
+    <section class="section home-fields section-alt">
       <div class="container-custom">
-        <header class="text-center mb-5">
-          <h2 data-i18n="specializations.title">Fields of Computer Engineering</h2>
-          <p class="lead" data-i18n="specializations.subtitle">Areas that Computer Engineering students may explore</p>
-        </header>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item1.title">Embedded Systems</h3>
-                <p class="card-text" data-i18n="specializations.item1.desc">Microcontroller-based systems for specific functions in devices.</p>
-              </div>
+        <div class="home-editorial-split">
+          <header class="home-section-heading">
+            <h2 data-i18n="specializations.title">Fields of Computer Engineering</h2>
+            <p data-i18n="specializations.subtitle">Areas that Computer Engineering students may explore</p>
+            <a href="specializations.html" class="home-text-link" data-i18n="specializations.cta">View All Specializations</a>
+          </header>
+          <div class="home-field-list">
+            <article class="home-field">
+              <h3 data-i18n="specializations.item1.title">Embedded Systems</h3>
+              <p data-i18n="specializations.item1.desc">Microcontroller-based systems for specific functions in devices.</p>
+            </article>
+            <article class="home-field">
+              <h3 data-i18n="specializations.item2.title">Internet of Things</h3>
+              <p data-i18n="specializations.item2.desc">Connected devices and sensor networks for smart environments.</p>
+            </article>
+            <article class="home-field">
+              <h3 data-i18n="specializations.item3.title">Computer Networks</h3>
+              <p data-i18n="specializations.item3.desc">Design and management of data communication systems.</p>
+            </article>
+            <article class="home-field">
+              <h3 data-i18n="specializations.item4.title">Cybersecurity</h3>
+              <p data-i18n="specializations.item4.desc">Protecting systems, networks, and data from digital attacks.</p>
+            </article>
+            <article class="home-field">
+              <h3 data-i18n="specializations.item5.title">Software Development</h3>
+              <p data-i18n="specializations.item5.desc">Creating applications and systems software for computing platforms.</p>
+            </article>
+            <article class="home-field">
+              <h3 data-i18n="specializations.item6.title">AI &amp; Machine Learning</h3>
+              <p data-i18n="specializations.item6.desc">Intelligent systems that learn from data and make decisions.</p>
             </article>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item2.title">Internet of Things</h3>
-                <p class="card-text" data-i18n="specializations.item2.desc">Connected devices and sensor networks for smart environments.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item3.title">Computer Networks</h3>
-                <p class="card-text" data-i18n="specializations.item3.desc">Design and management of data communication systems.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item4.title">Cybersecurity</h3>
-                <p class="card-text" data-i18n="specializations.item4.desc">Protecting systems, networks, and data from digital attacks.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item5.title">Software Development</h3>
-                <p class="card-text" data-i18n="specializations.item5.desc">Creating applications and systems software for computing platforms.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="specializations.item6.title">AI & Machine Learning</h3>
-                <p class="card-text" data-i18n="specializations.item6.desc">Intelligent systems that learn from data and make decisions.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <a href="specializations.html" class="btn btn-outline-primary" data-i18n="specializations.cta">View All Specializations</a>
         </div>
       </div>
     </section>
 
     <!-- Career Outcomes Preview -->
-    <section class="section section-alt">
+    <section class="section home-careers">
       <div class="container-custom">
-        <header class="text-center mb-5">
-          <h2 data-i18n="careers.title">Possible Career Paths</h2>
-          <p class="lead" data-i18n="careers.subtitle">General roles that Computer Engineering graduates may explore</p>
-        </header>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="careers.item1.title">Embedded Systems Engineer</h3>
-                <p class="card-text" data-i18n="careers.item1.desc">Design and develop firmware for microcontroller-based systems.</p>
-              </div>
+        <div class="home-editorial-split">
+          <header class="home-section-heading">
+            <h2 data-i18n="careers.title">Possible Career Paths</h2>
+            <p data-i18n="careers.subtitle">General roles that Computer Engineering graduates may explore</p>
+            <a href="careers.html" class="btn btn-outline-light" data-i18n="careers.cta">Explore All Careers</a>
+          </header>
+          <div class="home-career-list">
+            <article class="home-career">
+              <h3 data-i18n="careers.item1.title">Embedded Systems Engineer</h3>
+              <p data-i18n="careers.item1.desc">Design and develop firmware for microcontroller-based systems.</p>
             </article>
-          </div>
-          <div class="col-md-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="careers.item2.title">Software Engineer</h3>
-                <p class="card-text" data-i18n="careers.item2.desc">Develop applications, systems software, and embedded software.</p>
-              </div>
+            <article class="home-career">
+              <h3 data-i18n="careers.item2.title">Software Engineer</h3>
+              <p data-i18n="careers.item2.desc">Develop applications, systems software, and embedded software.</p>
             </article>
-          </div>
-          <div class="col-md-4">
-            <article class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="careers.item3.title">Network Engineer</h3>
-                <p class="card-text" data-i18n="careers.item3.desc">Design, implement, and manage computer networks and communications systems.</p>
-              </div>
+            <article class="home-career">
+              <h3 data-i18n="careers.item3.title">Network Engineer</h3>
+              <p data-i18n="careers.item3.desc">Design, implement, and manage computer networks and communications systems.</p>
             </article>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <a href="careers.html" class="btn btn-outline-primary" data-i18n="careers.cta">Explore All Careers</a>
+      </div>
+    </section>
+
+    <!-- Project Preview -->
+    <section class="section home-projects section-alt">
+      <div class="container-custom">
+        <header class="home-projects-heading">
+          <h2 data-i18n="community.projects.title">Student Projects</h2>
+          <div>
+            <p data-i18n="community.projects.desc">View the available Computer Engineering project records.</p>
+            <a href="projects.html" class="home-text-link" data-i18n="community.projects.cta">View Projects</a>
+          </div>
+        </header>
+        <div class="home-project-grid">
+          <a class="home-project home-project--lead" href="projects.html">
+            <img src="Assets/images/project-and-achievements/annual-research.jpg" alt="" loading="lazy">
+            <span data-i18n="projects.annual-research.title">Annual Research</span>
+          </a>
+          <a class="home-project" href="projects.html">
+            <img src="Assets/images/project-and-achievements/circuit.jpg" alt="" loading="lazy">
+            <span data-i18n="projects.circuit.title">Circuit</span>
+          </a>
+          <a class="home-project" href="projects.html">
+            <img src="Assets/images/project-and-achievements/packet-hacks-2025.jpg" alt="" loading="lazy">
+            <span data-i18n="projects.packet-hacks.title">Packet Hacks 2025</span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Community Spotlight -->
-    <section class="section">
+    <section class="section home-community">
       <div class="container-custom">
-        <header class="text-center mb-5">
-          <h2 data-i18n="community.title">Community & Student Life</h2>
-        </header>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <article class="card h-100">
-              <div class="card-body text-center d-flex flex-column align-items-center">
-                <div class="spec-icon mx-auto mb-3">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <h3 class="card-title" data-i18n="community.scpes.title">SCPES</h3>
-                <p class="card-text mb-4" data-i18n="community.scpes.desc">View SCPES officer profiles and community activities.</p>
-                <a href="scpes.html" class="btn btn-outline-primary mt-auto" data-i18n="community.scpes.cta">Learn More</a>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="card h-100">
-              <div class="card-body text-center d-flex flex-column align-items-center">
-                <div class="spec-icon mx-auto mb-3">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <h3 class="card-title" data-i18n="community.faculty.title">Faculty</h3>
-                <p class="card-text mb-4" data-i18n="community.faculty.desc">View current UE Manila Computer Engineering department members.</p>
-                <a href="faculty.html" class="btn btn-outline-primary mt-auto" data-i18n="community.faculty.cta">Meet the Faculty</a>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="card h-100">
-              <div class="card-body text-center d-flex flex-column align-items-center">
-                <div class="spec-icon mx-auto mb-3">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-                </div>
-                <h3 class="card-title" data-i18n="community.projects.title">Student Projects</h3>
-                <p class="card-text mb-4" data-i18n="community.projects.desc">View the available Computer Engineering project records.</p>
-                <a href="projects.html" class="btn btn-outline-primary mt-auto" data-i18n="community.projects.cta">View Projects</a>
-              </div>
-            </article>
+        <div class="home-community-grid">
+          <figure class="home-community-image">
+            <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES students at Arduino Day Philippines" loading="lazy" decoding="async">
+          </figure>
+          <div class="home-community-content">
+            <h2 data-i18n="community.title">Community &amp; Student Life</h2>
+            <div class="home-community-links">
+              <article>
+                <h3 data-i18n="community.scpes.title">SCPES</h3>
+                <p data-i18n="community.scpes.desc">View SCPES officer profiles and community activities.</p>
+                <a href="scpes.html" class="home-text-link" data-i18n="community.scpes.cta">Learn More</a>
+              </article>
+              <article>
+                <h3 data-i18n="community.faculty.title">Faculty</h3>
+                <p data-i18n="community.faculty.desc">View current UE Manila Computer Engineering department members.</p>
+                <a href="faculty.html" class="home-text-link" data-i18n="community.faculty.cta">Meet the Faculty</a>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Banner -->
-    <section class="section section-alt">
-      <div class="container-custom text-center">
-        <h2 data-i18n="cta.title">Ready to Build the Future?</h2>
-        <p class="lead" data-i18n="cta.desc">Explore the Bachelor of Science in Computer Engineering program at the University of the East — Manila.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+    <section class="section home-cta">
+      <div class="container-custom home-cta-grid">
+        <div>
+          <h2 data-i18n="cta.title">Ready to Build the Future?</h2>
+          <p class="lead" data-i18n="cta.desc">Explore the Bachelor of Science in Computer Engineering program at the University of the East — Manila.</p>
+        </div>
+        <div class="home-cta-actions">
           <a href="cpe-at-ue.html" class="btn btn-primary btn-lg" data-i18n="cta.program">Explore the Program</a>
           <a href="contact.html" class="btn btn-outline-primary btn-lg" data-i18n="cta.contact">Contact Us</a>
+          <a href="game.html" class="home-utility-link" data-i18n="nav.game">Game</a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container-custom">
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
@@ -302,7 +279,7 @@
           </p>
         </div>
         <div class="col-lg-2 col-md-6">
-          <h4 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h4>
+          <h2 class="footer-heading" data-i18n="footer.quickLinks">Quick Links</h2>
           <ul class="footer-links">
             <li><a href="what-is-cpe.html" data-i18n="nav.whatIs">What is Computer Engineering?</a></li>
             <li><a href="cpe-at-ue.html" data-i18n="nav.cpeAtUe">CpE at UE</a></li>
@@ -312,7 +289,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="footer-heading" data-i18n="footer.community">Community</h4>
+          <h2 class="footer-heading" data-i18n="footer.community">Community</h2>
           <ul class="footer-links">
             <li><a href="faculty.html" data-i18n="nav.faculty">Faculty</a></li>
             <li><a href="scpes.html" data-i18n="nav.scpes">SCPES</a></li>
@@ -320,7 +297,7 @@
           </ul>
         </div>
         <div class="col-lg-4 col-md-6">
-          <h4 class="footer-heading" data-i18n="footer.contact">Contact</h4>
+          <h2 class="footer-heading" data-i18n="footer.contact">Contact</h2>
           <address class="footer-contact">
             <p><strong data-i18n="footer.dean">Dean:</strong> Dr. Rogelio B. Aniez Jr.</p>
             <p><strong data-i18n="footer.assocDean">Associate Dean:</strong> Engr. Darwin Alpis</p>
@@ -339,7 +316,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Scroll to top" data-i18n-aria-label="a11y.scrollTop" hidden>
+  <button class="scroll-top" type="button" aria-label="Scroll to top" data-i18n-aria-label="a11y.scrollTop" hidden>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
