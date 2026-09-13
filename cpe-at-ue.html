@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-cpe-at-ue">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-2">
-      <div class="carousel-caption">
+  <header class="inner-hero hero-slide hero-slide-2">
+      <div class="container-custom inner-hero__content">
+        <p class="inner-hero__eyebrow" data-i18n="nav.cpeAtUe">CpE at UE</p>
         <h1 data-i18n="cpeAtUe.hero.title">Bachelor of Science in Computer Engineering</h1>
         <p class="lead" data-i18n="cpeAtUe.hero.tagline">University of the East — Manila</p>
       </div>
-    </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -90,18 +89,20 @@
         </nav>
 
         <!-- Program Overview Tab -->
-        <section id="overview" class="mb-5">
+        <section id="overview" class="core-page__intro ue-program__overview">
           <h2 data-i18n="cpeAtUe.overview.title">Program Overview</h2>
           <p class="lead" data-i18n="cpeAtUe.overview.desc">Bachelor of Science in Computer Engineering combines principles from electrical engineering and computer science, including the interaction between computer hardware and software.</p>
           <p data-i18n="cpeAtUe.overview.detail">Computer Engineering commonly covers areas such as digital systems, computer architecture, embedded systems, networks, and software development. These are general discipline areas, not a list of official UE Manila courses or tracks.</p>
-          <p data-i18n="cpeAtUe.overview.accreditation">UE Manila BS Computer Engineering holds PACUCOA Level II Reaccredited Status, valid until November 2027.</p>
+          <aside class="ue-program__accreditation" data-i18n="cpeAtUe.overview.accreditation">UE Manila BS Computer Engineering holds PACUCOA Level II Reaccredited Status, valid until November 2027.</aside>
         </section>
 
         <!-- Career Opportunities (from UE) -->
-        <section id="career-opps" class="mb-5">
+        <section id="career-opps" class="core-page__section core-page__split">
+          <div class="core-page__section-heading">
           <h2 data-i18n="cpeAtUe.careers.title">Possible Career Paths</h2>
           <p data-i18n="cpeAtUe.careers.intro">Computer Engineering graduates may explore roles such as:</p>
-          <ul class="list-group list-group-flush">
+          </div>
+          <ol class="ue-program__career-list">
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item1">Project Engineer/Manager</li>
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item2">Network System Administrator/Manager</li>
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item3">Data Communications Engineer</li>
@@ -112,22 +113,22 @@
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item8">Technopreneur</li>
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item9">Software Engineer</li>
             <li class="list-group-item" data-i18n="cpeAtUe.careers.item10">Educator and Researcher</li>
-          </ul>
+          </ol>
         </section>
 
         <!-- Department Leadership -->
-        <section id="leadership" class="mb-5">
+        <section id="leadership" class="core-page__section ue-program__leadership">
           <h2 data-i18n="cpeAtUe.leadership.title">Department Leadership</h2>
-          <dl class="row">
-            <dt class="col-sm-3" data-i18n="cpeAtUe.leadership.dean">Dean (Manila)</dt>
-            <dd class="col-sm-9" data-i18n="cpeAtUe.leadership.deanName">Dr. Rogelio B. Aniez Jr.</dd>
-            <dt class="col-sm-3" data-i18n="cpeAtUe.leadership.assocDean">Associate Dean</dt>
-            <dd class="col-sm-9" data-i18n="cpeAtUe.leadership.assocDeanName">Engr. Darwin Alpis</dd>
-            <dt class="col-sm-3" data-i18n="cpeAtUe.leadership.secretary">College Secretary</dt>
-            <dd class="col-sm-9" data-i18n="cpeAtUe.leadership.secretaryName">Ms. Jasmin S. Salazar</dd>
+          <dl class="ue-program__leadership-list">
+            <div><dt data-i18n="cpeAtUe.leadership.dean">Dean (Manila)</dt><dd data-i18n="cpeAtUe.leadership.deanName">Dr. Rogelio B. Aniez Jr.</dd></div>
+            <div><dt data-i18n="cpeAtUe.leadership.assocDean">Associate Dean</dt><dd data-i18n="cpeAtUe.leadership.assocDeanName">Engr. Darwin Alpis</dd></div>
+            <div><dt data-i18n="cpeAtUe.leadership.secretary">College Secretary</dt><dd data-i18n="cpeAtUe.leadership.secretaryName">Ms. Jasmin S. Salazar</dd></div>
           </dl>
         </section>
-
+        <nav class="core-page__next" aria-label="Program page navigation" data-i18n-aria-label="a11y.programPageNav">
+          <a href="what-is-cpe.html"><span data-i18n="nav.whatIs">What is Computer Engineering?</span></a>
+          <a href="specializations.html"><span data-i18n="nav.specializations">Specializations</span></a>
+        </nav>
       </div>
     </section>
   </main>

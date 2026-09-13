@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-specializations">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-3">
-      <div class="carousel-caption">
+  <header class="inner-hero hero-slide hero-slide-3">
+      <div class="container-custom inner-hero__content">
+        <p class="inner-hero__eyebrow" data-i18n="nav.specializations">Specializations</p>
         <h1 data-i18n="spec.hero.title">Fields of Computer Engineering</h1>
         <p class="lead" data-i18n="spec.hero.tagline">Areas that Computer Engineering students may explore</p>
       </div>
-    </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,22 +88,22 @@
           </ol>
         </nav>
 
-        <header class="text-center mb-5">
+        <header class="core-page__intro specializations__intro">
           <h2 data-i18n="spec.intro.title">General Fields in Computer Engineering</h2>
           <p class="lead" data-i18n="spec.intro.desc">The following are general Computer Engineering areas, not official UE Manila tracks, majors, concentrations, or course requirements.</p>
         </header>
 
         <!-- Filter Chips -->
-        <div class="specializations-filter" role="group" aria-label="Filter specializations by category" data-i18n-aria-label="a11y.filterSpecializations">
-          <button class="filter-chip active" data-filter="all" aria-pressed="true" data-i18n="spec.filter.all">All</button>
-          <button class="filter-chip" data-filter="hardware" aria-pressed="false" data-i18n="spec.filter.hardware">Hardware</button>
-          <button class="filter-chip" data-filter="software" aria-pressed="false" data-i18n="spec.filter.software">Software</button>
-          <button class="filter-chip" data-filter="systems" aria-pressed="false" data-i18n="spec.filter.systems">Systems</button>
-          <button class="filter-chip" data-filter="emerging" aria-pressed="false" data-i18n="spec.filter.emerging">Emerging</button>
+        <div class="specializations-filter" role="group" aria-controls="specializations-list" aria-label="Filter specializations by category" data-i18n-aria-label="a11y.filterSpecializations">
+          <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true" data-i18n="spec.filter.all">All</button>
+          <button class="filter-chip" type="button" data-filter="hardware" aria-pressed="false" data-i18n="spec.filter.hardware">Hardware</button>
+          <button class="filter-chip" type="button" data-filter="software" aria-pressed="false" data-i18n="spec.filter.software">Software</button>
+          <button class="filter-chip" type="button" data-filter="systems" aria-pressed="false" data-i18n="spec.filter.systems">Systems</button>
+          <button class="filter-chip" type="button" data-filter="emerging" aria-pressed="false" data-i18n="spec.filter.emerging">Emerging</button>
         </div>
 
         <!-- Specializations Grid -->
-        <div class="specializations-grid">
+        <div class="specializations-grid" id="specializations-list">
           <!-- Embedded Systems -->
           <article class="spec-card" data-category="hardware systems">
             <div class="spec-icon">
@@ -356,9 +355,11 @@
           </article>
         </div>
 
-        <div class="text-center mt-5">
-          <p class="placeholder-notice" data-i18n="spec.note">These examples do not represent a verified list of UE Manila courses or specialization tracks.</p>
-        </div>
+        <aside class="core-page__note specializations__note" data-i18n="spec.note">These examples do not represent a verified list of UE Manila courses or specialization tracks.</aside>
+        <nav class="core-page__next" aria-label="Program page navigation" data-i18n-aria-label="a11y.programPageNav">
+          <a href="cpe-at-ue.html"><span data-i18n="nav.cpeAtUe">CpE at UE</span></a>
+          <a href="careers.html"><span data-i18n="nav.careers">Careers</span></a>
+        </nav>
       </div>
     </section>
   </main>

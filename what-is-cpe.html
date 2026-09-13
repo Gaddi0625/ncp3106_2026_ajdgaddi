@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-what-is-cpe">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-1">
-      <div class="carousel-caption">
+  <header class="inner-hero hero-slide hero-slide-1">
+      <div class="container-custom inner-hero__content">
+        <p class="inner-hero__eyebrow" data-i18n="nav.about">About CpE</p>
         <h1 data-i18n="whatIs.hero.title">What is Computer Engineering?</h1>
         <p class="lead" data-i18n="whatIs.hero.tagline">The discipline that bridges hardware and software to create computing systems</p>
       </div>
-    </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,18 +88,18 @@
           </ol>
         </nav>
 
-        <article>
-          <header class="mb-5">
+        <article class="core-page__article">
+          <header class="core-page__intro">
             <h2 data-i18n="whatIs.definition.title">Definition</h2>
             <p class="lead" data-i18n="whatIs.definition.desc">Computer Engineering is a discipline that integrates electrical engineering and computer science to develop computer hardware and software. Computer engineers are involved in many hardware and software aspects of computing, from the design of individual microcontrollers, microprocessors, personal computers, and supercomputers, to circuit design.</p>
           </header>
 
-          <section id="hardware-software" class="mb-5">
+          <section id="hardware-software" class="core-page__section what-is__bridge">
             <h2 data-i18n="whatIs.hwsw.title">The Hardware–Software Relationship</h2>
             <p data-i18n="whatIs.hwsw.desc">Computer Engineering sits at the intersection of hardware and software. Computer Science, Electrical Engineering, and Computer Engineering overlap, while each program emphasizes different combinations of theory, software, electronics, and system design.</p>
             
-            <div class="row g-4 mt-4 align-items-start">
-              <div class="col-lg-6">
+            <div class="what-is__concept-grid">
+              <article class="what-is__concept">
                 <h3 data-i18n="whatIs.hwsw.hardware.title" class="h4 mb-3">Hardware</h3>
                 <p class="text-muted small mb-3" data-i18n="whatIs.hwsw.hardware.desc">Computer Engineering hardware encompasses the physical components and architectural decisions that define computing systems.</p>
                 <ul class="list-unstyled">
@@ -110,8 +109,8 @@
                   <li data-i18n="whatIs.hwsw.hardware.item4"><span class="me-2" aria-hidden="true">▸</span> VLSI / Chip design</li>
                   <li data-i18n="whatIs.hwsw.hardware.item5"><span class="me-2" aria-hidden="true">▸</span> Signal processing</li>
                 </ul>
-              </div>
-              <div class="col-lg-6">
+              </article>
+              <article class="what-is__concept">
                 <h3 data-i18n="whatIs.hwsw.software.title" class="h4 mb-3">Software</h3>
                 <p class="text-muted small mb-3" data-i18n="whatIs.hwsw.software.desc">Computer Engineering software focuses on the code that runs close to the hardware, enabling systems to function efficiently.</p>
                 <ul class="list-unstyled">
@@ -121,103 +120,84 @@
                   <li data-i18n="whatIs.hwsw.software.item4"><span class="me-2" aria-hidden="true">▸</span> Real-time systems</li>
                   <li data-i18n="whatIs.hwsw.software.item5"><span class="me-2" aria-hidden="true">▸</span> Hardware-software co-design</li>
                 </ul>
-              </div>
+              </article>
             </div>
             
-            <div class="mt-4 p-3 rounded bg-light border">
-              <h4 class="mb-2" data-i18n="whatIs.hwsw.integration.title">Where They Meet: Hardware-Software Integration</h4>
+            <aside class="core-page__callout">
+              <h3 data-i18n="whatIs.hwsw.integration.title">Where They Meet: Hardware-Software Integration</h3>
               <p class="mb-0" data-i18n="whatIs.hwsw.integration.desc">The defining skill of a Computer Engineer is co-design — making hardware and software decisions together to optimize for performance, power, cost, and reliability. This systems-level thinking is what distinguishes Computer Engineering from its parent disciplines.</p>
-            </div>
+            </aside>
           </section>
 
-          <section id="major-fields" class="mb-5">
+          <section id="major-fields" class="core-page__section">
             <h2 data-i18n="whatIs.fields.title">Major Areas of Computer Engineering</h2>
             <p class="lead mb-4" data-i18n="whatIs.fields.intro">Computer Engineering spans multiple interconnected fields. Students typically build depth in one or more of these areas through electives, projects, and research.</p>
             
-            <div class="row g-4">
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+            <div class="what-is__field-grid">
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item1.title">Embedded Systems</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item1.desc">Designing dedicated computing systems for specific functions within larger devices.</p>
                   <p class="small" data-i18n="whatIs.fields.item1.topics"><strong>Key topics:</strong> Microcontrollers, RTOS, C/C++, bare-metal programming</p>
                   <p class="small" data-i18n="whatIs.fields.item1.apps"><strong>Applications:</strong> Automotive ECUs, medical devices, IoT sensors, industrial controllers</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+              </article>
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item2.title">Computer Architecture</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item2.desc">Designing processor architectures, memory hierarchies, and instruction sets.</p>
                   <p class="small" data-i18n="whatIs.fields.item2.topics"><strong>Key topics:</strong> ISA design, pipelining, cache hierarchy, parallel processing</p>
                   <p class="small" data-i18n="whatIs.fields.item2.apps"><strong>Applications:</strong> CPU/GPU design, high-performance computing, accelerator chips</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+              </article>
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item3.title">VLSI & Chip Design</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item3.desc">Very Large Scale Integration — creating integrated circuits with millions of transistors.</p>
                   <p class="small" data-i18n="whatIs.fields.item3.topics"><strong>Key topics:</strong> Verilog/VHDL, FPGA, ASIC flow, timing analysis</p>
                   <p class="small" data-i18n="whatIs.fields.item3.apps"><strong>Applications:</strong> Custom SoCs, AI accelerators, memory controllers, I/O interfaces</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+              </article>
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item4.title">Computer Networks</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item4.desc">Designing and managing data communication systems and network protocols.</p>
                   <p class="small" data-i18n="whatIs.fields.item4.topics"><strong>Key topics:</strong> TCP/IP, routing, switching, network security, QoS</p>
                   <p class="small" data-i18n="whatIs.fields.item4.apps"><strong>Applications:</strong> Data centers, 5G/6G, IoT connectivity, SDN/NFV</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+              </article>
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item5.title">Signal Processing</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item5.desc">Analyzing, modifying, and synthesizing signals for communications, audio, and video.</p>
                   <p class="small" data-i18n="whatIs.fields.item5.topics"><strong>Key topics:</strong> DSP algorithms, filters, transforms, real-time processing</p>
                   <p class="small" data-i18n="whatIs.fields.item5.apps"><strong>Applications:</strong> Wireless comms, audio/video codecs, radar/sonar, biomedical imaging</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="p-3">
+              </article>
+              <article class="what-is__field">
                   <h3 class="h5 mb-2" data-i18n="whatIs.fields.item6.title">Robotics & Control</h3>
                   <p class="text-muted small mb-2" data-i18n="whatIs.fields.item6.desc">Integrating sensors, actuators, and computing for autonomous systems.</p>
                   <p class="small" data-i18n="whatIs.fields.item6.topics"><strong>Key topics:</strong> Control theory, sensor fusion, ROS, real-time control loops</p>
                   <p class="small" data-i18n="whatIs.fields.item6.apps"><strong>Applications:</strong> Industrial robots, autonomous vehicles, drones, surgical robots</p>
-                </div>
-              </div>
+              </article>
             </div>
           </section>
 
-          <section id="what-do" class="mb-5">
+          <section id="what-do" class="core-page__section core-page__split">
+            <div class="core-page__section-heading">
             <h2 data-i18n="whatIs.do.title">What Computer Engineers Do</h2>
             <p data-i18n="whatIs.do.intro">Computer Engineers work across the full lifecycle of computing systems. Their work typically spans these core activities:</p>
-            
-            <dl class="row mb-4">
-              <dt class="col-sm-3" data-i18n="whatIs.do.item1.title">Design</dt>
-              <dd class="col-sm-9" data-i18n="whatIs.do.item1.desc">Create hardware architectures, circuit schematics, and system specifications.</dd>
-              
-              <dt class="col-sm-3" data-i18n="whatIs.do.item2.title">Develop</dt>
-              <dd class="col-sm-9" data-i18n="whatIs.do.item2.desc">Write firmware, device drivers, and low-level software for embedded platforms.</dd>
-              
-              <dt class="col-sm-3" data-i18n="whatIs.do.item3.title">Test & Verify</dt>
-              <dd class="col-sm-9" data-i18n="whatIs.do.item3.desc">Validate hardware and software through simulation, emulation, and physical testing.</dd>
-              
-              <dt class="col-sm-3" data-i18n="whatIs.do.item4.title">Integrate</dt>
-              <dd class="col-sm-9" data-i18n="whatIs.do.item4.desc">Combine hardware and software components into working systems.</dd>
-              
-              <dt class="col-sm-3" data-i18n="whatIs.do.item5.title">Research</dt>
-              <dd class="col-sm-9" data-i18n="whatIs.do.item5.desc">Advance the state of the art in computing hardware, architectures, and applications.</dd>
+            </div>
+            <div>
+            <dl class="core-page__definition-list">
+              <div><dt data-i18n="whatIs.do.item1.title">Design</dt><dd data-i18n="whatIs.do.item1.desc">Create hardware architectures, circuit schematics, and system specifications.</dd></div>
+              <div><dt data-i18n="whatIs.do.item2.title">Develop</dt><dd data-i18n="whatIs.do.item2.desc">Write firmware, device drivers, and low-level software for embedded platforms.</dd></div>
+              <div><dt data-i18n="whatIs.do.item3.title">Test & Verify</dt><dd data-i18n="whatIs.do.item3.desc">Validate hardware and software through simulation, emulation, and physical testing.</dd></div>
+              <div><dt data-i18n="whatIs.do.item4.title">Integrate</dt><dd data-i18n="whatIs.do.item4.desc">Combine hardware and software components into working systems.</dd></div>
+              <div><dt data-i18n="whatIs.do.item5.title">Research</dt><dd data-i18n="whatIs.do.item5.desc">Advance the state of the art in computing hardware, architectures, and applications.</dd></div>
             </dl>
-            
-            <div class="p-3 rounded bg-light border" data-i18n="whatIs.do.note">
+            <aside class="core-page__note" data-i18n="whatIs.do.note">
               <strong>Note:</strong> The specific mix of activities varies by role. Computer Engineering's breadth allows graduates to specialize based on interest.
+            </aside>
             </div>
           </section>
 
           <!-- CpE vs Computer Science -->
-          <section id="cpe-vs-cs" class="mb-5">
-            <h2 data-i18n="whatIs.vsCS.title">Computer Engineering vs. Computer Science</h2>
+          <section id="cpe-vs-cs" class="core-page__section">
+            <h2 id="cpe-vs-cs-title" data-i18n="whatIs.vsCS.title">Computer Engineering vs. Computer Science</h2>
             <p data-i18n="whatIs.vsCS.intro">Both disciplines work with computing, but they differ in focus and scope:</p>
             
-            <div class="table-responsive">
+            <div class="table-responsive core-page__table-region" tabindex="0" role="region" aria-labelledby="cpe-vs-cs-title">
               <table class="table table-bordered align-middle">
                 <thead class="table-light">
                   <tr>
@@ -259,29 +239,29 @@
             <p class="mt-3" data-i18n="whatIs.vsCS.conclusion">In practice, the fields overlap significantly. Computer Engineers may work extensively with software, and Computer Scientists may work with hardware. The emphasis of either degree varies by institution and curriculum.</p>
           </section>
 
-          <section id="applications" class="mb-5">
+          <section id="applications" class="core-page__section core-page__split">
+            <div class="core-page__section-heading">
             <h2 data-i18n="whatIs.apps.title">Applications of Computer Engineering</h2>
             <p data-i18n="whatIs.apps.intro">Computer Engineering drives innovation across diverse domains:</p>
-            <div class="row g-3">
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item1">Multimedia</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item2">Aerospace & Avionics</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item3">Automotive</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item4">Consumer Electronics</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item5">Medical Sciences</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item6">Internet & Communications</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item7">Entertainment & Gaming</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item8">Game System Hardware</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item9">Electronic Toys</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item10">Virtual Reality Hardware</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item11">Human Interface Devices</span></div>
-              <div class="col-sm-6 col-lg-3"><span class="badge badge-secondary" data-i18n="whatIs.apps.item12">Military & Defense</span></div>
             </div>
+            <ul class="what-is__application-list">
+              <li data-i18n="whatIs.apps.item1">Multimedia</li><li data-i18n="whatIs.apps.item2">Aerospace & Avionics</li>
+              <li data-i18n="whatIs.apps.item3">Automotive</li><li data-i18n="whatIs.apps.item4">Consumer Electronics</li>
+              <li data-i18n="whatIs.apps.item5">Medical Sciences</li><li data-i18n="whatIs.apps.item6">Internet & Communications</li>
+              <li data-i18n="whatIs.apps.item7">Entertainment & Gaming</li><li data-i18n="whatIs.apps.item8">Game System Hardware</li>
+              <li data-i18n="whatIs.apps.item9">Electronic Toys</li><li data-i18n="whatIs.apps.item10">Virtual Reality Hardware</li>
+              <li data-i18n="whatIs.apps.item11">Human Interface Devices</li><li data-i18n="whatIs.apps.item12">Military & Defense</li>
+            </ul>
           </section>
 
-          <section id="why-matters" class="mb-5">
+          <section id="why-matters" class="core-page__closing">
             <h2 data-i18n="whatIs.matter.title">Importance in Modern Society</h2>
             <p data-i18n="whatIs.matter.desc">Computer Engineering is foundational to modern technology. From the smartphones in our pockets to the control systems in aircraft, from medical devices that save lives to the infrastructure powering the internet — computer engineers design the computing systems that enable modern life. The discipline continues to drive advances in artificial intelligence, autonomous systems, quantum computing, and the Internet of Things.</p>
           </section>
+          <nav class="core-page__next" aria-label="Program page navigation" data-i18n-aria-label="a11y.programPageNav">
+            <a href="index.html"><span data-i18n="nav.home">Home</span></a>
+            <a href="cpe-at-ue.html"><span data-i18n="nav.cpeAtUe">CpE at UE</span></a>
+          </nav>
         </article>
       </div>
     </section>

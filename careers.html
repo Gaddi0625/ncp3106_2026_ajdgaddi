@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-careers">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-1">
-      <div class="carousel-caption">
+  <header class="inner-hero hero-slide hero-slide-1">
+      <div class="container-custom inner-hero__content">
+        <p class="inner-hero__eyebrow" data-i18n="nav.careers">Careers</p>
         <h1 data-i18n="careers.hero.title">Career Opportunities</h1>
         <p class="lead" data-i18n="careers.hero.tagline">Paths for Computer Engineering graduates</p>
       </div>
-    </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,13 +88,13 @@
           </ol>
         </nav>
 
-        <header class="text-center mb-5">
-          <h2 data-i18n="careers.intro.title">Possible Career Paths for CpE Graduates</h2>
+        <header class="core-page__intro careers__intro">
+          <h2 id="careers-directory-title" data-i18n="careers.intro.title">Possible Career Paths for CpE Graduates</h2>
           <p class="lead" data-i18n="careers.intro.desc">The following are general examples of roles that Computer Engineering graduates may explore. They are not employment guarantees or UE Manila outcome statistics.</p>
         </header>
 
         <!-- Desktop Table View -->
-        <div class="careers-table table-responsive">
+        <div class="careers-table table-responsive core-page__table-region" tabindex="0" role="region" aria-labelledby="careers-directory-title">
           <table class="table table-hover align-middle">
             <thead>
               <tr>
@@ -264,11 +263,11 @@
         </div>
 
         <!-- Career Category Comparison -->
-        <section class="mb-5">
-          <h2 class="h4 mb-3" data-i18n="careers.comparison.title">Career Categories at a Glance</h2>
+        <section class="core-page__section careers__comparison">
+          <h2 id="careers-comparison-title" data-i18n="careers.comparison.title">Career Categories at a Glance</h2>
           <p class="text-muted mb-4" data-i18n="careers.comparison.intro">Computer Engineering careers span multiple categories. This comparison helps you understand the focus and typical entry points for each area.</p>
           
-          <div class="table-responsive">
+          <div class="table-responsive core-page__table-region" tabindex="0" role="region" aria-labelledby="careers-comparison-title">
             <table class="table table-bordered align-middle">
               <thead class="table-light">
                 <tr>
@@ -328,15 +327,20 @@
         </section>
 
         <!-- Career CTA -->
-        <section class="mb-5">
-          <div class="p-5 rounded bg-primary text-white text-center">
+        <section class="careers__cta">
+          <div>
             <h2 class="h4 mb-3" data-i18n="careers.cta.title">Explore Computer Engineering</h2>
             <p class="lead mb-4 text-dark" data-i18n="careers.cta.desc">Learn about the Bachelor of Science in Computer Engineering program at the University of the East — Manila.</p>
-            <a href="cpe-at-ue.html" class="btn btn-light btn-lg me-2" data-i18n="careers.cta.explore">Explore the Program</a>
-            <a href="contact.html" class="btn btn-outline-dark btn-lg" data-i18n="careers.cta.contact">Contact Us</a>
+            <div class="careers__cta-actions">
+              <a href="cpe-at-ue.html" class="btn btn-primary btn-lg" data-i18n="careers.cta.explore">Explore the Program</a>
+              <a href="contact.html" class="btn btn-outline-primary btn-lg" data-i18n="careers.cta.contact">Contact Us</a>
+            </div>
           </div>
         </section>
-
+        <nav class="core-page__next" aria-label="Program page navigation" data-i18n-aria-label="a11y.programPageNav">
+          <a href="specializations.html"><span data-i18n="nav.specializations">Specializations</span></a>
+          <a href="contact.html"><span data-i18n="nav.contact">Contact</span></a>
+        </nav>
       </div>
     </section>
   </main>
