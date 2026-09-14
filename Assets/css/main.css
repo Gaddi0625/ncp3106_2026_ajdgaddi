@@ -2234,6 +2234,459 @@ main .section > .container-custom > .text-center .lead {
   .page-careers .careers__cta-actions .btn { width: 100%; }
 }
 
+/* --- Stage 2B Community and Showcase Pages ------------------------------ */
+.page-faculty .community-page__content,
+.page-scpes .community-page__content,
+.page-projects .community-page__content {
+  padding-top: var(--space-10);
+}
+
+.page-faculty .breadcrumb,
+.page-scpes .breadcrumb,
+.page-projects .breadcrumb {
+  padding-bottom: var(--space-5);
+  margin-bottom: clamp(var(--space-12), 6vw, var(--space-20));
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--fs-400);
+}
+
+.page-faculty .community-page__heading,
+.page-scpes .community-page__heading,
+.page-projects .community-page__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  gap: clamp(var(--space-8), 7vw, 7rem);
+  align-items: start;
+  padding-top: var(--space-5);
+  margin-bottom: clamp(var(--space-10), 5vw, var(--space-16));
+  border-top: 3px solid var(--color-primary);
+}
+
+.page-faculty .community-page__heading h2,
+.page-scpes .community-page__heading h2,
+.page-projects .community-page__heading h2 {
+  max-width: 13ch;
+  margin-bottom: 0;
+  font-size: var(--fs-900);
+  text-wrap: balance;
+}
+
+.page-faculty .community-page__heading p,
+.page-scpes .community-page__heading p,
+.page-projects .community-page__heading p {
+  max-width: var(--content-measure);
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+.page-scpes .community-page__heading .lead {
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+  font-size: clamp(1.2rem, 1.08rem + 0.55vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.page-scpes .community-page__heading--compact {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.page-scpes .community-page__heading--compact h2 { max-width: 20ch; }
+
+/* Faculty directory */
+.page-faculty .faculty-record-list {
+  border-bottom: 1px solid var(--color-border-strong);
+  counter-reset: faculty-record;
+}
+
+.page-faculty .faculty-record {
+  display: grid;
+  grid-template-columns: 3rem 9rem minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: start;
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-border-strong);
+  counter-increment: faculty-record;
+}
+
+.page-faculty .faculty-record::before {
+  content: counter(faculty-record, decimal-leading-zero);
+  padding-top: var(--space-1);
+  color: var(--color-accent-text);
+  font-family: var(--font-mono);
+  font-size: var(--fs-300);
+}
+
+.page-faculty .faculty-record-visual { width: 9rem; }
+
+.page-faculty .faculty-record-image {
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-sm);
+}
+
+.page-faculty .faculty-photo-status {
+  margin-top: var(--space-2);
+  text-align: left;
+}
+
+.page-faculty .faculty-record-content {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-8);
+  align-items: start;
+  padding-top: var(--space-1);
+}
+
+.page-faculty .faculty-record h3 {
+  max-width: 18ch;
+  margin-bottom: 0;
+  font-size: var(--fs-700);
+  text-wrap: balance;
+}
+
+.page-faculty .faculty-credentials {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-faculty .faculty-credentials li {
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.page-faculty .faculty-credentials li:last-child { border-bottom: 1px solid var(--color-border); }
+.page-faculty .faculty-credentials li + li { margin-top: 0; }
+.page-faculty .faculty-record-content > p { color: var(--color-text-muted) !important; font-size: var(--fs-400); }
+
+/* SCPES overview and banner categories */
+.page-scpes .scpes-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(320px, 4fr);
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.page-scpes .scpes-intro-image { min-width: 0; margin: 0; }
+
+.page-scpes .scpes-intro-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 34rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-scpes .scpes-category-panel {
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+  border-top: 3px solid var(--color-accent);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.page-scpes .scpes-activities-intro {
+  max-width: 28ch;
+  margin: 0 0 var(--space-6);
+  color: var(--color-text-on-primary);
+  font-family: var(--font-display);
+  font-size: var(--fs-600);
+  line-height: var(--lh-snug);
+}
+
+.page-scpes .scpes-activity-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
+  columns: auto;
+  list-style: none;
+  counter-reset: scpes-category;
+}
+
+.page-scpes .scpes-activity-list li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: var(--fs-400);
+  line-height: 1.45;
+  counter-increment: scpes-category;
+}
+
+.page-scpes .scpes-activity-list li::before {
+  content: counter(scpes-category, decimal-leading-zero);
+  color: var(--color-accent-on-dark);
+  font-family: var(--font-mono);
+  font-size: var(--fs-300);
+}
+
+.page-scpes .scpes-activity-list li:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.24); }
+
+/* SCPES officers */
+.page-scpes .community-section {
+  padding-top: clamp(var(--space-16), 8vw, 7rem);
+  margin-top: clamp(var(--space-16), 8vw, 7rem);
+  border-top-color: var(--color-border-strong);
+}
+
+.page-scpes .officer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-10) var(--space-5);
+}
+
+.page-scpes .officer-card {
+  min-width: 0;
+  height: auto;
+  padding: 0 0 var(--space-5);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.page-scpes .officer-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: var(--space-5);
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.page-scpes .officer-name {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-600);
+  line-height: var(--lh-snug);
+  overflow-wrap: anywhere;
+}
+
+.page-scpes .officer-detail {
+  max-width: 30ch;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.page-scpes .officer-card--president {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+  padding-bottom: 0;
+  border-top: 3px solid var(--color-accent);
+  background: var(--color-surface-alt);
+}
+
+.page-scpes .officer-card--president img {
+  height: 100%;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.page-scpes .officer-card--president .officer-card__caption {
+  align-self: end;
+  padding: var(--space-6) var(--space-6) var(--space-6) 0;
+}
+
+.page-scpes .officer-card--president .officer-name { font-size: var(--fs-700); }
+.page-scpes .officer-card--president .officer-detail { color: var(--color-accent-text); font-weight: var(--fw-medium); }
+
+/* SCPES activity journal */
+.page-scpes .activity-journal {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(var(--space-10), 5vw, var(--space-16)) var(--space-5);
+}
+
+.page-scpes .community-event {
+  grid-column: span 4;
+  height: auto;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.page-scpes .community-event--lead { grid-column: span 8; }
+.page-scpes .community-event--wide { grid-column: span 6; }
+
+.page-scpes .community-event img {
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-sm);
+  object-position: center;
+}
+
+.page-scpes .community-event-body {
+  padding: var(--space-5) 0 0;
+  border-top: 3px solid var(--color-primary);
+}
+
+.page-scpes .community-event h3 {
+  max-width: 28ch;
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-600);
+  line-height: var(--lh-snug);
+  text-wrap: balance;
+}
+
+.page-scpes .community-event--lead h3 { font-size: var(--fs-700); }
+
+.page-scpes .community-event p {
+  max-width: 58ch;
+  line-height: 1.55;
+}
+
+.page-scpes .community-event .community-event-theme { margin-bottom: var(--space-4); color: var(--color-text); }
+
+.page-scpes .community-event-meta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  margin-bottom: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-scpes .community-event-meta div { display: block; }
+.page-scpes .community-event-meta dt { color: var(--color-accent-text); font-family: var(--font-mono); font-size: var(--fs-300); }
+.page-scpes .community-event-meta dd { color: var(--color-text); }
+
+/* Projects image plate */
+.page-projects .projects-heading { margin-bottom: clamp(var(--space-12), 7vw, var(--space-20)); }
+
+.page-projects .project-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(var(--space-12), 7vw, var(--space-20)) var(--space-5);
+  counter-reset: project-plate;
+}
+
+.page-projects .project-plate {
+  min-width: 0;
+  counter-increment: project-plate;
+}
+
+.page-projects .project-plate:nth-child(1) { grid-column: 1 / 11; grid-row: 1; }
+.page-projects .project-plate:nth-child(2) { grid-column: 7 / 13; grid-row: 2; }
+.page-projects .project-plate:nth-child(3) { grid-column: 2 / 10; grid-row: 3; }
+.page-projects .project-plate:nth-child(4) { grid-column: 8 / 13; grid-row: 4; }
+.page-projects .project-plate:nth-child(5) { grid-column: 3 / 13; grid-row: 5; }
+.page-projects .project-plate figure { margin: 0; }
+
+.page-projects .project-plate__media {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+}
+
+.page-projects .project-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-projects .project-plate figcaption {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: baseline;
+  padding: var(--space-5) 0;
+  border-top: 3px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.page-projects .project-plate figcaption::before {
+  content: counter(project-plate, decimal-leading-zero);
+  color: var(--color-accent-text);
+  font-family: var(--font-mono);
+  font-size: var(--fs-300);
+}
+
+.page-projects .project-plate h3 {
+  margin-bottom: 0;
+  font-size: var(--fs-700);
+  line-height: var(--lh-snug);
+}
+
+.page-projects .project-plate--lead h3 { font-size: var(--fs-800); }
+
+@media (max-width: 1199.98px) {
+  .page-scpes .scpes-intro-grid { grid-template-columns: minmax(0, 3fr) minmax(300px, 2fr); }
+  .page-scpes .officer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 991.98px) {
+  .page-faculty .community-page__heading,
+  .page-scpes .community-page__heading,
+  .page-projects .community-page__heading {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .page-faculty .community-page__heading h2,
+  .page-scpes .community-page__heading h2,
+  .page-projects .community-page__heading h2 { max-width: 16ch; }
+
+  .page-faculty .faculty-record-content { grid-template-columns: 1fr; gap: var(--space-5); }
+  .page-scpes .scpes-intro-grid { grid-template-columns: 1fr; }
+  .page-scpes .scpes-intro-image img { min-height: 0; aspect-ratio: 16 / 9; }
+  .page-scpes .scpes-activity-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-6); }
+  .page-scpes .officer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-scpes .activity-journal { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-scpes .community-event,
+  .page-scpes .community-event--wide { grid-column: span 1; }
+  .page-scpes .community-event--lead { grid-column: span 2; }
+
+  .page-projects .project-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-12) var(--space-5); }
+  .page-projects .project-plate:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .page-projects .project-plate--lead { grid-column: 1 / -1 !important; }
+}
+
+@media (max-width: 767.98px) {
+  .page-faculty .faculty-record { grid-template-columns: 2rem 7.5rem minmax(0, 1fr); gap: var(--space-5); }
+  .page-faculty .faculty-record-visual { width: 7.5rem; }
+  .page-scpes .scpes-activity-list { grid-template-columns: 1fr; }
+  .page-scpes .officer-card--president { gap: var(--space-4); }
+  .page-scpes .officer-card--president .officer-card__caption { padding: var(--space-5) var(--space-5) var(--space-5) 0; }
+}
+
+@media (max-width: 575.98px) {
+  .page-faculty .community-page__content,
+  .page-scpes .community-page__content,
+  .page-projects .community-page__content { padding-top: var(--space-8); }
+
+  .page-faculty .breadcrumb,
+  .page-scpes .breadcrumb,
+  .page-projects .breadcrumb { margin-bottom: var(--space-12); }
+
+  .page-faculty .faculty-record {
+    grid-template-columns: 1.75rem 4rem minmax(0, 1fr);
+    gap: var(--space-3);
+    padding: var(--space-6) 0;
+  }
+
+  .page-faculty .faculty-record-visual { width: 4rem; }
+  .page-faculty .faculty-record h3 { font-size: var(--fs-600); }
+  .page-faculty .faculty-credentials { font-size: var(--fs-300); overflow-wrap: anywhere; }
+  .page-scpes .scpes-category-panel { padding: var(--space-6); }
+  .page-scpes .officer-card--president { grid-template-columns: 1fr; }
+  .page-scpes .officer-card--president .officer-card__caption { padding: 0 var(--space-5) var(--space-5); }
+  .page-scpes .activity-journal { grid-template-columns: 1fr; }
+  .page-scpes .community-event,
+  .page-scpes .community-event--lead,
+  .page-scpes .community-event--wide { grid-column: 1; }
+  .page-scpes .community-event--lead h3 { font-size: var(--fs-600); }
+  .page-projects .project-gallery { grid-template-columns: 1fr; gap: var(--space-12); }
+  .page-projects .project-plate--lead { grid-column: auto !important; }
+  .page-projects .project-plate--lead h3 { font-size: var(--fs-700); }
+}
+
+@media (max-width: 479.98px) {
+  .page-scpes .officer-grid { grid-template-columns: 1fr; }
+  .page-scpes .officer-card--president { grid-column: 1; }
+}
+
 /* --- Print Styles -------------------------------------------------------- */
 @media print {
   .navbar, .scroll-top, .hero-carousel, .btn, .dropdown, .modal { display: none !important; }

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-faculty">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-2">
-      <div class="carousel-caption">
-        <h1 data-i18n="faculty.hero.title">Faculty</h1>
-        <p class="lead" data-i18n="faculty.hero.tagline">Current UE Manila Computer Engineering faculty records</p>
-      </div>
+  <header class="inner-hero hero-slide hero-slide-2">
+    <div class="container-custom inner-hero__content">
+      <p class="inner-hero__eyebrow" data-i18n="nav.community">Community</p>
+      <h1 data-i18n="faculty.hero.title">Faculty</h1>
+      <p class="lead" data-i18n="faculty.hero.tagline">Current UE Manila Computer Engineering faculty records</p>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content community-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,19 +88,19 @@
           </ol>
         </nav>
 
-        <section class="faculty-directory mb-5" aria-labelledby="current-faculty-title">
-          <header class="section-heading">
+        <section class="faculty-directory" aria-labelledby="current-faculty-title">
+          <header class="community-page__heading">
             <h2 id="current-faculty-title" data-i18n="faculty.verified.title">Current Faculty</h2>
             <p data-i18n="faculty.verified.intro">The four profiles below list only verified current UE Manila department information.</p>
           </header>
 
-          <div class="faculty-record-grid">
+          <div class="faculty-record-list">
             <article class="faculty-record faculty-record--verified">
               <div class="faculty-record-visual">
                 <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image" loading="lazy" decoding="async">
                 <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
               </div>
-              <div>
+              <div class="faculty-record-content">
                 <h3 data-i18n="faculty.antonio.name">Errol John M. Antonio</h3>
                 <ul class="faculty-credentials">
                   <li data-i18n="faculty.antonio.degree1">BSCpE, University of the East, 2012</li>
@@ -116,7 +115,7 @@
                 <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image" loading="lazy" decoding="async">
                 <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
               </div>
-              <div>
+              <div class="faculty-record-content">
                 <h3 data-i18n="faculty.corpuz.name">Onofre F. Corpuz</h3>
                 <ul class="faculty-credentials">
                   <li data-i18n="faculty.corpuz.degree1">BSECE, FEATI University, 1993</li>
@@ -130,7 +129,7 @@
                 <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image" loading="lazy" decoding="async">
                 <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
               </div>
-              <div>
+              <div class="faculty-record-content">
                 <h3 data-i18n="faculty.limkian.name">Mary Ann L. Limkian</h3>
                 <ul class="faculty-credentials">
                   <li data-i18n="faculty.limkian.degree1">BSCpE, University of the East, 2000</li>
@@ -146,7 +145,7 @@
                 <img src="Assets/images/faculty/placeholder.svg" alt="" class="faculty-record-image" loading="lazy" decoding="async">
                 <span class="faculty-photo-status" data-i18n="faculty.placeholder.photo">Photo unavailable</span>
               </div>
-              <div>
+              <div class="faculty-record-content">
                 <h3 data-i18n="faculty.coral.name">Joemhel Jhon D. Coral</h3>
                 <p class="text-muted mb-0" data-i18n="faculty.coral.detail">Profile details coming soon.</p>
               </div>

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-projects">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-3">
-      <div class="carousel-caption">
-        <h1 data-i18n="projects.hero.title">Student Projects</h1>
-        <p class="lead" data-i18n="projects.hero.tagline">Available project records from the UE Manila Computer Engineering community</p>
-      </div>
+  <header class="inner-hero hero-slide hero-slide-3">
+    <div class="container-custom inner-hero__content">
+      <p class="inner-hero__eyebrow" data-i18n="nav.community">Community</p>
+      <h1 data-i18n="projects.hero.title">Student Projects</h1>
+      <p class="lead" data-i18n="projects.hero.tagline">Available project records from the UE Manila Computer Engineering community</p>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content community-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,59 +88,56 @@
           </ol>
         </nav>
 
-        <header class="section-heading section-heading--centered">
+        <header class="community-page__heading projects-heading">
           <h2 data-i18n="projects.intro.title">Project Records</h2>
           <p data-i18n="projects.intro.desc">Five records are presented using the available project images. Additional verified information will be added when available.</p>
         </header>
 
-        <section class="project-showcase project-media-left">
-          <div class="project-media">
-            <img src="Assets/images/project-and-achievements/annual-research.jpg" alt="Annual Research" class="img-fluid" loading="lazy" decoding="async">
-          </div>
-          <div class="project-content">
-            <h3 data-i18n="projects.annual-research.title">Annual Research</h3>
-            <p class="project-placeholder" data-i18n="projects.placeholder">Project details coming soon.</p>
-          </div>
-        </section>
+        <section class="project-gallery" aria-label="Project records" data-i18n-aria-label="projects.intro.title">
+          <article class="project-plate project-plate--lead">
+            <figure>
+              <div class="project-plate__media">
+                <img src="Assets/images/project-and-achievements/annual-research.jpg" alt="Group posing together onstage in the Annual Research showcase image" loading="eager" fetchpriority="high" decoding="async">
+              </div>
+              <figcaption><h3 data-i18n="projects.annual-research.title">Annual Research</h3></figcaption>
+            </figure>
+          </article>
 
-        <section class="project-showcase project-media-right">
-          <div class="project-media">
-            <img src="Assets/images/project-and-achievements/circuit.jpg" alt="Circuit" class="img-fluid" loading="lazy" decoding="async">
-          </div>
-          <div class="project-content">
-            <h3 data-i18n="projects.circuit.title">Circuit</h3>
-            <p class="project-placeholder" data-i18n="projects.placeholder">Project details coming soon.</p>
-          </div>
-        </section>
+          <article class="project-plate">
+            <figure>
+              <div class="project-plate__media">
+                <img src="Assets/images/project-and-achievements/circuit.jpg" alt="Breadboard circuit with sensors, wires, and a display on a laboratory table" loading="lazy" decoding="async">
+              </div>
+              <figcaption><h3 data-i18n="projects.circuit.title">Circuit</h3></figcaption>
+            </figure>
+          </article>
 
-        <section class="project-showcase project-media-left">
-          <div class="project-media">
-            <img src="Assets/images/project-and-achievements/packet-hacks-2025.jpg" alt="Packet Hacks 2025" class="img-fluid" loading="lazy" decoding="async">
-          </div>
-          <div class="project-content">
-            <h3 data-i18n="projects.packet-hacks.title">Packet Hacks 2025</h3>
-            <p class="project-placeholder" data-i18n="projects.placeholder">Project details coming soon.</p>
-          </div>
-        </section>
+          <article class="project-plate">
+            <figure>
+              <div class="project-plate__media">
+                <img src="Assets/images/project-and-achievements/packet-hacks-2025.jpg" alt="Computer Engineering group posing together in the Packet Hacks 2025 showcase image" loading="lazy" decoding="async">
+              </div>
+              <figcaption><h3 data-i18n="projects.packet-hacks.title">Packet Hacks 2025</h3></figcaption>
+            </figure>
+          </article>
 
-        <section class="project-showcase project-media-right">
-          <div class="project-media">
-            <img src="Assets/images/project-and-achievements/project.jpg" alt="Project" class="img-fluid" loading="lazy" decoding="async">
-          </div>
-          <div class="project-content">
-            <h3 data-i18n="projects.generic.title">Project</h3>
-            <p class="project-placeholder" data-i18n="projects.placeholder">Project details coming soon.</p>
-          </div>
-        </section>
+          <article class="project-plate">
+            <figure>
+              <div class="project-plate__media">
+                <img src="Assets/images/project-and-achievements/project.jpg" alt="Student-built blue character model displayed with other projects" loading="lazy" decoding="async">
+              </div>
+              <figcaption><h3 data-i18n="projects.generic.title">Project</h3></figcaption>
+            </figure>
+          </article>
 
-        <section class="project-showcase project-media-left">
-          <div class="project-media">
-            <img src="Assets/images/project-and-achievements/thesis-projects.jpg" alt="Thesis Projects" class="img-fluid" loading="lazy" decoding="async">
-          </div>
-          <div class="project-content">
-            <h3 data-i18n="projects.thesis.title">Thesis Projects</h3>
-            <p class="project-placeholder" data-i18n="projects.placeholder">Project details coming soon.</p>
-          </div>
+          <article class="project-plate">
+            <figure>
+              <div class="project-plate__media">
+                <img src="Assets/images/project-and-achievements/thesis-projects.jpg" alt="Six thesis project posters displayed in a laboratory" loading="lazy" decoding="async">
+              </div>
+              <figcaption><h3 data-i18n="projects.thesis.title">Thesis Projects</h3></figcaption>
+            </figure>
+          </article>
         </section>
       </div>
     </section>

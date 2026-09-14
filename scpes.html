@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body class="page-scpes">
+<body class="page-core page-scpes">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +70,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide--scpes">
-      <div class="carousel-caption">
-        <h1 data-i18n="scpes.hero.title">Society of Computer Engineering Students</h1>
-        <p class="lead" data-i18n="scpes.hero.tagline">Computer Engineering student community at UE Manila</p>
-      </div>
+  <header class="inner-hero hero-slide hero-slide--scpes">
+    <div class="container-custom inner-hero__content">
+      <p class="inner-hero__eyebrow" data-i18n="nav.community">Community</p>
+      <h1 data-i18n="scpes.hero.title">Society of Computer Engineering Students</h1>
+      <p class="lead" data-i18n="scpes.hero.tagline">Computer Engineering student community at UE Manila</p>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content community-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,14 +88,21 @@
           </ol>
         </nav>
 
-        <section class="community-intro mb-5" aria-labelledby="scpes-about-title">
-          <h2 id="scpes-about-title" data-i18n="scpes.about.title">About SCPES</h2>
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
+        <section class="community-intro" aria-labelledby="scpes-about-title">
+          <header class="community-page__heading">
+            <h2 id="scpes-about-title" data-i18n="scpes.about.title">About SCPES</h2>
+            <div>
               <p class="lead" data-i18n="scpes.about.mission">Society of Computer Engineering Students (SCPES), University of the East — Manila.</p>
               <p data-i18n="scpes.about.desc">This page presents the confirmed A.Y. 2026–2027 officer roster and verified details from community activity images.</p>
+            </div>
+          </header>
+          <div class="scpes-intro-grid">
+            <figure class="scpes-intro-image">
+              <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES community gathered onstage at Arduino Day Philippines" decoding="async">
+            </figure>
+            <div class="scpes-category-panel">
               <p class="scpes-activities-intro" data-i18n="scpes.activities.intro">Activities listed on the SCPES banner include:</p>
-              <ul class="scpes-activity-list">
+              <ol class="scpes-activity-list">
                 <li data-i18n="scpes.activities.item1">Academic Seminars, Trainings, &amp; Workshops</li>
                 <li data-i18n="scpes.activities.item2">Curricular &amp; Co-Curricular Competitions</li>
                 <li data-i18n="scpes.activities.item3">Life Talks and Academic Mentoring</li>
@@ -105,55 +111,52 @@
                 <li data-i18n="scpes.activities.item6">E-Sports Competitions</li>
                 <li data-i18n="scpes.activities.item7">Social Gatherings</li>
                 <li data-i18n="scpes.activities.item8">Social Responsibility and Community Outreach Initiatives</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <img src="Assets/images/scpes/arduino-day.jpg" alt="SCPES Arduino Day event" class="img-fluid rounded" decoding="async">
+              </ol>
             </div>
           </div>
         </section>
 
-        <section class="community-section mb-5" aria-labelledby="scpes-officers-title">
-          <header class="section-heading">
+        <section class="community-section scpes-officers" aria-labelledby="scpes-officers-title">
+          <header class="community-page__heading community-page__heading--compact">
             <h2 id="scpes-officers-title" data-i18n="scpes.officers.title">SCPES Officers — A.Y. 2026–2027</h2>
           </header>
 
-          <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic15.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Charlize Baldovino</h3><p class="officer-detail" data-i18n="scpes.officers.president">President</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic14.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Jawad Macawadib</h3><p class="officer-detail" data-i18n="scpes.officers.internal">VP for Internal Affairs</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic16.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Joshua Madriaga</h3><p class="officer-detail" data-i18n="scpes.officers.external">VP for External Affairs</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic12.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Ghenny Manabat</h3><p class="officer-detail" data-i18n="scpes.officers.secretariat">VP for Secretariat</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic17.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.jessica.name">Jessica Apostol</h3><p class="officer-detail" data-i18n="scpes.officers.finance">VP for Business and Finance</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic18.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Joshua Purificacion</h3><p class="officer-detail" data-i18n="scpes.officers.career">VP for Career Development</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic8.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Roselle Landayan</h3><p class="officer-detail" data-i18n="scpes.officers.events">VP for Events and Programs</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic13.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name" data-i18n="scpes.officers.jian.name">Jian Cruz</h3><p class="officer-detail" data-i18n="scpes.officers.creatives">VP for Creatives &amp; Communication</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic9.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Joe Cornita</h3><p class="officer-detail" data-i18n="scpes.officers.media">VP for Media</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic11.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Mei Rupera</h3><p class="officer-detail" data-i18n="scpes.officers.technical">VP for Technical Operations</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic10.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Earl Lorenzo</h3><p class="officer-detail" data-i18n="scpes.officers.community">VP for Community &amp; Social Responsibility</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic7.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Felix Adriano</h3><p class="officer-detail" data-i18n="scpes.officers.recreation">VP for Recreation and Wellness</p></article></div>
-            <div class="col-6 col-md-4 col-lg-3"><article class="officer-card"><img src="Assets/images/officers/pic19.jpg" alt="" loading="lazy" decoding="async"><h3 class="officer-name">Bench Paed</h3><p class="officer-detail" data-i18n="scpes.officers.logistics">VP for Logistics &amp; Volunteer's Coordination</p></article></div>
+          <div class="officer-grid">
+            <article class="officer-card officer-card--president"><img src="Assets/images/officers/pic15.jpg" alt="Charlize Baldovino" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Charlize Baldovino</h3><p class="officer-detail" data-i18n="scpes.officers.president">President</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic14.jpg" alt="Jawad Macawadib" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Jawad Macawadib</h3><p class="officer-detail" data-i18n="scpes.officers.internal">VP for Internal Affairs</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic16.jpg" alt="Joshua Madriaga" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Joshua Madriaga</h3><p class="officer-detail" data-i18n="scpes.officers.external">VP for External Affairs</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic12.jpg" alt="Ghenny Manabat" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Ghenny Manabat</h3><p class="officer-detail" data-i18n="scpes.officers.secretariat">VP for Secretariat</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic17.jpg" alt="Jessica Apostol" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name" data-i18n="scpes.officers.jessica.name">Jessica Apostol</h3><p class="officer-detail" data-i18n="scpes.officers.finance">VP for Business and Finance</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic18.jpg" alt="Joshua Purificacion" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Joshua Purificacion</h3><p class="officer-detail" data-i18n="scpes.officers.career">VP for Career Development</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic8.jpg" alt="Roselle Landayan" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Roselle Landayan</h3><p class="officer-detail" data-i18n="scpes.officers.events">VP for Events and Programs</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic13.jpg" alt="Jian Cruz" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name" data-i18n="scpes.officers.jian.name">Jian Cruz</h3><p class="officer-detail" data-i18n="scpes.officers.creatives">VP for Creatives &amp; Communication</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic9.jpg" alt="Joe Cornita" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Joe Cornita</h3><p class="officer-detail" data-i18n="scpes.officers.media">VP for Media</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic11.jpg" alt="Mei Rupera" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Mei Rupera</h3><p class="officer-detail" data-i18n="scpes.officers.technical">VP for Technical Operations</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic10.jpg" alt="Earl Lorenzo" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Earl Lorenzo</h3><p class="officer-detail" data-i18n="scpes.officers.community">VP for Community &amp; Social Responsibility</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic7.jpg" alt="Felix Adriano" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Felix Adriano</h3><p class="officer-detail" data-i18n="scpes.officers.recreation">VP for Recreation and Wellness</p></div></article>
+            <article class="officer-card"><img src="Assets/images/officers/pic19.jpg" alt="Bench Paed" loading="lazy" decoding="async"><div class="officer-card__caption"><h3 class="officer-name">Bench Paed</h3><p class="officer-detail" data-i18n="scpes.officers.logistics">VP for Logistics &amp; Volunteer's Coordination</p></div></article>
           </div>
         </section>
 
         <section class="community-section" aria-labelledby="scpes-events-title">
-          <header class="section-heading">
+          <header class="community-page__heading">
             <h2 id="scpes-events-title" data-i18n="scpes.events.title">Community Activities</h2>
             <p data-i18n="scpes.events.intro">Verified details visible in the available community activity images.</p>
           </header>
 
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="1st Computer Engineering Research Colloquium-Forum group with certificates" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.1.title">1st Computer Engineering Research Colloquium-Forum</h3><p class="community-event-theme"><strong data-i18n="scpes.events.themeLabel">Theme:</strong> <span data-i18n="scpes.events.1.theme">Advancing the Sustainable Development Goals Through Design Projects and Innovation</span></p><dl class="community-event-meta"><div><dt data-i18n="scpes.events.dateLabel">Date</dt><dd data-i18n="scpes.events.1.date">April 24, 2026</dd></div><div><dt data-i18n="scpes.events.locationLabel">Location</dt><dd data-i18n="scpes.events.1.location">CPE Laboratories</dd></div></dl><p data-i18n="scpes.events.1.desc">Third- and fourth-year Computer Engineering students participated in the research colloquium highlighting design projects and innovation.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="Students participating in a 3D printing workshop" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.2.title">3D Printing Workshop</h3><p data-i18n="scpes.events.2.desc">Third- and fourth-year Computer Engineering students took part in a 3D printing workshop and demonstration.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/3d-printing.jpg" alt="3D printing fabrication activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.3.title">3D Printing</h3><p data-i18n="scpes.events.3.desc">This practical 3D printing activity focused on fabrication and prototyping.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/arduino-day.jpg" alt="Group on stage at Arduino Day Philippines" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.4.title">Arduino Day Philippines</h3><p data-i18n="scpes.events.4.desc">Second-year Computer Engineering students participated in Arduino Day Philippines.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="Robotics kits, sensors, robotic arms, and controller display" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.5.title">DOST-PAGASA</h3><p data-i18n="scpes.events.5.desc">Students explored robotics kits, sensors, robotic arms, and controllers through a DOST-PAGASA technology exhibit.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="Seeed Studio XIAO Series electronics display" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.6.title">DOST-PAGASA</h3><p data-i18n="scpes.events.6.desc">Students explored electronics, robotics, and embedded technology through a DOST-PAGASA product display.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="Group at the DOST-PAGASA Flood Simulator exhibit" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.7.title">DOST-PAGASA Flood Simulator / Augmented Reality Terrain</h3><p data-i18n="scpes.events.7.desc">Third-year Computer Engineering students explored the DOST-PAGASA Flood Simulator / Augmented Reality Terrain exhibit.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Refreshment table with coffee and bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.8.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.8.desc">SCPES provided free coffee and bread refreshments for students.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="SCPES information display beside coffee and bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.9.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.9.desc">SCPES paired its Free Coffee and Bread activity with information and recruitment materials for students.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/shs-work-immersion.jpg" alt="Group at the SHS Work Immersion activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.10.title">SHS Work Immersion</h3><p data-i18n="scpes.events.10.desc">Senior High School students participated in work immersion within a Computer Engineering laboratory or learning environment.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Group at the Thanksgiving 2025 activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.11.title">Thanksgiving 2025</h3><p data-i18n="scpes.events.11.desc">Students from the Computer Engineering community gathered for Thanksgiving 2025.</p></div></article></div>
-            <div class="col-md-6 col-lg-4"><article class="community-event"><img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Small wheeled electronics projects at a robotics activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.12.title">Tracing Sumobot Workshops</h3><p data-i18n="scpes.events.12.desc">The workshops involved hands-on robotics work with line-tracing and Sumobot systems.</p></div></article></div>
+          <div class="activity-journal">
+            <article class="community-event community-event--lead"><img src="Assets/images/scpes/1st-computer-engineering-research-colloquium-forum).jpg" alt="1st Computer Engineering Research Colloquium-Forum group with certificates" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.1.title">1st Computer Engineering Research Colloquium-Forum</h3><p class="community-event-theme"><strong data-i18n="scpes.events.themeLabel">Theme:</strong> <span data-i18n="scpes.events.1.theme">Advancing the Sustainable Development Goals Through Design Projects and Innovation</span></p><dl class="community-event-meta"><div><dt data-i18n="scpes.events.dateLabel">Date</dt><dd data-i18n="scpes.events.1.date">April 24, 2026</dd></div><div><dt data-i18n="scpes.events.locationLabel">Location</dt><dd data-i18n="scpes.events.1.location">CPE Laboratories</dd></div></dl><p data-i18n="scpes.events.1.desc">Third- and fourth-year Computer Engineering students participated in the research colloquium highlighting design projects and innovation.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/3d-printing-workshop.jpg" alt="Students participating in a 3D printing workshop" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.2.title">3D Printing Workshop</h3><p data-i18n="scpes.events.2.desc">Third- and fourth-year Computer Engineering students took part in a 3D printing workshop and demonstration.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/3d-printing.jpg" alt="3D printing fabrication activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.3.title">3D Printing</h3><p data-i18n="scpes.events.3.desc">This practical 3D printing activity focused on fabrication and prototyping.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/arduino-day.jpg" alt="Group on stage at Arduino Day Philippines" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.4.title">Arduino Day Philippines</h3><p data-i18n="scpes.events.4.desc">Second-year Computer Engineering students participated in Arduino Day Philippines.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/dost-pagasa (1).jpg" alt="Robotics kits, sensors, robotic arms, and controller display" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.5.title">DOST-PAGASA</h3><p data-i18n="scpes.events.5.desc">Students explored robotics kits, sensors, robotic arms, and controllers through a DOST-PAGASA technology exhibit.</p></div></article>
+            <article class="community-event community-event--wide"><img src="Assets/images/scpes/dost-pagasa (2).jpg" alt="Seeed Studio XIAO Series electronics display" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.6.title">DOST-PAGASA</h3><p data-i18n="scpes.events.6.desc">Students explored electronics, robotics, and embedded technology through a DOST-PAGASA product display.</p></div></article>
+            <article class="community-event community-event--wide"><img src="Assets/images/scpes/dost-pagasa (3).jpg" alt="Group at the DOST-PAGASA Flood Simulator exhibit" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.7.title">DOST-PAGASA Flood Simulator / Augmented Reality Terrain</h3><p data-i18n="scpes.events.7.desc">Third-year Computer Engineering students explored the DOST-PAGASA Flood Simulator / Augmented Reality Terrain exhibit.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread1.jpg" alt="Refreshment table with coffee and bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.8.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.8.desc">SCPES provided free coffee and bread refreshments for students.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/free-coffee-and-bread2.jpg" alt="SCPES information display beside coffee and bread" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.9.title">Free Coffee and Bread</h3><p data-i18n="scpes.events.9.desc">SCPES paired its Free Coffee and Bread activity with information and recruitment materials for students.</p></div></article>
+            <article class="community-event"><img src="Assets/images/scpes/shs-work-immersion.jpg" alt="Group at the SHS Work Immersion activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.10.title">SHS Work Immersion</h3><p data-i18n="scpes.events.10.desc">Senior High School students participated in work immersion within a Computer Engineering laboratory or learning environment.</p></div></article>
+            <article class="community-event community-event--wide"><img src="Assets/images/scpes/thanksgiving-2025.jpg" alt="Group at the Thanksgiving 2025 activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.11.title">Thanksgiving 2025</h3><p data-i18n="scpes.events.11.desc">Students from the Computer Engineering community gathered for Thanksgiving 2025.</p></div></article>
+            <article class="community-event community-event--wide"><img src="Assets/images/scpes/tracing-sumobot-workshops.jpg" alt="Small wheeled electronics projects at a robotics activity" loading="lazy" decoding="async"><div class="community-event-body"><h3 data-i18n="scpes.events.12.title">Tracing Sumobot Workshops</h3><p data-i18n="scpes.events.12.desc">The workshops involved hands-on robotics work with line-tracing and Sumobot systems.</p></div></article>
           </div>
         </section>
       </div>
