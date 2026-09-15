@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
   <meta name="description" content="Bachelor of Science in Computer Engineering website for the University of the East - Manila" data-i18n="meta.description">
   <title data-i18n="faq.meta.title">Frequently Asked Questions | UE Computer Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
   <link rel="stylesheet" href="Assets/css/main.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-faq">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -70,17 +71,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-1">
-      <div class="carousel-caption">
-        <h1 data-i18n="faq.hero.title">Frequently Asked Questions</h1>
-        <p class="lead" data-i18n="faq.hero.tagline">Common questions about Computer Engineering and the UE Manila program</p>
-      </div>
+  <header class="inner-hero hero-slide hero-slide-1">
+    <div class="container-custom inner-hero__content">
+      <p class="inner-hero__eyebrow" data-i18n="nav.faq">FAQ</p>
+      <h1 data-i18n="faq.hero.title">Frequently Asked Questions</h1>
+      <p class="lead" data-i18n="faq.hero.tagline">Common questions about Computer Engineering and the UE Manila program</p>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content utility-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -89,23 +89,29 @@
           </ol>
         </nav>
 
-        <div class="row g-5 align-items-start">
-          <header class="col-lg-4">
-            <h2 data-i18n="faq.intro.title">Questions, answered clearly</h2>
-            <p class="lead" data-i18n="faq.intro.desc">A concise guide to Computer Engineering, the UE Manila program, and where to confirm current institutional information.</p>
-            <div class="mt-4">
+        <header class="utility-page__heading">
+          <h2 data-i18n="faq.intro.title">Questions, answered clearly</h2>
+          <p class="lead" data-i18n="faq.intro.desc">A concise guide to Computer Engineering, the UE Manila program, and where to confirm current institutional information.</p>
+        </header>
+
+        <div class="faq-tools">
+          <div class="faq-search">
               <label for="faqSearch" class="form-label" data-i18n="faq.search.label">Search frequently asked questions</label>
               <input type="search" class="form-control" id="faqSearch" placeholder="Search by topic or keyword" data-i18n-placeholder="faq.search.placeholder" aria-describedby="faqSearchStatus">
               <p class="form-text" id="faqSearchStatus" aria-live="polite"><span id="faqSearchStatusLabel" data-i18n="faq.search.status">Questions available:</span> <span id="faqSearchCount">12</span></p>
-            </div>
-          </header>
+          </div>
+          <nav class="faq-topic-nav" aria-labelledby="faq-topic-nav-label">
+            <span class="visually-hidden" id="faq-topic-nav-label" data-i18n="faq.intro.title">Questions, answered clearly</span>
+            <a href="#faq-about" data-i18n="faq.general.title">About Computer Engineering</a>
+            <a href="#faq-study" data-i18n="faq.study.title">Studying Computer Engineering</a>
+            <a href="#faq-careers" data-i18n="faq.careers.title">Careers</a>
+            <a href="#faq-ue" data-i18n="faq.ue.title">UE Manila Program and Contact</a>
+          </nav>
+        </div>
 
-          <div class="col-lg-8">
-            <section class="mb-5" aria-labelledby="faq-about-heading">
-              <h2 id="faq-about-heading" class="h3 supporting-label">
-                <svg class="supporting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.33c-.9.37-.9.92-.9 1.67"/><path d="M12 17h.01"/></svg>
-                <span data-i18n="faq.general.title">About Computer Engineering</span>
-              </h2>
+        <div class="faq-groups">
+            <section id="faq-about" class="faq-group" aria-labelledby="faq-about-heading">
+              <h2 id="faq-about-heading" data-i18n="faq.general.title">About Computer Engineering</h2>
               <div class="accordion faq-accordion" id="faqAbout">
                 <article class="accordion-item">
                   <h3 class="accordion-header">
@@ -160,11 +166,8 @@
               </div>
             </section>
 
-            <section class="mb-5" aria-labelledby="faq-study-heading">
-              <h2 id="faq-study-heading" class="h3 supporting-label">
-                <svg class="supporting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5z"/></svg>
-                <span data-i18n="faq.study.title">Studying Computer Engineering</span>
-              </h2>
+            <section id="faq-study" class="faq-group" aria-labelledby="faq-study-heading">
+              <h2 id="faq-study-heading" data-i18n="faq.study.title">Studying Computer Engineering</h2>
               <div class="accordion faq-accordion" id="faqStudy">
                 <article class="accordion-item">
                   <h3 class="accordion-header">
@@ -189,11 +192,8 @@
               </div>
             </section>
 
-            <section class="mb-5" aria-labelledby="faq-careers-heading">
-              <h2 id="faq-careers-heading" class="h3 supporting-label">
-                <svg class="supporting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></svg>
-                <span data-i18n="faq.careers.title">Careers</span>
-              </h2>
+            <section id="faq-careers" class="faq-group" aria-labelledby="faq-careers-heading">
+              <h2 id="faq-careers-heading" data-i18n="faq.careers.title">Careers</h2>
               <div class="accordion faq-accordion" id="faqCareers">
                 <article class="accordion-item">
                   <h3 class="accordion-header">
@@ -218,11 +218,8 @@
               </div>
             </section>
 
-            <section aria-labelledby="faq-ue-heading">
-              <h2 id="faq-ue-heading" class="h3 supporting-label">
-                <svg class="supporting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 21V8l8-5 8 5v13M2 21h20M9 21v-5h6v5M8 10h.01M12 10h.01M16 10h.01"/></svg>
-                <span data-i18n="faq.ue.title">UE Manila Program and Contact</span>
-              </h2>
+            <section id="faq-ue" class="faq-group" aria-labelledby="faq-ue-heading">
+              <h2 id="faq-ue-heading" data-i18n="faq.ue.title">UE Manila Program and Contact</h2>
               <div class="accordion faq-accordion" id="faqUE">
                 <article class="accordion-item">
                   <h3 class="accordion-header">
@@ -256,7 +253,6 @@
                 </article>
               </div>
             </section>
-          </div>
         </div>
       </div>
     </section>

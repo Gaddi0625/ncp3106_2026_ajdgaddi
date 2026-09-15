@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
   <meta name="description" content="Play a five-letter word game on the UE Manila Computer Engineering website" data-i18n="game.meta.description">
   <title data-i18n="game.meta.title">Word Game | UE Computer Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="Assets/css/game.css">
   <link rel="stylesheet" href="Assets/css/assistant.css">
 </head>
-<body>
+<body class="page-core page-game">
   <a href="#main-content" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
   <nav class="navbar navbar-expand-xxl" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNav">
@@ -71,17 +72,16 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-carousel hero-carousel--compact">
-    <div class="hero-slide hero-slide-2">
-      <div class="carousel-caption">
-        <h1 data-i18n="game.hero.title">Computer Engineering Word Game</h1>
-        <p class="lead" data-i18n="game.hero.tagline">Guess a five-letter word related to Computer Engineering and technology</p>
-      </div>
+  <header class="inner-hero hero-slide hero-slide-2">
+    <div class="container-custom inner-hero__content">
+      <p class="inner-hero__eyebrow" data-i18n="nav.game">Game</p>
+      <h1 data-i18n="game.hero.title">Computer Engineering Word Game</h1>
+      <p class="lead" data-i18n="game.hero.tagline">Guess a five-letter word related to Computer Engineering and technology</p>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="section">
+    <section class="section core-page__content utility-page__content">
       <div class="container-custom">
         <nav aria-label="Breadcrumb" class="mb-4" data-i18n-aria-label="a11y.breadcrumb">
           <ol class="breadcrumb">
@@ -90,7 +90,7 @@
           </ol>
         </nav>
 
-        <header class="wordle-intro">
+        <header class="utility-page__heading wordle-intro">
           <h2 data-i18n="game.intro.title">A quick five-letter word challenge</h2>
           <p class="lead" data-i18n="game.intro.desc">Use the onscreen keyboard or your physical keyboard to find the hidden word.</p>
         </header>
@@ -110,14 +110,16 @@
             </div>
           </div>
 
-          <p id="wordle-status" class="wordle-status" aria-live="polite" aria-atomic="true">Enter a five-letter word.</p>
-          <div id="wordle-board" class="wordle-board" role="grid" aria-rowcount="6" aria-colcount="5" aria-label="Word game board" data-i18n-aria-label="game.board.label"></div>
-          <div id="wordle-keyboard" class="wordle-keyboard" aria-label="Onscreen keyboard" data-i18n-aria-label="game.keyboard.label"></div>
-          <div class="wordle-actions">
-            <button id="wordle-new" class="btn btn-outline-primary" type="button" data-i18n="game.action.new">New Word</button>
-            <button id="wordle-copy" class="btn btn-primary wordle-is-hidden" type="button" data-i18n="game.action.copy">Copy Result</button>
+          <div class="wordle-play">
+            <p id="wordle-status" class="wordle-status" aria-live="polite" aria-atomic="true">Enter a five-letter word.</p>
+            <div id="wordle-board" class="wordle-board" role="grid" aria-rowcount="6" aria-colcount="5" aria-label="Word game board" data-i18n-aria-label="game.board.label"></div>
+            <div id="wordle-keyboard" class="wordle-keyboard" aria-label="Onscreen keyboard" data-i18n-aria-label="game.keyboard.label"></div>
+            <div class="wordle-actions">
+              <button id="wordle-new" class="btn btn-outline-primary" type="button" data-i18n="game.action.new">New Word</button>
+              <button id="wordle-copy" class="btn btn-primary wordle-is-hidden" type="button" data-i18n="game.action.copy">Copy Result</button>
+            </div>
+            <p id="wordle-toast" class="wordle-toast" role="status" aria-live="polite" aria-atomic="true" hidden></p>
           </div>
-          <p id="wordle-toast" class="wordle-toast" role="status" aria-live="polite" aria-atomic="true" hidden></p>
         </section>
       </div>
     </section>
