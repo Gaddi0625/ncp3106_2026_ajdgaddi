@@ -4,6 +4,15 @@
 (() => {
   const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
+  const heroCarousel = document.getElementById('heroCarousel');
+  if (heroCarousel && typeof bootstrap !== 'undefined') {
+    bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+      interval: false,
+      keyboard: true,
+      touch: true
+    });
+  }
+
   // ===== Scroll to Top =====
   const scrollTopBtn = document.querySelector('.scroll-top');
   if (scrollTopBtn) {
