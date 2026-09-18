@@ -478,6 +478,26 @@ pre code { background: none; padding: 0; }
   background-position: center 42%;
 }
 
+.hero-slide-4 {
+  background-image: url('../images/hero/COMPUTER ENGINEER.jpg');
+  background-position: center 30%;
+}
+
+.hero-slide-5 {
+  background-image: url('../images/hero/COMMUNITY.jpg');
+  background-position: center 40%;
+}
+
+.hero-slide-6 {
+  background-image: url('../images/hero/CAREER.jpg');
+  background-position: center 35%;
+}
+
+.hero-slide-7 {
+  background-image: url('../images/hero/ORG ACHIEVEMENT.jpg');
+  background-position: center 40%;
+}
+
 .hero-slide .carousel-caption {
   position: relative;
   inset: auto;
