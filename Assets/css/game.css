@@ -1,7 +1,7 @@
 /* ==========================================================================
    Word Game
    ========================================================================== */
-.page-game .inner-hero { min-height: clamp(20rem, 32vw, 25rem); }
+.page-game .hero-base--inner { min-height: clamp(10rem, 16vw, 12.5rem); }
 .page-game .wordle-intro { margin-bottom: clamp(var(--space-10), 6vw, var(--space-16)); }
 .page-game .wordle-intro h2 { max-width: 14ch; }
 
