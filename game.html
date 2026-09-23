@@ -104,7 +104,7 @@
               <li data-i18n="game.instructions.item2">You have six attempts to find the hidden word.</li>
               <li data-i18n="game.instructions.item3">Use Enter to submit and Backspace to remove a letter.</li>
             </ul>
-            <div class="wordle-legend" aria-label="Tile state guide" data-i18n-aria-label="game.legend.label">
+            <div class="wordle-legend" role="group" aria-label="Tile state guide" data-i18n-aria-label="game.legend.label">
               <span><span class="wordle-legend__tile wordle-is-correct" aria-hidden="true">A</span><span data-i18n="game.legend.correct">Correct position</span></span>
               <span><span class="wordle-legend__tile wordle-is-present" aria-hidden="true">B</span><span data-i18n="game.legend.present">In the word, wrong position</span></span>
               <span><span class="wordle-legend__tile wordle-is-absent" aria-hidden="true">C</span><span data-i18n="game.legend.absent">Not in the word</span></span>
@@ -114,7 +114,7 @@
           <div class="wordle-play">
             <p id="wordle-status" class="wordle-status" aria-live="polite" aria-atomic="true">Enter a five-letter word.</p>
             <div id="wordle-board" class="wordle-board" role="grid" aria-rowcount="6" aria-colcount="5" aria-label="Word game board" data-i18n-aria-label="game.board.label"></div>
-            <div id="wordle-keyboard" class="wordle-keyboard" aria-label="Onscreen keyboard" data-i18n-aria-label="game.keyboard.label"></div>
+            <div id="wordle-keyboard" class="wordle-keyboard" role="group" aria-label="Onscreen keyboard" data-i18n-aria-label="game.keyboard.label"></div>
             <div class="wordle-actions">
               <button id="wordle-new" class="btn btn-outline-primary" type="button" data-i18n="game.action.new">New Word</button>
               <button id="wordle-copy" class="btn btn-primary wordle-is-hidden" type="button" data-i18n="game.action.copy">Copy Result</button>

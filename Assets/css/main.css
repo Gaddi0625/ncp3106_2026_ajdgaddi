@@ -359,6 +359,13 @@ pre code { background: none; padding: 0; }
     transform: translateX(0);
   }
 
+  .navbar-collapse a:focus-visible,
+  .navbar-collapse button:focus-visible {
+    outline: 3px solid var(--color-accent-text);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
   .navbar-nav {
     flex-direction: column;
     align-items: stretch;
@@ -366,13 +373,28 @@ pre code { background: none; padding: 0; }
 
   .navbar-nav .nav-link {
     color: var(--color-text);
+    background-color: transparent;
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-3) var(--space-2) !important;
     font-size: var(--fs-500);
+    transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: var(--color-text);
+    background-color: var(--color-surface-alt);
   }
 
   .navbar-nav .nav-link.active {
     border-bottom-color: var(--color-accent);
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent-text);
+  }
+
+  .navbar-nav .nav-link.active:hover,
+  .navbar-nav .nav-link.active:focus {
+    background-color: var(--color-accent-soft);
     color: var(--color-accent-text);
   }
 
@@ -387,6 +409,25 @@ pre code { background: none; padding: 0; }
 
   .language-selector .btn-link {
     color: var(--color-text);
+  }
+
+  .language-selector .btn-link:hover,
+  .language-selector .btn-link:focus {
+    background-color: var(--color-surface-alt);
+    color: var(--color-text);
+  }
+
+  .language-selector .dropdown-item {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .language-selector .dropdown-item.active,
+  .language-selector .dropdown-item.active:hover,
+  .language-selector .dropdown-item.active:focus {
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent-text);
   }
 }
 
@@ -486,7 +527,6 @@ pre code { background: none; padding: 0; }
 .hero-slide-2 { background-image: url('../images/hero/hero2.jpg'); background-position: center bottom; }
 .hero-slide-2::before { background: linear-gradient(90deg, rgba(8, 24, 34, 0.94) 0%, rgba(8, 24, 34, 0.76) 62%, rgba(8, 24, 34, 0.42) 100%); }
 .hero-slide-3 { background-image: url('../images/hero/hero3.jpg'); background-position: center 24%; }
-.hero-slide--scpes { background-image: url('../images/scpes/thanksgiving-2025.jpg'); background-position: center 42%; }
 .hero-slide-4 { background-image: url('../images/hero/COMPUTER ENGINEER.jpg'); background-position: center 30%; }
 .hero-slide-5 { background-image: url('../images/hero/COMMUNITY.jpg'); background-position: center 40%; }
 .hero-slide-6 { background-image: url('../images/hero/CAREER.jpg'); background-position: center 35%; }
@@ -512,6 +552,7 @@ pre code { background: none; padding: 0; }
 .hero-base--carousel > .carousel,
 .hero-base--carousel .carousel-inner,
 .hero-base--carousel .carousel-item {
+  width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -567,8 +608,7 @@ pre code { background: none; padding: 0; }
 
 /* --- Hero Inner (Inner Pages) ------------------------------------------- */
 .hero-base--inner {
-  aspect-ratio: 16 / 4.5;
-  min-height: clamp(10rem, 19vw, 14.5rem);
+  min-height: max(clamp(10rem, 19vw, 14.5rem), 28.125vw);
   display: flex;
   align-items: flex-end;
   border-bottom: 3px solid var(--color-accent);
@@ -1716,8 +1756,7 @@ main .section > .container-custom > .text-center .lead {
 
 /* --- Stage 2A Program Pages --------------------------------------------- */
 .page-core .hero-base--inner {
-  aspect-ratio: 16 / 4.5;
-  min-height: clamp(10rem, 19vw, 14.5rem);
+  min-height: max(clamp(10rem, 19vw, 14.5rem), 28.125vw);
   display: flex;
   align-items: flex-end;
   border-bottom: 3px solid var(--color-accent);
@@ -1735,6 +1774,92 @@ main .section > .container-custom > .text-center .lead {
   align-items: flex-start;
   padding-top: clamp(var(--space-12), 8vw, var(--space-20));
   padding-bottom: clamp(var(--space-10), 6vw, var(--space-16));
+}
+
+.page-specializations .hero-slide-3 { background-position: center 8%; }
+
+.page-scpes .hero-base--scpes-carousel > .carousel,
+.page-scpes .hero-base--scpes-carousel .carousel-inner,
+.page-scpes .hero-base--scpes-carousel .carousel-item,
+.page-scpes .hero-base--scpes-carousel .hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-scpes .hero-base--scpes-carousel > .carousel { z-index: 0; }
+
+.page-scpes .hero-base--scpes-carousel > .hero-base__content { pointer-events: none; }
+
+.page-scpes .hero-base--scpes-carousel .hero-slide::before {
+  background: linear-gradient(90deg, rgba(8, 24, 34, 0.94) 0%, rgba(8, 24, 34, 0.78) 48%, rgba(8, 24, 34, 0.28) 100%);
+}
+
+.page-scpes .hero-base--scpes-carousel .hero-slide--scpes-community {
+  background-image: url('../images/scpes/thanksgiving-2025.jpg');
+  background-position: center 58%;
+}
+
+.page-scpes .hero-base--scpes-carousel .hero-slide--scpes-arduino {
+  background-image: url('../images/scpes/arduino-day.jpg');
+  background-position: center 64%;
+}
+
+.page-scpes .hero-base--scpes-carousel .hero-slide--scpes-workshop {
+  background-image: url('../images/scpes/3d-printing-workshop.jpg');
+  background-position: 62% 58%;
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-control-prev,
+.page-scpes .hero-base--scpes-carousel .carousel-control-next {
+  top: auto;
+  bottom: var(--space-3);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(8, 24, 34, 0.78);
+  opacity: 1;
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-control-prev { left: var(--layout-gutter); }
+.page-scpes .hero-base--scpes-carousel .carousel-control-next { right: auto; left: calc(var(--layout-gutter) + 52px); }
+
+.page-scpes .hero-base--scpes-carousel .carousel-control-prev:hover,
+.page-scpes .hero-base--scpes-carousel .carousel-control-next:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-indicators {
+  right: var(--layout-gutter);
+  bottom: var(--space-3);
+  left: auto;
+  z-index: 3;
+  margin: 0;
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-indicators button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.58)) center / 28px 3px no-repeat;
+  opacity: 1;
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-indicators button.active {
+  background: linear-gradient(var(--color-accent-on-dark), var(--color-accent-on-dark)) center / 28px 3px no-repeat;
+  transform: none;
+}
+
+.page-scpes .hero-base--scpes-carousel .carousel-control-prev:focus-visible,
+.page-scpes .hero-base--scpes-carousel .carousel-control-next:focus-visible,
+.page-scpes .hero-base--scpes-carousel .carousel-indicators button:focus-visible {
+  outline: 3px solid var(--color-accent-on-dark);
+  outline-offset: -4px;
 }
 
 .page-core .hero-base__eyebrow {
@@ -2234,6 +2359,12 @@ main .section > .container-custom > .text-center .lead {
   .page-core .hero-base--inner { min-height: 11rem; }
   .page-core .hero-base--inner.hero-slide::before { background: linear-gradient(90deg, rgba(8, 24, 34, 0.94), rgba(8, 24, 34, 0.64)); }
   .page-core .hero-base--inner h1 { max-width: 12ch; font-size: clamp(2.5rem, 11vw, 4rem); }
+  .page-scpes .hero-base--scpes-carousel { min-height: 19rem; }
+  .page-scpes .hero-base--scpes-carousel .hero-slide::before { background: linear-gradient(90deg, rgba(8, 24, 34, 0.94), rgba(8, 24, 34, 0.64)); }
+  .page-scpes .hero-base--scpes-carousel .hero-slide--scpes-community { background-position: 51% center; }
+  .page-scpes .hero-base--scpes-carousel .hero-slide--scpes-arduino { background-position: 49% center; }
+  .page-scpes .hero-base--scpes-carousel .hero-slide--scpes-workshop { background-position: 68% center; }
+  .page-scpes .hero-base--scpes-carousel .carousel-indicators { bottom: var(--space-2); }
   .page-what-is-cpe .what-is__concept-grid,
   .page-what-is-cpe .what-is__field-grid,
   .page-specializations .specializations-grid,
@@ -2253,6 +2384,14 @@ main .section > .container-custom > .text-center .lead {
 }
 
 @media (max-width: 575.98px) {
+  .page-specializations .hero-slide-3 {
+    background-position: center top;
+    background-size: auto 125%;
+  }
+
+  .page-scpes .hero-base--scpes-carousel .carousel-control-prev,
+  .page-scpes .hero-base--scpes-carousel .carousel-control-next { bottom: var(--space-2); }
+
   .page-core .core-page__content { padding-top: var(--space-8); }
   .page-core .breadcrumb { margin-bottom: var(--space-12); }
   .page-core .core-page__definition-list > div { grid-template-columns: 1fr; gap: var(--space-2); }
@@ -3282,23 +3421,23 @@ main .section > .container-custom > .text-center .lead {
   .page-skills .page-hero {
     min-height: 20rem;
   }
-  
+
   .page-skills .page-hero::before {
     background: linear-gradient(90deg, rgba(8, 24, 34, 0.94), rgba(8, 24, 34, 0.64));
   }
-  
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .foundational-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .pathways-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cta-actions .btn {
     width: 100%;
   }

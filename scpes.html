@@ -72,7 +72,31 @@
   </nav>
   <div class="navbar-drawer-backdrop" aria-hidden="true"></div>
 
-  <header class="hero-base hero-base--inner hero-slide hero-slide--scpes">
+  <header class="hero-base hero-base--inner hero-base--scpes-carousel" aria-label="Hero carousel" data-i18n-aria-label="a11y.heroCarousel">
+    <div id="scpesHeroCarousel" class="carousel slide" data-bs-interval="false" data-bs-keyboard="true" data-bs-touch="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#scpesHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" data-i18n-aria-label="a11y.slide1"></button>
+        <button type="button" data-bs-target="#scpesHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2" data-i18n-aria-label="a11y.slide2"></button>
+        <button type="button" data-bs-target="#scpesHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3" data-i18n-aria-label="a11y.slide3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide hero-slide--scpes-community" role="img" aria-label="SCPES community group at Thanksgiving 2025"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide hero-slide--scpes-arduino" role="img" aria-label="SCPES group at Arduino Day Philippines"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide hero-slide--scpes-workshop" role="img" aria-label="Students attending a 3D printing workshop"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#scpesHeroCarousel" data-bs-slide="prev" aria-label="Previous slide" data-i18n-aria-label="a11y.previousSlide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#scpesHeroCarousel" data-bs-slide="next" aria-label="Next slide" data-i18n-aria-label="a11y.nextSlide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
     <div class="container-custom hero-base__content">
       <p class="hero-base__eyebrow" data-i18n="nav.community">Community</p>
       <h1 data-i18n="scpes.hero.title">Society of Computer Engineering Students</h1>
