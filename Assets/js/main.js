@@ -2,15 +2,50 @@
  * main.js — Shared utilities: filters, scroll-to-top, and anchor navigation
  */
 (() => {
-  const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const scrollBehavior = reducedMotionQuery.matches ? 'auto' : 'smooth';
 
   const heroCarousel = document.getElementById('heroCarousel');
   if (heroCarousel && typeof bootstrap !== 'undefined') {
-    bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
-      interval: false,
+    const carousel = bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+      interval: 7000,
       keyboard: true,
+      pause: false,
+      ride: false,
       touch: true
     });
+
+    let pointerInside = false;
+    let focusInside = false;
+
+    const updateCarouselPlayback = () => {
+      if (reducedMotionQuery.matches || pointerInside || focusInside) {
+        carousel.pause();
+      } else {
+        carousel.cycle();
+      }
+    };
+
+    heroCarousel.addEventListener('mouseenter', () => {
+      pointerInside = true;
+      updateCarouselPlayback();
+    });
+    heroCarousel.addEventListener('mouseleave', () => {
+      pointerInside = false;
+      updateCarouselPlayback();
+    });
+    heroCarousel.addEventListener('focusin', () => {
+      focusInside = true;
+      updateCarouselPlayback();
+    });
+    heroCarousel.addEventListener('focusout', event => {
+      if (!heroCarousel.contains(event.relatedTarget)) {
+        focusInside = false;
+        updateCarouselPlayback();
+      }
+    });
+    reducedMotionQuery.addEventListener('change', updateCarouselPlayback);
+    updateCarouselPlayback();
   }
 
   // ===== Scroll to Top =====
